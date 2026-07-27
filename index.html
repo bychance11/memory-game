@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content">
 <title>오늘의 기억력 게임</title>
 <style>
   :root{
@@ -135,6 +135,32 @@
   nav button .ico{font-size:20px;}
   nav button.active{color:var(--accent2); background:rgba(255,184,77,.08);}
   footer{margin-top:20px; color:#565c72; font-size:12px; text-align:center; line-height:1.6;}
+  /* ── 모바일 압축 레이아웃: 키보드가 화면 절반을 차지하는 것을 고려 ── */
+  @media (max-width: 600px){
+    body{padding:12px 12px 16px;}
+    header h1{font-size:19px;}
+    header .date{font-size:11px; margin-top:2px;}
+    .streak{margin-top:5px; font-size:11px; padding:4px 10px;}
+    .diff-row{margin-top:7px;}
+    .diff-row button{padding:5px 11px; font-size:12px;}
+    .progress{margin:8px 0 10px;}
+    .card{padding:14px;}
+    .badge{margin-bottom:10px;}
+    .question-area{min-height:100px; padding:12px; margin-bottom:12px;}
+    .question-area img{max-height:170px;}
+    .question-area .prompt{font-size:15px;}
+    .cast-chips .chip{padding:6px 12px; font-size:14px;}
+    .slot{width:30px; height:38px; font-size:17px; border-radius:6px;}
+    .slot.space{width:10px;}
+    .hint-row{margin-bottom:12px;}
+    .btn{padding:10px 14px; font-size:14px;}
+    .answer-row input{padding:11px 12px;}
+    /* 키보드 열림(입력 포커스) 시: 문제·초성·입력창만 남기고 숨김 */
+    body.kb header, body.kb .progress, body.kb nav, body.kb footer{display:none;}
+    body.kb .question-area{min-height:0;}
+    body.kb .question-area img{max-height:130px;}
+    body.kb .btn-giveup{display:none;}
+  }
   /* 넓은 화면(데스크톱)에서만 하단 고정 */
   @media (min-width: 768px){
     body{padding-bottom:96px;}
@@ -339,6 +365,9 @@ let DATA = SAMPLE_QUESTIONS;
 const sessions = {}; // page -> state
 let currentPage = "home";
 const $ = id => document.getElementById(id);
+const isTouch = matchMedia("(pointer: coarse)").matches;
+// 모바일에선 자동 포커스 금지 (키보드가 멋대로 화면을 덮는 것 방지)
+function focusInput(){ if(!isTouch) $("answerInput").focus(); }
 
 /* ---- 난이도 ---- */
 const DIFFS = ["easy","normal","hard"];
@@ -436,8 +465,15 @@ function renderGame(){
   $("submitBtn").onclick = checkAnswer;
   $("giveupBtn").onclick = ()=>finish(false);
   $("nextBtn").onclick = next;
-  $("answerInput").onkeydown = e=>{ if(e.key==="Enter") checkAnswer(); };
-  $("answerInput").focus();
+  const inp = $("answerInput");
+  inp.onkeydown = e=>{ if(e.key==="Enter") checkAnswer(); };
+  // 키보드 열림/닫힘에 맞춰 화면 압축 모드 전환
+  inp.onfocus = ()=>{
+    document.body.classList.add("kb");
+    setTimeout(()=>inp.scrollIntoView({block:"center", behavior:"smooth"}), 150);
+  };
+  inp.onblur = ()=>document.body.classList.remove("kb");
+  focusInput();
 }
 
 function hintTargets(){
@@ -488,7 +524,7 @@ function useHint(){
   renderSlots();
   updateHintBtn();
   if(s.hintsUsed >= total){ finish(false); return; } // 마지막 힌트 = 정답 공개
-  $("answerInput").focus();
+  focusInput();
 }
 
 function checkAnswer(){
