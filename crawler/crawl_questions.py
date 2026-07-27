@@ -49,6 +49,7 @@ KNOWN_ACTORS = [
 ]
 
 # 위키피디아에서 출연진을 가져올 예능 목록 (문서 제목)
+# 출연자 필드가 없거나 3명 미만이면 자동으로 건너뜀
 VARIETY_SHOWS = {
     "런닝맨": "런닝맨 (텔레비전 프로그램)",
     "나 혼자 산다": "나 혼자 산다",
@@ -58,6 +59,15 @@ VARIETY_SHOWS = {
     "신서유기": "신서유기",
     "무한도전": "무한도전",
     "라디오스타": "라디오 스타 (텔레비전 프로그램)",
+    "미운 우리 새끼": "미운 우리 새끼",
+    "전지적 참견 시점": "전지적 참견 시점",
+    "삼시세끼": "삼시세끼",
+    "윤식당": "윤식당",
+    "서진이네": "서진이네",
+    "꽃보다 할배": "꽃보다 할배",
+    "대탈출": "대탈출",
+    "놀라운 토요일": "놀라운 토요일",
+    "뿅뿅 지구오락실": "뿅뿅 지구오락실",
 }
 
 # 난이도 기준(객관 지표):
@@ -66,7 +76,54 @@ VARIETY_SHOWS = {
 #   예능  = 위키 문서 조회는 지표가 없어 목록에 수동 태그
 VARIETY_DIFFICULTY = {
     "무한도전": "easy", "런닝맨": "easy", "1박 2일": "easy", "나 혼자 산다": "easy",
+    "미운 우리 새끼": "easy", "전지적 참견 시점": "easy",
     "신서유기": "normal", "아는 형님": "normal", "놀면 뭐하니": "normal", "라디오스타": "normal",
+    "삼시세끼": "normal", "윤식당": "normal", "꽃보다 할배": "normal", "놀라운 토요일": "normal",
+    "서진이네": "hard", "대탈출": "hard", "뿅뿅 지구오락실": "hard",
+}
+
+# 정답 공개 시 보여줄 프로그램 정보
+VARIETY_INFO = {
+    "무한도전": ["MBC, 2005~2018 방영", "\"대한민국 평균 이하\" 리얼 버라이어티의 시초", "토요일 6시의 전설, 시청률 20%대를 넘나든 국민 예능"],
+    "런닝맨": ["SBS, 2010~ 방영 중", "이름표 뜯기 게임으로 유명한 장수 예능", "동남아·중국 등 해외 인기가 특히 높음"],
+    "1박 2일": ["KBS2, 2007~ 방영 중", "복불복의 원조, 야생 로드 버라이어티", "까나리 액젓 복불복이 여기서 탄생"],
+    "나 혼자 산다": ["MBC, 2013~ 방영 중", "싱글 라이프 관찰 예능, 무지개 회원", "기안84·전현무 등의 일상 공개로 화제"],
+    "아는 형님": ["JTBC, 2015~ 방영 중", "교실 콘셉트 토크쇼", "\"나 OO인데 나 알아?\" 반말 토크가 특징"],
+    "놀면 뭐하니": ["MBC, 2019~ 방영 중", "유재석의 부캐 놀이터", "유산슬·싹쓰리·환불원정대가 여기서 탄생"],
+    "신서유기": ["tvN, 2015~2020 방영", "나영석표 리얼 야생 게임 여행기", "인터넷 선공개 예능의 성공 사례"],
+    "라디오스타": ["MBC, 2007~ 방영 중", "독한 토크의 심야 4MC 토크쇼", "\"우리 형이 왜 거기서 나와?\""],
+    "삼시세끼": ["tvN, 2014~ 시즌제", "하루 세 끼 해 먹는 게 전부인 슬로우 라이프", "차승원 '차줌마'의 요리 실력이 화제"],
+    "뿅뿅 지구오락실": ["tvN, 2022~ 시즌제", "나영석 사단의 MZ세대 게임 예능", "이은지·미미·이영지·안유진 4인방"],
+    "출장 십오야": ["tvN D/유튜브", "나영석 PD의 출장 게임 버라이어티", "아이돌·배우 소속사로 직접 찾아가는 콘셉트"],
+    "강식당": ["tvN, 2017~2019", "신서유기 스핀오프 요리 예능", "강호동의 돈까스집 운영기"],
+    "어쩌다 사장": ["tvN, 2021~ 시즌제", "차태현·조인성의 시골 슈퍼/마트 운영기", "연예인 친구들이 알바로 총출동"],
+    "미운 우리 새끼": ["SBS, 2016~ 방영 중", "미혼 스타 아들의 일상을 어머니들이 관찰", "신동엽·서장훈 진행"],
+    "전지적 참견 시점": ["MBC, 2018~ 방영 중", "스타와 매니저의 일상 관찰 예능", "이영자 먹방으로 초반 화제"],
+    "윤식당": ["tvN, 2017~2018", "해외에서 한식당을 운영하는 나영석표 예능", "윤여정·이서진·정유미·박서준"],
+    "서진이네": ["tvN, 2023~ 시즌제", "윤식당 스핀오프, 이서진이 사장으로 승진", "정유미·박서준·최우식 + 뉴 인턴"],
+    "꽃보다 할배": ["tvN, 2013~2018", "평균 76세 원로 배우들의 배낭여행", "이순재·신구·박근형·백일섭 + 짐꾼 이서진"],
+    "대탈출": ["tvN, 2018~2021", "거대 밀실을 탈출하는 어드벤처 예능", "강호동·김종민·김동현·신동·유병재·피오"],
+    "놀라운 토요일": ["tvN, 2018~ 방영 중", "받아쓰기로 전국 시장 음식을 건 배틀", "붐·문세윤·키·태연 등 출연"],
+}
+
+# 정답 공개 시 보여줄 수도 정보
+CAPITAL_INFO = {
+    "서울": ["인구 약 940만 명, 한강이 가로지르는 대도시", "조선의 수도 '한양'에서 600년 넘게 이어진 수도"],
+    "도쿄": ["세계 최대 도시권 (수도권 인구 약 3,700만)", "1868년 교토에서 천도, 옛 이름은 '에도'"],
+    "파리": ["센 강의 도시, 별명은 '빛의 도시'", "에펠탑·루브르 박물관 등 세계적 관광 도시"],
+    "카이로": ["나일강 하류, 아프리카 최대급 도시권", "인근 기자에 피라미드와 스핑크스가 있음"],
+    "하노이": ["베트남 북부, 1010년부터의 유서 깊은 수도", "최대 도시는 남부의 호치민(옛 사이공)"],
+    "캔버라": ["시드니와 멜버른의 수도 경쟁 끝에 건설된 계획도시", "1913년 착공, 인구는 시드니의 1/10 수준"],
+    "오타와": ["온타리오주, 영어·프랑스어권 경계의 타협 입지", "토론토·몬트리올·밴쿠버보다 작은 수도"],
+    "브라질리아": ["1960년 내륙 개발을 위해 건설된 계획도시", "비행기 모양 도시 설계로 유네스코 세계문화유산"],
+    "앙카라": ["1923년 공화국 수립과 함께 이스탄불 대신 수도로", "튀르키예 중부 아나톨리아 고원에 위치"],
+    "베른": ["취리히·제네바보다 작은 스위스의 수도", "중세 구시가지가 유네스코 세계문화유산"],
+    "헬싱키": ["발트해 연안, '숲과 호수의 나라' 핀란드의 관문", "1812년 러시아 지배기에 수도가 됨"],
+    "웰링턴": ["세계 최남단의 수도, 별명은 '바람의 도시'", "최대 도시는 북쪽의 오클랜드"],
+    "아디스아바바": ["해발 2,355m의 고원 도시", "아프리카연합(AU) 본부 소재지, '아프리카의 수도'로 불림"],
+    "아스타나": ["1997년 알마티에서 이전한 계획 수도", "2019~2022년엔 '누르술탄'으로 개명됐다가 환원"],
+    "네피도": ["2005년 양곤에서 전격 이전한 계획도시", "20차선 도로가 텅 비어 있는 것으로 유명"],
+    "아부자": ["1991년 라고스에서 이전한 계획 수도", "나이지리아 중앙부, 민족 간 균형을 위한 입지"],
 }
 
 
@@ -143,11 +200,12 @@ def crawl_singers(limit=12):
             seen.add(answer)
             per_diff[diff] += 1
             m = re.search(r"goSongDetail\('?(\d+)'?\)", t.get("href", ""))
-            lyric = get_melon_lyric_snippet(m.group(1)) if m else None
+            lyric, meta = get_melon_song_detail(m.group(1)) if m else (None, [])
             prompt = (f"🎵 '{title}' — \"{lyric}\"" if lyric
                       else f"🎵 '{title}' — 현재 멜론 차트인 중인 이 곡의 가수는?")
+            info = [f"'{title}' — 멜론 차트 {rank}위"] + meta
             out.append({"answer": answer, "alt": alt, "prompt": prompt,
-                        "lyric": True, "difficulty": diff})
+                        "lyric": True, "difficulty": diff, "info": info})
             if len(out) >= limit:
                 break
     except Exception as e:
@@ -168,18 +226,28 @@ def clean_artist(name):
     return outer, [inner, name]
 
 
-def get_melon_lyric_snippet(song_id, lines=1):
-    """곡 상세 페이지에서 가사 첫 소절만 (저작권상 짧게)."""
+def get_melon_song_detail(song_id, lines=1):
+    """곡 상세 페이지에서 (가사 첫 소절, 앨범/발매일/장르 정보) 추출."""
     try:
         html = fetch(f"https://www.melon.com/song/detail.htm?songId={song_id}").text
         soup = BeautifulSoup(html, "html.parser")
+        lyric = None
         box = soup.select_one("div.lyric")
-        if not box:
-            return None
-        first = [l for l in box.get_text("\n", strip=True).split("\n") if l.strip()][:lines]
-        return " / ".join(first) if first else None
+        if box:
+            first = [l for l in box.get_text("\n", strip=True).split("\n") if l.strip()][:lines]
+            lyric = " / ".join(first) if first else None
+        info = []
+        for dl in soup.select("div.meta dl.list, dl.list"):
+            dts = [d.get_text(strip=True) for d in dl.select("dt")]
+            dds = [d.get_text(" ", strip=True) for d in dl.select("dd")]
+            for k, v in zip(dts, dds):
+                if k in ("앨범", "발매일", "장르") and v:
+                    info.append(f"{k}: {v}")
+            if info:
+                break
+        return lyric, info
     except Exception:
-        return None
+        return None, []
 
 
 # ---------------------------------------------------------------
@@ -219,7 +287,7 @@ def wiki_cast(page_title):
     return cast[:6]
 
 
-def crawl_variety(limit=8):
+def crawl_variety(limit=20):
     out = []
     for answer, page in VARIETY_SHOWS.items():
         try:
@@ -227,7 +295,8 @@ def crawl_variety(limit=8):
             if len(cast) >= 3:
                 alt = [answer.replace(" ", "")] if " " in answer else []
                 out.append({"answer": answer, "alt": alt, "cast": cast[:5],
-                            "difficulty": VARIETY_DIFFICULTY.get(answer, "normal")})
+                            "difficulty": VARIETY_DIFFICULTY.get(answer, "normal"),
+                            "info": VARIETY_INFO.get(answer, [])})
                 print(f"  [variety] {answer}: {', '.join(cast[:5])}")
         except Exception as e:
             print(f"  [variety] {answer} 실패: {e}")
@@ -469,6 +538,54 @@ FALLBACK = {
         {"answer": "아스타나", "difficulty": "hard", "alt": [], "prompt": "🌍 카자흐스탄의 수도는?"},
         {"answer": "네피도", "difficulty": "hard", "alt": [], "prompt": "🌍 미얀마의 수도는? (양곤 아님!)"},
         {"answer": "아부자", "difficulty": "hard", "alt": [], "prompt": "🌍 나이지리아의 수도는? (라고스 아님!)"},
+        {"answer": "워싱턴", "difficulty": "easy", "alt": ["워싱턴 D.C.", "워싱턴DC", "워싱턴 DC"], "prompt": "🌍 미국의 수도는? (뉴욕 아님!)",
+         "info": ["공식 명칭 워싱턴 D.C. (컬럼비아 특별구)", "어느 주에도 속하지 않는 연방 직할지"]},
+        {"answer": "런던", "difficulty": "easy", "alt": [], "prompt": "🌍 영국의 수도는?",
+         "info": ["템스 강의 도시, 빅벤·버킹엄 궁전", "2천 년 전 로마인이 세운 '론디니움'에서 출발"]},
+        {"answer": "베이징", "difficulty": "easy", "alt": ["북경"], "prompt": "🌍 중국의 수도는? (상하이 아님!)",
+         "info": ["자금성·천안문 광장의 도시", "원·명·청 대부터 이어진 수도"]},
+        {"answer": "로마", "difficulty": "easy", "alt": [], "prompt": "🌍 이탈리아의 수도는? (밀라노 아님!)",
+         "info": ["'모든 길은 로마로 통한다'의 그 로마", "도시 안에 세계에서 가장 작은 나라 바티칸이 있음"]},
+        {"answer": "베를린", "difficulty": "easy", "alt": [], "prompt": "🌍 독일의 수도는? (뮌헨 아님!)",
+         "info": ["1989년 베를린 장벽 붕괴의 현장", "통일 후 본에서 수도를 되찾아옴"]},
+        {"answer": "마드리드", "difficulty": "easy", "alt": [], "prompt": "🌍 스페인의 수도는? (바르셀로나 아님!)",
+         "info": ["이베리아 반도 한가운데, 해발 667m", "레알 마드리드의 홈"]},
+        {"answer": "방콕", "difficulty": "easy", "alt": [], "prompt": "🌍 태국의 수도는?",
+         "info": ["정식 명칭이 세계에서 가장 긴 도시 이름(기네스 등재)", "현지어로는 '끄룽텝'(천사의 도시)"]},
+        {"answer": "모스크바", "difficulty": "easy", "alt": [], "prompt": "🌍 러시아의 수도는?",
+         "info": ["크렘린과 붉은 광장의 도시", "유럽에서 인구가 가장 많은 도시권"]},
+        {"answer": "리스본", "difficulty": "normal", "alt": ["리스보아"], "prompt": "🌍 포르투갈의 수도는?",
+         "info": ["대항해시대의 출발점, 테주 강 하구", "1755년 대지진 후 재건된 도시"]},
+        {"answer": "빈", "difficulty": "normal", "alt": ["비엔나"], "prompt": "🌍 오스트리아의 수도는?",
+         "info": ["모차르트·베토벤이 활동한 '음악의 도시'", "합스부르크 제국의 수도였음"]},
+        {"answer": "아테네", "difficulty": "normal", "alt": [], "prompt": "🌍 그리스의 수도는?",
+         "info": ["파르테논 신전, 민주주의의 발상지", "기록상 3,400년 이상 된 유럽 최고(最古) 수도급 도시"]},
+        {"answer": "프라하", "difficulty": "normal", "alt": [], "prompt": "🌍 체코의 수도는?",
+         "info": ["'백탑의 도시', 카를교와 프라하 성", "구시가지 전체가 유네스코 세계문화유산"]},
+        {"answer": "바르샤바", "difficulty": "normal", "alt": [], "prompt": "🌍 폴란드의 수도는?",
+         "info": ["2차대전 때 파괴됐다가 옛 모습대로 복원", "쇼팽의 도시"]},
+        {"answer": "부다페스트", "difficulty": "normal", "alt": [], "prompt": "🌍 헝가리의 수도는?",
+         "info": ["도나우 강을 사이에 둔 '부다'와 '페스트'가 합쳐진 이름", "야경이 아름다워 '도나우의 진주'로 불림"]},
+        {"answer": "자카르타", "difficulty": "normal", "alt": [], "prompt": "🌍 인도네시아의 수도는?",
+         "info": ["자바 섬 북서부, 인구 1,000만+", "지반 침하로 새 수도 '누산타라' 이전을 추진 중"]},
+        {"answer": "뉴델리", "difficulty": "normal", "alt": ["델리"], "prompt": "🌍 인도의 수도는? (뭄바이 아님!)",
+         "info": ["1911년 콜카타에서 천도, 델리 남부의 계획 구역", "인도문(India Gate)과 대통령궁"]},
+        {"answer": "멕시코시티", "difficulty": "normal", "alt": ["멕시코 시티"], "prompt": "🌍 멕시코의 수도는?",
+         "info": ["아스테카 제국의 수도 테노치티틀란 자리", "해발 2,240m, 아메리카 대륙 최대급 도시"]},
+        {"answer": "마닐라", "difficulty": "normal", "alt": [], "prompt": "🌍 필리핀의 수도는?",
+         "info": ["루손 섬, 마닐라 만의 항구 도시", "스페인 식민지 시절의 성곽도시 인트라무로스"]},
+        {"answer": "오슬로", "difficulty": "normal", "alt": [], "prompt": "🌍 노르웨이의 수도는?",
+         "info": ["노벨 평화상 시상식이 열리는 도시", "피오르 안쪽 깊숙이 자리한 항구"]},
+        {"answer": "프리토리아", "difficulty": "hard", "alt": [], "prompt": "🌍 남아프리카공화국의 행정수도는? (요하네스버그 아님!)",
+         "info": ["남아공은 수도가 3개: 행정 프리토리아, 입법 케이프타운, 사법 블룸폰테인", "자카란다 꽃의 도시"]},
+        {"answer": "울란바토르", "difficulty": "hard", "alt": [], "prompt": "🌍 몽골의 수도는?",
+         "info": ["세계에서 가장 추운 수도 (연평균 기온 영하)", "몽골 인구의 절반 가까이가 거주"]},
+        {"answer": "타슈켄트", "difficulty": "hard", "alt": [], "prompt": "🌍 우즈베키스탄의 수도는?",
+         "info": ["실크로드의 오아시스 도시", "중앙아시아 최대 도시"]},
+        {"answer": "리야드", "difficulty": "hard", "alt": [], "prompt": "🌍 사우디아라비아의 수도는?",
+         "info": ["아라비아 반도 중앙의 사막 도시", "네옴시티 등 초대형 프로젝트의 중심"]},
+        {"answer": "다카", "difficulty": "hard", "alt": [], "prompt": "🌍 방글라데시의 수도는?",
+         "info": ["세계에서 인구밀도가 가장 높은 도시권 중 하나", "릭샤(인력거)의 도시"]},
     ],
 }
 
@@ -501,6 +618,8 @@ def main():
     print("예능 출연진 크롤링 (위키피디아)...")
     variety = crawl_variety()
     data["variety"] = pick(variety, FALLBACK["variety"])
+    for q in data["variety"]:  # 내장 풀에도 프로그램 정보 주입
+        q.setdefault("info", VARIETY_INFO.get(q["answer"], []))
     print(f"  → {len(data['variety'])}개 ({'크롤링' if len(variety) >= 3 else '내장 풀'})")
 
     if key:
@@ -514,6 +633,8 @@ def main():
         data["movie"] = FALLBACK["movie"]
 
     data["capital"] = FALLBACK["capital"]
+    for q in data["capital"]:  # 수도 상식 정보 주입
+        q.setdefault("info", CAPITAL_INFO.get(q["answer"], []))
     print("수도: 내장 데이터 사용")
 
     out = Path(args.out)

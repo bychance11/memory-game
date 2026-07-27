@@ -14,7 +14,7 @@
     font-family:'Apple SD Gothic Neo','Pretendard','Noto Sans KR',sans-serif;
     background:var(--bg); color:var(--text);
     min-height:100vh; display:flex; flex-direction:column; align-items:center;
-    padding:20px 16px 96px;
+    padding:20px 16px 24px;
   }
   header{text-align:center; margin-bottom:14px;}
   header h1{font-size:24px; letter-spacing:-0.5px;}
@@ -120,11 +120,11 @@
   .shake{animation:shake .35s;}
   @keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-7px)}75%{transform:translateX(7px)}}
 
+  /* 모바일 기본: 본문 흐름 안에 배치 (고정 X → 키보드·문제 화면을 가리지 않음) */
   nav{
-    position:fixed; bottom:0; left:0; right:0;
-    background:rgba(20,22,32,.95); backdrop-filter:blur(12px);
-    border-top:1px solid #2a2e3f;
-    display:flex; justify-content:center; gap:2px; padding:8px 6px 14px;
+    width:100%; max-width:520px; margin-top:16px;
+    background:var(--card); border:1px solid #2a2e3f; border-radius:14px;
+    display:flex; justify-content:center; gap:2px; padding:8px 6px;
   }
   nav button{
     flex:1; max-width:90px; background:none; border:none; cursor:pointer;
@@ -135,6 +135,16 @@
   nav button .ico{font-size:20px;}
   nav button.active{color:var(--accent2); background:rgba(255,184,77,.08);}
   footer{margin-top:20px; color:#565c72; font-size:12px; text-align:center; line-height:1.6;}
+  /* 넓은 화면(데스크톱)에서만 하단 고정 */
+  @media (min-width: 768px){
+    body{padding-bottom:96px;}
+    nav{
+      position:fixed; bottom:0; left:0; right:0;
+      max-width:none; margin-top:0; border-radius:0; border:none;
+      background:rgba(20,22,32,.95); backdrop-filter:blur(12px);
+      border-top:1px solid #2a2e3f; padding:8px 6px 14px;
+    }
+  }
 </style>
 </head>
 <body>
@@ -153,11 +163,6 @@
 <div class="progress" id="progress"></div>
 <div class="card" id="card"></div>
 
-<footer>
-  힌트를 적게 쓸수록 높은 점수! · 매일 자정에 새 문제 출제<br>
-  questions.json이 있으면 자동으로 불러옵니다
-</footer>
-
 <nav id="nav">
   <button data-page="home"><span class="ico">🧠</span>오늘의 게임</button>
   <button data-page="movie"><span class="ico">🎬</span>영화</button>
@@ -166,6 +171,11 @@
   <button data-page="capital"><span class="ico">🌍</span>수도</button>
   <button data-page="variety"><span class="ico">📺</span>예능</button>
 </nav>
+
+<footer>
+  힌트를 적게 쓸수록 높은 점수! · 매일 자정에 새 문제 출제<br>
+  questions.json이 있으면 자동으로 불러옵니다
+</footer>
 
 <script>
 /* ================= 문제 데이터 =================
