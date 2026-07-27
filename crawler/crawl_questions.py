@@ -282,6 +282,10 @@ def crawl_actors_tmdb(api_key, per_tier=8, movie_pages=3, cast_per_movie=8):
                 if pid not in people:
                     people[pid] = c
                 people[pid]["_count"] = people[pid].get("_count", 0) + 1
+                # 필모그래피 정보 축적 (정답 공개 시 표시)
+                people[pid].setdefault("_films", []).append((
+                    mv.get("title"), (mv.get("release_date") or "")[:4],
+                    c.get("character", ""), mv.get("vote_count", 0)))
         except Exception:
             continue
 
@@ -302,10 +306,14 @@ def crawl_actors_tmdb(api_key, per_tier=8, movie_pages=3, cast_per_movie=8):
     for diff, tier in tiers.items():
         random.shuffle(tier)
         for p in tier[:per_tier]:
+            films = sorted(p.get("_films", []), key=lambda f: f[3], reverse=True)[:5]
+            info = [f"{t} ({y})" + (f" — {ch} 역" if ch else "")
+                    for t, y, ch, _ in films if t]
             out.append({"answer": p["name"], "alt": [],
                         "img": PROFILE_BASE + p["profile_path"],
                         "prompt": "이 배우의 이름은?",
-                        "difficulty": diff})
+                        "difficulty": diff,
+                        "info": info})
     return out
 
 
@@ -349,12 +357,30 @@ def crawl_movies(api_key, limit=24, pages=8):
                 if not backdrops:
                     continue
                 still = random.choice(backdrops[:5])  # 포스터 대신 스틸컷(제목 미노출)
+                year = movie.get("release_date", "")[:4]
+                # 정답 공개 시 보여줄 간략 정보 (감독·주연은 credits에서)
+                info = [f"개봉: {year}년"]
+                try:
+                    cred = fetch(f"{TMDB}/movie/{movie['id']}/credits",
+                                 params={"api_key": api_key, "language": "ko-KR"}).json()
+                    director = next((c["name"] for c in cred.get("crew", [])
+                                     if c.get("job") == "Director"), None)
+                    if director:
+                        info.append(f"감독: {director}")
+                    stars = [c["name"] for c in (cred.get("cast") or [])[:3]]
+                    if stars:
+                        info.append("주연: " + ", ".join(stars))
+                except Exception:
+                    pass
+                info.append(f"TMDB 평점 {movie.get('vote_average', 0):.1f} "
+                            f"(투표 {movie.get('vote_count', 0):,}개)")
                 out.append({
                     "answer": movie.get("title"),
                     "alt": [],
                     "img": IMG_BASE + still["file_path"],
-                    "prompt": f"힌트: {movie.get('release_date', '')[:4]}년 개봉",
+                    "prompt": f"힌트: {year}년 개봉",
                     "difficulty": diff,
+                    "info": info,
                 })
                 got += 1
                 print(f"  [movie/{diff}] {movie.get('title')} "

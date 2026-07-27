@@ -106,6 +106,12 @@
   .result.no{display:block; background:rgba(255,92,122,.12); color:var(--no);}
   .result.reveal{display:block; background:rgba(255,184,77,.12); color:var(--accent2);}
   .result small{display:block; font-weight:400; color:var(--sub); margin-top:4px; font-size:13px;}
+  .answer-info{
+    margin-top:10px; padding:10px 14px; border-radius:8px;
+    background:rgba(0,0,0,.25); text-align:left;
+    font-size:13px; font-weight:400; color:var(--sub); line-height:1.7;
+  }
+  .answer-info div::before{content:"· "; color:var(--accent2);}
 
   .final{text-align:center; padding:26px 8px;}
   .final .score{font-size:50px; font-weight:800; color:var(--accent2); margin:12px 0;}
@@ -501,17 +507,19 @@ function finish(correct){
   const total = hintTargets().length*2;
   renderSlots(true);
   const r = $("result");
+  const infoHtml = (q.info && q.info.length)
+    ? `<div class="answer-info">${q.info.map(l=>`<div>${l}</div>`).join("")}</div>` : "";
   if(correct){
     const pts = Math.max(10, 100 - Math.round(s.hintsUsed/total*90));
     s.score += pts;
     s.results[s.idx] = true;
     s.hints[s.idx] = s.hintsUsed;
     r.className="result ok";
-    r.innerHTML = `⭕ 정답! <b>${q.answer}</b> (+${pts}점)<small>힌트 ${s.hintsUsed}개 사용</small>`;
+    r.innerHTML = `⭕ 정답! <b>${q.answer}</b> (+${pts}점)<small>힌트 ${s.hintsUsed}개 사용</small>${infoHtml}`;
   }else{
     s.results[s.idx] = false;
     r.className="result reveal";
-    r.innerHTML = `정답은 <b>${q.answer}</b> 였습니다`;
+    r.innerHTML = `정답은 <b>${q.answer}</b> 였습니다${infoHtml}`;
   }
   restoreSolvedUI();
   renderProgress();
