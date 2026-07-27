@@ -1,0 +1,464 @@
+{
+  "actor": [
+    {
+      "answer": "송강호",
+      "difficulty": "easy",
+      "alt": [],
+      "prompt": "기생충·변호인·괴물의 주연. 칸 남우주연상."
+    },
+    {
+      "answer": "마동석",
+      "difficulty": "easy",
+      "alt": [],
+      "prompt": "범죄도시 마석도 형사. 이터널스 출연."
+    },
+    {
+      "answer": "전지현",
+      "difficulty": "easy",
+      "alt": [],
+      "prompt": "엽기적인 그녀, 별에서 온 그대의 천송이."
+    },
+    {
+      "answer": "이정재",
+      "difficulty": "easy",
+      "alt": [],
+      "prompt": "오징어 게임의 성기훈. 에미상 수상."
+    },
+    {
+      "answer": "이병헌",
+      "difficulty": "normal",
+      "alt": [],
+      "prompt": "내부자들·오징어 게임의 프론트맨."
+    },
+    {
+      "answer": "김혜수",
+      "difficulty": "normal",
+      "alt": [],
+      "prompt": "타짜의 정마담. \"나 이대 나온 여자야.\""
+    },
+    {
+      "answer": "최민식",
+      "difficulty": "normal",
+      "alt": [],
+      "prompt": "올드보이·명량·파묘의 주연."
+    },
+    {
+      "answer": "박은빈",
+      "difficulty": "normal",
+      "alt": [],
+      "prompt": "'이상한 변호사 우영우'의 주인공."
+    },
+    {
+      "answer": "박정민",
+      "difficulty": "hard",
+      "alt": [],
+      "prompt": "동주·다만 악에서 구하소서. 파수꾼으로 데뷔한 연기파."
+    },
+    {
+      "answer": "구교환",
+      "difficulty": "hard",
+      "alt": [],
+      "prompt": "반도·D.P.·모가디슈. 독립영화 감독 겸 배우."
+    },
+    {
+      "answer": "전여빈",
+      "difficulty": "hard",
+      "alt": [],
+      "prompt": "빈센조의 홍차영 변호사, 낙원의 밤."
+    },
+    {
+      "answer": "김신록",
+      "difficulty": "hard",
+      "alt": [],
+      "prompt": "지옥의 박정자, 재벌집 막내아들. 연극 무대 출신."
+    }
+  ],
+  "singer": [
+    {
+      "answer": "Lady Gaga",
+      "alt": [],
+      "prompt": "🎵 'Die With A Smile' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "lyric": true,
+      "difficulty": "hard"
+    },
+    {
+      "answer": "IVE (아이브)",
+      "alt": [],
+      "prompt": "🎵 'REBEL HEART' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "lyric": true,
+      "difficulty": "hard"
+    },
+    {
+      "answer": "한로로",
+      "alt": [],
+      "prompt": "🎵 '입춘' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "lyric": true,
+      "difficulty": "hard"
+    },
+    {
+      "answer": "프로미스나인",
+      "alt": [],
+      "prompt": "🎵 'Vitamin ME' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "lyric": true,
+      "difficulty": "hard"
+    },
+    {
+      "answer": "ALLDAY PROJECT",
+      "alt": [],
+      "prompt": "🎵 'FAMOUS' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "lyric": true,
+      "difficulty": "hard"
+    },
+    {
+      "answer": "Hearts2Hearts (하츠투하츠)",
+      "alt": [],
+      "prompt": "🎵 'Lemon Tang' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "lyric": true,
+      "difficulty": "normal"
+    },
+    {
+      "answer": "이창섭",
+      "alt": [],
+      "prompt": "🎵 '천상연' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "lyric": true,
+      "difficulty": "normal"
+    },
+    {
+      "answer": "10CM",
+      "alt": [],
+      "prompt": "🎵 '너에게 닿기를' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "lyric": true,
+      "difficulty": "normal"
+    },
+    {
+      "answer": "카더가든",
+      "alt": [],
+      "prompt": "🎵 '그대 작은 나의 세상이 되어' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "lyric": true,
+      "difficulty": "normal"
+    },
+    {
+      "answer": "제니 (JENNIE)",
+      "alt": [],
+      "prompt": "🎵 'Less than a Lover' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "lyric": true,
+      "difficulty": "normal"
+    },
+    {
+      "answer": "WOODZ",
+      "alt": [],
+      "prompt": "🎵 'Drowning' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "lyric": true,
+      "difficulty": "easy"
+    },
+    {
+      "answer": "RESCENE (리센느)",
+      "alt": [],
+      "prompt": "🎵 'Pretty Girl' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "lyric": true,
+      "difficulty": "easy"
+    }
+  ],
+  "variety": [
+    {
+      "answer": "런닝맨",
+      "alt": [],
+      "cast": [
+        "일요일",
+        "대한민국",
+        "돌비 디지털"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "answer": "나 혼자 산다",
+      "alt": [
+        "나혼자산다"
+      ],
+      "cast": [
+        "전현무",
+        "기안84",
+        "코드 쿤스트",
+        "구성환",
+        "이주승"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "answer": "1박 2일",
+      "alt": [
+        "1박2일"
+      ],
+      "cast": [
+        "김종민",
+        "문세윤",
+        "이용진",
+        "이준",
+        "딘딘"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "answer": "아는 형님",
+      "alt": [
+        "아는형님"
+      ],
+      "cast": [
+        "강호동",
+        "서장훈",
+        "김영철",
+        "이수근",
+        "김희철"
+      ],
+      "difficulty": "normal"
+    },
+    {
+      "answer": "놀면 뭐하니",
+      "alt": [
+        "놀면뭐하니"
+      ],
+      "cast": [
+        "유재석",
+        "하하",
+        "허경환",
+        "주우재"
+      ],
+      "difficulty": "normal"
+    },
+    {
+      "answer": "신서유기",
+      "alt": [],
+      "cast": [
+        "강호동",
+        "이수근",
+        "은지원",
+        "규현",
+        "송민호"
+      ],
+      "difficulty": "normal"
+    },
+    {
+      "answer": "무한도전",
+      "alt": [],
+      "cast": [
+        "문화방송",
+        "김태호",
+        "돌비 디지털",
+        "리얼리티 방송",
+        "유재석"
+      ],
+      "difficulty": "easy"
+    }
+  ],
+  "movie": [
+    {
+      "answer": "살인의 추억",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/bBOgInuYcKB5rorSvRJ9PmSMxAn.jpg",
+      "prompt": "힌트: 2003년 개봉",
+      "difficulty": "easy"
+    },
+    {
+      "answer": "장화, 홍련",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/4rI9NEdyVgPuKk6k09K1sCmZCB3.jpg",
+      "prompt": "힌트: 2003년 개봉",
+      "difficulty": "easy"
+    },
+    {
+      "answer": "헤어질 결심",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/fXmaCa7bE5mp9AMkVT8cKaI5GMK.jpg",
+      "prompt": "힌트: 2022년 개봉",
+      "difficulty": "easy"
+    },
+    {
+      "answer": "빈집",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/45AGyfilC8CKmKYORFLeJI76jP6.jpg",
+      "prompt": "힌트: 2004년 개봉",
+      "difficulty": "easy"
+    },
+    {
+      "answer": "#살아있다",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/pFsVnpABinjTdtdjp6kpK1tAtoo.jpg",
+      "prompt": "힌트: 2020년 개봉",
+      "difficulty": "easy"
+    },
+    {
+      "answer": "마녀",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/faawswmpK7mGhPtiVjdPWVJ6Vld.jpg",
+      "prompt": "힌트: 2018년 개봉",
+      "difficulty": "normal"
+    },
+    {
+      "answer": "외계+인 2부",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/8EV5mTNiYsuZfSyFA0wxS86Ia58.jpg",
+      "prompt": "힌트: 2024년 개봉",
+      "difficulty": "normal"
+    },
+    {
+      "answer": "파묘",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/6EO11KoiMMG29ISaQrm2G5DCe1X.jpg",
+      "prompt": "힌트: 2024년 개봉",
+      "difficulty": "normal"
+    },
+    {
+      "answer": "엽기적인 그녀",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/jTz5oGoHhcms8OQCu5HyXhAGnsI.jpg",
+      "prompt": "힌트: 2001년 개봉",
+      "difficulty": "normal"
+    },
+    {
+      "answer": "태극기 휘날리며",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/6CeuXfrqe9TCBBaFTwvb6tnjIc9.jpg",
+      "prompt": "힌트: 2004년 개봉",
+      "difficulty": "normal"
+    },
+    {
+      "answer": "7번방의 선물",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/iHYZema3sNtwnivttgjeX7Ts28V.jpg",
+      "prompt": "힌트: 2013년 개봉",
+      "difficulty": "hard"
+    },
+    {
+      "answer": "마녀 2",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/8cV7zcFvazfEY8uStId95FHXcwk.jpg",
+      "prompt": "힌트: 2022년 개봉",
+      "difficulty": "hard"
+    },
+    {
+      "answer": "범죄도시",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/67eKM9rkCOZmNVrsgXVKiCvJh1.jpg",
+      "prompt": "힌트: 2017년 개봉",
+      "difficulty": "hard"
+    },
+    {
+      "answer": "판도라",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/vcq4aM7NvVYFAYQbxEAWtcVFSUv.jpg",
+      "prompt": "힌트: 2016년 개봉",
+      "difficulty": "hard"
+    },
+    {
+      "answer": "범죄도시 2",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/iuM006FCrVXqvwLg4R0hkST0HPy.jpg",
+      "prompt": "힌트: 2022년 개봉",
+      "difficulty": "hard"
+    }
+  ],
+  "capital": [
+    {
+      "answer": "서울",
+      "difficulty": "easy",
+      "alt": [
+        "서울특별시"
+      ],
+      "prompt": "🌍 대한민국의 수도는?"
+    },
+    {
+      "answer": "도쿄",
+      "difficulty": "easy",
+      "alt": [
+        "동경"
+      ],
+      "prompt": "🌍 일본의 수도는?"
+    },
+    {
+      "answer": "파리",
+      "difficulty": "easy",
+      "alt": [],
+      "prompt": "🌍 프랑스의 수도는?"
+    },
+    {
+      "answer": "카이로",
+      "difficulty": "easy",
+      "alt": [],
+      "prompt": "🌍 이집트의 수도는?"
+    },
+    {
+      "answer": "하노이",
+      "difficulty": "easy",
+      "alt": [],
+      "prompt": "🌍 베트남의 수도는? (호치민 아님!)"
+    },
+    {
+      "answer": "캔버라",
+      "difficulty": "normal",
+      "alt": [],
+      "prompt": "🌍 호주의 수도는? (시드니 아님!)"
+    },
+    {
+      "answer": "오타와",
+      "difficulty": "normal",
+      "alt": [],
+      "prompt": "🌍 캐나다의 수도는? (토론토 아님!)"
+    },
+    {
+      "answer": "브라질리아",
+      "difficulty": "normal",
+      "alt": [],
+      "prompt": "🌍 브라질의 수도는? (리우 아님!)"
+    },
+    {
+      "answer": "앙카라",
+      "difficulty": "normal",
+      "alt": [],
+      "prompt": "🌍 튀르키예의 수도는? (이스탄불 아님!)"
+    },
+    {
+      "answer": "베른",
+      "difficulty": "normal",
+      "alt": [],
+      "prompt": "🌍 스위스의 수도는? (취리히 아님!)"
+    },
+    {
+      "answer": "헬싱키",
+      "difficulty": "normal",
+      "alt": [],
+      "prompt": "🌍 핀란드의 수도는?"
+    },
+    {
+      "answer": "웰링턴",
+      "difficulty": "hard",
+      "alt": [],
+      "prompt": "🌍 뉴질랜드의 수도는? (오클랜드 아님!)"
+    },
+    {
+      "answer": "아디스아바바",
+      "difficulty": "hard",
+      "alt": [
+        "아디스 아바바"
+      ],
+      "prompt": "🌍 에티오피아의 수도는?"
+    },
+    {
+      "answer": "아스타나",
+      "difficulty": "hard",
+      "alt": [],
+      "prompt": "🌍 카자흐스탄의 수도는?"
+    },
+    {
+      "answer": "네피도",
+      "difficulty": "hard",
+      "alt": [],
+      "prompt": "🌍 미얀마의 수도는? (양곤 아님!)"
+    },
+    {
+      "answer": "아부자",
+      "difficulty": "hard",
+      "alt": [],
+      "prompt": "🌍 나이지리아의 수도는? (라고스 아님!)"
+    }
+  ]
+}

@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>오늘의 기억력 게임</title>
+<style>
+  :root{
+    --bg:#0f1117; --card:#1a1d27; --card2:#232736; --accent:#7c5cff;
+    --accent2:#ffb84d; --text:#eef0f6; --sub:#9aa0b4; --ok:#3ddc84; --no:#ff5c7a;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    font-family:'Apple SD Gothic Neo','Pretendard','Noto Sans KR',sans-serif;
+    background:var(--bg); color:var(--text);
+    min-height:100vh; display:flex; flex-direction:column; align-items:center;
+    padding:20px 16px 96px;
+  }
+  header{text-align:center; margin-bottom:14px;}
+  header h1{font-size:24px; letter-spacing:-0.5px;}
+  header h1 span{color:var(--accent2);}
+  header .date{color:var(--sub); font-size:13px; margin-top:5px;}
+  .streak{
+    display:inline-block; margin-top:8px; font-size:13px; font-weight:700;
+    background:var(--card); border:1px solid #2a2e3f; border-radius:20px; padding:6px 14px;
+    color:var(--accent2);
+  }
+  .diff-row{display:flex; gap:6px; justify-content:center; margin-top:10px;}
+  .diff-row button{
+    border:1px solid #2a2e3f; background:var(--card); color:var(--sub);
+    border-radius:20px; padding:6px 14px; font-size:13px; font-weight:700;
+    cursor:pointer; font-family:inherit; transition:.15s;
+  }
+  .diff-row button.active{color:#fff;}
+  .diff-row button.active[data-diff="easy"]{background:#31b57c; border-color:#31b57c;}
+  .diff-row button.active[data-diff="normal"]{background:var(--accent); border-color:var(--accent);}
+  .diff-row button.active[data-diff="hard"]{background:#e15564; border-color:#e15564;}
+
+  .progress{display:flex; gap:6px; margin:12px 0 18px;}
+  .progress .dot{width:26px; height:6px; border-radius:3px; background:var(--card2); transition:.3s;}
+  .progress .dot.done{background:var(--ok);}
+  .progress .dot.fail{background:var(--no);}
+  .progress .dot.now{background:var(--accent);}
+
+  .card{
+    width:100%; max-width:520px; background:var(--card);
+    border:1px solid #2a2e3f; border-radius:16px;
+    padding:24px; box-shadow:0 12px 40px rgba(0,0,0,.4);
+  }
+  .badge{
+    display:inline-block; font-size:12px; font-weight:700; letter-spacing:1px;
+    padding:5px 12px; border-radius:20px; background:var(--accent); color:#fff; margin-bottom:16px;
+  }
+  .badge.movie{background:#e15564;} .badge.variety{background:#3aa0ff;}
+  .badge.actor{background:#e69a2e;} .badge.singer{background:#31b57c;}
+  .badge.capital{background:#8f5cff;}
+
+  .question-area{
+    background:var(--card2); border-radius:12px; min-height:160px;
+    display:flex; align-items:center; justify-content:center;
+    padding:20px; margin-bottom:18px; text-align:center;
+  }
+  .question-area img{max-width:100%; max-height:280px; border-radius:8px;}
+  .question-area .prompt{font-size:19px; line-height:1.6; word-break:keep-all;}
+  .question-area .lyric{font-style:italic; color:var(--accent2); font-size:19px;}
+  .cast-chips{display:flex; gap:8px; flex-wrap:wrap; justify-content:center;}
+  .cast-chips .chip{
+    background:var(--bg); border:1px solid #333849; border-radius:20px;
+    padding:8px 16px; font-size:16px; font-weight:700;
+  }
+
+  .hint-row{display:flex; align-items:center; gap:10px; margin-bottom:18px; flex-wrap:wrap; justify-content:center;}
+  .hint-slots{display:flex; gap:6px; flex-wrap:wrap; justify-content:center;}
+  .slot{
+    width:38px; height:46px; border-radius:8px; background:var(--card2);
+    border:1px solid #333849; display:flex; align-items:center; justify-content:center;
+    font-size:22px; font-weight:700; color:var(--accent2);
+  }
+  .slot.space{background:transparent; border:none; width:14px;}
+  .slot.empty{color:#4a4f63;}
+
+  .btn{
+    border:none; border-radius:10px; padding:12px 18px; font-size:15px; font-weight:700;
+    cursor:pointer; transition:.15s; font-family:inherit;
+  }
+  .btn:active{transform:scale(.97);}
+  .btn-hint{background:var(--accent); color:#fff; width:100%;}
+  .btn-hint:disabled{background:#3a3e52; color:#777e97; cursor:default;}
+  .btn-next{background:var(--accent2); color:#1a1400; width:100%; margin-top:12px;}
+  .btn-giveup{background:transparent; color:var(--sub); border:1px solid #333849; width:100%; margin-top:8px;}
+  .btn-share{background:#3aa0ff; color:#fff; width:100%; margin-top:8px;}
+
+  .answer-row{display:flex; gap:8px; margin-bottom:12px;}
+  .answer-row input{
+    flex:1; padding:13px 14px; border-radius:10px; border:1px solid #333849;
+    background:var(--card2); color:var(--text); font-size:16px; font-family:inherit; outline:none; min-width:0;
+  }
+  .answer-row input:focus{border-color:var(--accent);}
+  .answer-row .btn{background:#3a3e52; color:#fff;}
+
+  .result{
+    text-align:center; padding:14px; border-radius:10px; margin-bottom:4px;
+    font-size:16px; font-weight:700; display:none;
+  }
+  .result.ok{display:block; background:rgba(61,220,132,.12); color:var(--ok);}
+  .result.no{display:block; background:rgba(255,92,122,.12); color:var(--no);}
+  .result.reveal{display:block; background:rgba(255,184,77,.12); color:var(--accent2);}
+  .result small{display:block; font-weight:400; color:var(--sub); margin-top:4px; font-size:13px;}
+
+  .final{text-align:center; padding:26px 8px;}
+  .final .score{font-size:50px; font-weight:800; color:var(--accent2); margin:12px 0;}
+  .final p{color:var(--sub); line-height:1.7;}
+  .final .emoji-line{font-size:22px; letter-spacing:3px; margin:10px 0;}
+  .shake{animation:shake .35s;}
+  @keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-7px)}75%{transform:translateX(7px)}}
+
+  nav{
+    position:fixed; bottom:0; left:0; right:0;
+    background:rgba(20,22,32,.95); backdrop-filter:blur(12px);
+    border-top:1px solid #2a2e3f;
+    display:flex; justify-content:center; gap:2px; padding:8px 6px 14px;
+  }
+  nav button{
+    flex:1; max-width:90px; background:none; border:none; cursor:pointer;
+    color:var(--sub); font-family:inherit; font-size:11px; font-weight:700;
+    display:flex; flex-direction:column; align-items:center; gap:3px; padding:6px 2px;
+    border-radius:10px; transition:.15s;
+  }
+  nav button .ico{font-size:20px;}
+  nav button.active{color:var(--accent2); background:rgba(255,184,77,.08);}
+  footer{margin-top:20px; color:#565c72; font-size:12px; text-align:center; line-height:1.6;}
+</style>
+</head>
+<body>
+
+<header>
+  <h1 id="pageTitle">🧠 오늘의 <span>기억력 게임</span></h1>
+  <div class="date" id="dateLabel"></div>
+  <div class="streak" id="streakLabel" style="display:none"></div>
+  <div class="diff-row" id="diffRow">
+    <button data-diff="easy">😊 쉬움</button>
+    <button data-diff="normal">🙂 보통</button>
+    <button data-diff="hard">🔥 어려움</button>
+  </div>
+</header>
+
+<div class="progress" id="progress"></div>
+<div class="card" id="card"></div>
+
+<footer>
+  힌트를 적게 쓸수록 높은 점수! · 매일 자정에 새 문제 출제<br>
+  questions.json이 있으면 자동으로 불러옵니다
+</footer>
+
+<nav id="nav">
+  <button data-page="home"><span class="ico">🧠</span>오늘의 게임</button>
+  <button data-page="movie"><span class="ico">🎬</span>영화</button>
+  <button data-page="singer"><span class="ico">🎤</span>가수</button>
+  <button data-page="actor"><span class="ico">🎭</span>배우</button>
+  <button data-page="capital"><span class="ico">🌍</span>수도</button>
+  <button data-page="variety"><span class="ico">📺</span>예능</button>
+</nav>
+
+<script>
+/* ================= 문제 데이터 =================
+   crawler/crawl_questions.py가 만든 questions.json이 있으면 우선 사용.
+   img가 있으면 이미지, cast 배열이 있으면 출연자 칩, 아니면 prompt 텍스트. */
+/* difficulty: "easy" | "normal" | "hard"
+   샘플 데이터는 수동 태그(크롤러는 TMDB 투표수·멜론 순위 등 지표로 자동 부여).
+   태그 없는 문제는 모든 난이도에 출제됩니다. */
+const SAMPLE_QUESTIONS = {
+  movie: [
+    {answer:"기생충", difficulty:"easy", prompt:"반지하에 사는 가족이 부잣집에 하나둘 취업하며 벌어지는 이야기. 칸 황금종려상·아카데미 작품상 수상작.", alt:[]},
+    {answer:"극한직업", difficulty:"easy", prompt:"잠복 수사를 위해 치킨집을 차렸는데 장사가 대박 난 마약반 형사들. \"지금까지 이런 맛은 없었다\"", alt:[]},
+    {answer:"부산행", difficulty:"easy", prompt:"좀비 바이러스가 퍼진 대한민국, KTX 안에서 벌어지는 사투.", alt:[]},
+    {answer:"명량", difficulty:"easy", prompt:"단 12척의 배로 330척에 맞선 이순신 장군의 해전. 역대 최다 관객 기록.", alt:[]},
+    {answer:"베테랑", difficulty:"easy", prompt:"\"어이가 없네~\" 재벌 3세를 쫓는 광역수사대 형사.", alt:[]},
+    {answer:"올드보이", difficulty:"normal", prompt:"영문도 모른 채 15년간 사설 감금방에 갇혔던 남자의 복수극. 장도리 액션 롱테이크로 유명.", alt:[]},
+    {answer:"타짜", difficulty:"normal", prompt:"\"묻고 더블로 가!\" 화투판 인생을 그린 최동훈 감독 작품.", alt:[]},
+    {answer:"아저씨", difficulty:"normal", prompt:"\"너희들은 내일만 살지? 난 오늘만 살아.\" 옆집 소녀를 구하러 나선 전직 특수요원.", alt:[]},
+    {answer:"곡성", difficulty:"normal", prompt:"\"뭣이 중헌디!\" 낯선 외지인이 나타난 후 마을에 벌어지는 기이한 사건들.", alt:[]},
+    {answer:"살인의 추억", difficulty:"normal", prompt:"\"밥은 먹고 다니냐?\" 화성 연쇄살인사건을 쫓는 두 형사.", alt:["살인의추억"]},
+    {answer:"버닝", difficulty:"hard", prompt:"무라카미 하루키 단편이 원작. 유아인·스티븐 연 주연, 이창동 감독의 미스터리.", alt:[]},
+    {answer:"벌새", difficulty:"hard", prompt:"1994년 서울, 중2 은희의 성장담. 김보라 감독의 독립영화 화제작.", alt:[]},
+    {answer:"파수꾼", difficulty:"hard", prompt:"세 고교생의 우정과 파국. 이제훈의 출세작이 된 독립영화.", alt:[]},
+    {answer:"지구를 지켜라!", difficulty:"hard", prompt:"외계인이라 믿는 남자를 납치한 청년. 시대를 앞서간 장준환 감독의 컬트작.", alt:["지구를 지켜라","지구를지켜라"]}
+  ],
+  singer: [
+    {answer:"아이유", difficulty:"easy", prompt:"🎵 '밤편지' — \"이 밤 그날의 반딧불을 당신의 창 가까이 보낼게요\"", alt:["IU"], lyric:true},
+    {answer:"싸이", difficulty:"easy", prompt:"🎵 '강남스타일' — 유튜브를 정복한 말춤 신드롬", alt:["PSY"], lyric:true},
+    {answer:"임영웅", difficulty:"easy", prompt:"🎵 '이제 나만 믿어요' — 미스터트롯 진(眞) 출신의 국민 가수", alt:[], lyric:true},
+    {answer:"방탄소년단", difficulty:"easy", prompt:"🎵 'Dynamite' — 빌보드 HOT100 1위를 차지한 7인조 그룹", alt:["BTS","비티에스"], lyric:true},
+    {answer:"윤하", difficulty:"normal", prompt:"🎵 '사건의 지평선' — 역주행 신화를 쓴 곡의 주인공", alt:[], lyric:true},
+    {answer:"버스커버스커", difficulty:"normal", prompt:"🎵 '벚꽃 엔딩' — \"봄바람 휘날리며~\" 매년 봄 차트에 돌아오는 벚꽃연금", alt:["버스커 버스커"], lyric:true},
+    {answer:"김광석", difficulty:"normal", prompt:"🎵 '서른 즈음에' — \"또 하루 멀어져 간다\" 영원한 가객", alt:[], lyric:true},
+    {answer:"이무진", difficulty:"normal", prompt:"🎵 '신호등' — \"건반처럼 생긴 도로 위\" 싱어게인 출신 싱어송라이터", alt:[], lyric:true},
+    {answer:"검정치마", difficulty:"hard", prompt:"🎵 'EVERYTHING' — \"나의 우주였던 그대\" 조휴일의 1인 밴드", alt:[], lyric:true},
+    {answer:"델리스파이스", difficulty:"hard", prompt:"🎵 '챠우챠우' — \"너의 목소리가 들려\" 한국 모던록의 시작점", alt:["델리 스파이스"], lyric:true},
+    {answer:"브로콜리너마저", difficulty:"hard", prompt:"🎵 '앵콜요청금지' — \"안 돼요 끝난 노래를 다시 부를 순 없어요\"", alt:["브로콜리 너마저"], lyric:true},
+    {answer:"넬", difficulty:"hard", prompt:"🎵 '기억을 걷는 시간' — \"그 어느 하루 흐린 날\" 김종완이 이끄는 밴드", alt:["NELL"], lyric:true}
+  ],
+  actor: [
+    {answer:"송강호", difficulty:"easy", prompt:"기생충·변호인·괴물·택시운전사의 주연. 칸 영화제 남우주연상 수상 배우.", alt:[]},
+    {answer:"마동석", difficulty:"easy", prompt:"범죄도시 시리즈의 괴물형사 마석도. 할리우드 '이터널스'에도 출연한 근육질 배우.", alt:[]},
+    {answer:"전지현", difficulty:"easy", prompt:"엽기적인 그녀로 스타덤, '별에서 온 그대'의 천송이.", alt:[]},
+    {answer:"이정재", difficulty:"easy", prompt:"오징어 게임의 성기훈. 에미상 남우주연상 수상.", alt:[]},
+    {answer:"이병헌", difficulty:"normal", prompt:"내부자들·미스터 션샤인·오징어 게임의 프론트맨.", alt:[]},
+    {answer:"김혜수", difficulty:"normal", prompt:"타짜의 정마담, 시그널의 차수현. \"나 이대 나온 여자야.\"", alt:[]},
+    {answer:"최민식", difficulty:"normal", prompt:"올드보이·명량·파묘의 주연. 악마를 보았다에서 살인마 장경철 역.", alt:[]},
+    {answer:"박은빈", difficulty:"normal", prompt:"'이상한 변호사 우영우'의 주인공. 아역 출신 배우.", alt:[]},
+    {answer:"박정민", difficulty:"hard", prompt:"동주·다만 악에서 구하소서·헤어질 결심 조연. 파수꾼으로 데뷔한 연기파.", alt:[]},
+    {answer:"구교환", difficulty:"hard", prompt:"반도·D.P.·모가디슈. 독립영화 감독 겸 배우로 시작한 대세.", alt:[]},
+    {answer:"전여빈", difficulty:"hard", prompt:"빈센조의 홍차영 변호사, 낙원의 밤. 독립영화 '죄 많은 소녀'로 주목.", alt:[]},
+    {answer:"김신록", difficulty:"hard", prompt:"지옥의 박정자, 재벌집 막내아들. 연극 무대 출신의 씬스틸러.", alt:[]}
+  ],
+  capital: [
+    {answer:"서울", difficulty:"easy", prompt:"🌍 대한민국의 수도는?", alt:["서울특별시"]},
+    {answer:"도쿄", difficulty:"easy", prompt:"🌍 일본의 수도는?", alt:["동경"]},
+    {answer:"파리", difficulty:"easy", prompt:"🌍 프랑스의 수도는?", alt:[]},
+    {answer:"카이로", difficulty:"easy", prompt:"🌍 이집트의 수도는?", alt:[]},
+    {answer:"하노이", difficulty:"easy", prompt:"🌍 베트남의 수도는? (호치민 아님!)", alt:[]},
+    {answer:"캔버라", difficulty:"normal", prompt:"🌍 호주의 수도는? (시드니 아님!)", alt:[]},
+    {answer:"오타와", difficulty:"normal", prompt:"🌍 캐나다의 수도는? (토론토 아님!)", alt:[]},
+    {answer:"브라질리아", difficulty:"normal", prompt:"🌍 브라질의 수도는? (리우 아님!)", alt:[]},
+    {answer:"앙카라", difficulty:"normal", prompt:"🌍 튀르키예의 수도는? (이스탄불 아님!)", alt:[]},
+    {answer:"베른", difficulty:"normal", prompt:"🌍 스위스의 수도는? (취리히 아님!)", alt:[]},
+    {answer:"헬싱키", difficulty:"normal", prompt:"🌍 핀란드의 수도는?", alt:[]},
+    {answer:"웰링턴", difficulty:"hard", prompt:"🌍 뉴질랜드의 수도는? (오클랜드 아님!)", alt:[]},
+    {answer:"아디스아바바", difficulty:"hard", prompt:"🌍 에티오피아의 수도는?", alt:["아디스 아바바"]},
+    {answer:"아스타나", difficulty:"hard", prompt:"🌍 카자흐스탄의 수도는?", alt:[]},
+    {answer:"네피도", difficulty:"hard", prompt:"🌍 미얀마의 수도는? (양곤 아님!)", alt:[]},
+    {answer:"아부자", difficulty:"hard", prompt:"🌍 나이지리아의 수도는? (라고스 아님!)", alt:[]}
+  ],
+  variety: [
+    {answer:"무한도전", difficulty:"easy", cast:["유재석","박명수","정준하","정형돈","하하","노홍철"], alt:[]},
+    {answer:"런닝맨", difficulty:"easy", cast:["유재석","김종국","하하","지석진","송지효","전소민"], alt:[]},
+    {answer:"1박 2일", difficulty:"easy", cast:["강호동","이수근","은지원","김종민"], alt:["1박2일"]},
+    {answer:"나 혼자 산다", difficulty:"easy", cast:["전현무","박나래","기안84","코드 쿤스트"], alt:["나혼자산다"]},
+    {answer:"신서유기", difficulty:"normal", cast:["강호동","이수근","은지원","규현","송민호","피오"], alt:[]},
+    {answer:"아는 형님", difficulty:"normal", cast:["강호동","서장훈","김영철","이수근","김희철","민경훈"], alt:["아는형님"]},
+    {answer:"삼시세끼", difficulty:"normal", cast:["차승원","유해진","손호준"], alt:[]},
+    {answer:"놀면 뭐하니", difficulty:"normal", cast:["유재석","하하","주우재","이이경"], alt:["놀면뭐하니"]},
+    {answer:"뿅뿅 지구오락실", difficulty:"hard", cast:["이은지","미미","이영지","안유진"], alt:["지구오락실"]},
+    {answer:"출장 십오야", difficulty:"hard", cast:["나영석","김대주","이우정"], alt:["출장십오야","십오야"]},
+    {answer:"강식당", difficulty:"hard", cast:["강호동","이수근","은지원","송민호"], alt:[]},
+    {answer:"어쩌다 사장", difficulty:"hard", cast:["차태현","조인성","김우빈"], alt:["어쩌다사장"]}
+  ]
+};
+
+const CATEGORY_META = {
+  movie:{label:"영화", ico:"🎬", title:"오늘의 영화게임", ask:"이 영화의 제목은?"},
+  singer:{label:"가수", ico:"🎤", title:"오늘의 가수게임", ask:"이 노래를 부른 가수는?"},
+  actor:{label:"배우", ico:"🎭", title:"오늘의 배우게임", ask:"이 배우의 이름은?"},
+  capital:{label:"수도", ico:"🌍", title:"오늘의 수도게임", ask:"이 나라의 수도는?"},
+  variety:{label:"예능", ico:"📺", title:"오늘의 예능게임", ask:"이 출연진의 예능 프로그램은?"}
+};
+const PAGES = ["home","movie","singer","actor","capital","variety"];
+const PER_THEME = 5; // 테마 페이지당 문제 수
+
+/* ================= 초성 유틸 ================= */
+const CHO = ["ㄱ","ㄲ","ㄴ","ㄷ","ㄸ","ㄹ","ㅁ","ㅂ","ㅃ","ㅅ","ㅆ","ㅇ","ㅈ","ㅉ","ㅊ","ㅋ","ㅌ","ㅍ","ㅎ"];
+function chosungOf(ch){
+  const code = ch.charCodeAt(0);
+  if(code >= 0xAC00 && code <= 0xD7A3) return CHO[Math.floor((code-0xAC00)/588)];
+  return ch;
+}
+function normalize(s){ return s.replace(/[\s.\-!?~'"]/g,"").toLowerCase(); }
+
+/* ================= 날짜 시드 ================= */
+function mulberry32(seed){
+  return function(){
+    seed |= 0; seed = seed + 0x6D2B79F5 | 0;
+    let t = Math.imul(seed ^ seed >>> 15, 1 | seed);
+    t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+    return ((t ^ t >>> 14) >>> 0) / 4294967296;
+  };
+}
+function todayStr(){
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
+}
+function todaySeed(extra=0){
+  const d = new Date();
+  return d.getFullYear()*10000 + (d.getMonth()+1)*100 + d.getDate() + extra;
+}
+function seededShuffle(arr, rng){
+  const a=[...arr];
+  for(let i=a.length-1;i>0;i--){ const j=Math.floor(rng()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; }
+  return a;
+}
+
+/* ================= 출석(streak) : localStorage 기반 =================
+   ※ IP 기반 공유는 서버가 필요합니다. 정적 HTML에서는 브라우저별
+   localStorage로 기록합니다. (README 참고) */
+const STORE_KEY = "memgame_v1";
+function loadStore(){
+  try{ return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; }catch(e){ return {}; }
+}
+function saveStore(s){ try{ localStorage.setItem(STORE_KEY, JSON.stringify(s)); }catch(e){} }
+function recordAttendance(){
+  const s = loadStore();
+  const today = todayStr();
+  if(s.lastDone === today) return s; // 오늘 이미 출석
+  const y = new Date(); y.setDate(y.getDate()-1);
+  const yesterday = `${y.getFullYear()}-${String(y.getMonth()+1).padStart(2,"0")}-${String(y.getDate()).padStart(2,"0")}`;
+  s.streak = (s.lastDone === yesterday) ? (s.streak||0)+1 : 1;
+  s.best = Math.max(s.best||0, s.streak);
+  s.lastDone = today;
+  saveStore(s);
+  return s;
+}
+function renderStreak(){
+  const s = loadStore();
+  const el = document.getElementById("streakLabel");
+  if(s.streak){
+    el.style.display = "inline-block";
+    el.textContent = `🔥 ${s.streak}일 연속 출석${s.best>s.streak?` (최고 ${s.best}일)`:""}`;
+  }
+}
+
+/* ================= 게임 세션 ================= */
+let DATA = SAMPLE_QUESTIONS;
+const sessions = {}; // page -> state
+let currentPage = "home";
+const $ = id => document.getElementById(id);
+
+/* ---- 난이도 ---- */
+const DIFFS = ["easy","normal","hard"];
+function getDiff(){
+  const d = loadStore().difficulty;
+  return DIFFS.includes(d) ? d : "normal";
+}
+function setDiff(d){
+  const s = loadStore(); s.difficulty = d; saveStore(s);
+  Object.keys(sessions).forEach(k=>delete sessions[k]); // 세션 리셋
+  renderDiffRow();
+  switchPage(currentPage);
+}
+function renderDiffRow(){
+  const d = getDiff();
+  document.querySelectorAll("#diffRow button").forEach(b=>{
+    b.classList.toggle("active", b.dataset.diff===d);
+  });
+}
+function poolFor(cat){
+  const all = DATA[cat]||[];
+  const d = getDiff();
+  const filtered = all.filter(q=>!q.difficulty || q.difficulty===d);
+  return filtered.length >= 3 ? filtered : all; // 해당 난이도 문제가 부족하면 전체 사용
+}
+
+function buildQuestions(page){
+  const diffOffset = DIFFS.indexOf(getDiff())*131;
+  if(page === "home"){
+    const rng = mulberry32(todaySeed(diffOffset));
+    const qs = [];
+    for(const cat of Object.keys(CATEGORY_META)){
+      const pool = seededShuffle(poolFor(cat), rng);
+      if(pool[0]) qs.push({...pool[0], category:cat});
+    }
+    return seededShuffle(qs, rng);
+  }
+  const rng = mulberry32(todaySeed(PAGES.indexOf(page)*777 + diffOffset));
+  return seededShuffle(poolFor(page), rng).slice(0, PER_THEME).map(q=>({...q, category:page}));
+}
+
+function getSession(page){
+  if(!sessions[page]){
+    sessions[page] = {questions:buildQuestions(page), idx:0, hintsUsed:0, solved:false,
+                      results:[], hints:[], score:0, finished:false};
+  }
+  return sessions[page];
+}
+
+/* ================= 렌더링 ================= */
+function renderProgress(){
+  const s = getSession(currentPage);
+  $("progress").innerHTML = s.questions.map((_,i)=>{
+    let cls="dot";
+    if(s.finished || i<s.idx) cls += s.results[i] ? " done" : (s.results[i]===false ? " fail" : "");
+    else if(i===s.idx) cls += " now";
+    return `<div class="${cls}"></div>`;
+  }).join("");
+}
+
+function questionHTML(q){
+  if(q.img) return `<img src="${q.img}" alt="문제 이미지" onerror="this.outerHTML='<div class=prompt>⚠️ 이미지를 불러올 수 없어요<br>${(q.prompt||'')}</div>'">`;
+  if(q.cast) return `<div><div style="color:var(--sub);font-size:14px;margin-bottom:12px">이 출연진의 예능 프로그램은?</div>
+    <div class="cast-chips">${q.cast.map(c=>`<span class="chip">${c}</span>`).join("")}</div></div>`;
+  return `<div class="prompt ${q.lyric?'lyric':''}">${q.prompt}</div>`;
+}
+
+function renderGame(){
+  const s = getSession(currentPage);
+  if(s.finished){ renderFinal(); return; }
+  const q = s.questions[s.idx];
+  if(!q){ renderFinal(); return; }
+  const meta = CATEGORY_META[q.category];
+
+  $("card").innerHTML = `
+    <span class="badge ${q.category}">${meta.label}</span>
+    <div class="question-area">${questionHTML(q)}</div>
+    <div class="hint-row"><div class="hint-slots" id="slots"></div></div>
+    <button class="btn btn-hint" id="hintBtn"></button>
+    <div style="height:14px"></div>
+    <div class="answer-row">
+      <input type="text" id="answerInput" placeholder="정답 입력 후 Enter" autocomplete="off">
+      <button class="btn" id="submitBtn">확인</button>
+    </div>
+    <div class="result" id="result"></div>
+    <button class="btn btn-giveup" id="giveupBtn">포기하고 정답 보기</button>
+    <button class="btn btn-next" id="nextBtn" style="display:none">다음 문제 →</button>`;
+
+  renderSlots(s.solved);
+  updateHintBtn();
+  if(s.solved) restoreSolvedUI();
+  renderProgress();
+
+  $("hintBtn").onclick = useHint;
+  $("submitBtn").onclick = checkAnswer;
+  $("giveupBtn").onclick = ()=>finish(false);
+  $("nextBtn").onclick = next;
+  $("answerInput").onkeydown = e=>{ if(e.key==="Enter") checkAnswer(); };
+  $("answerInput").focus();
+}
+
+function hintTargets(){
+  const s = getSession(currentPage);
+  const ans = s.questions[s.idx].answer;
+  const t=[];
+  for(let i=0;i<ans.length;i++) if(ans[i]!==" ") t.push(i);
+  return t;
+}
+
+function renderSlots(revealAll=false){
+  const s = getSession(currentPage);
+  const ans = s.questions[s.idx].answer;
+  const revealed = new Set(hintTargets().slice(0, s.hintsUsed));
+  $("slots").innerHTML = [...ans].map((ch,i)=>{
+    if(ch===" ") return `<div class="slot space"></div>`;
+    if(revealAll) return `<div class="slot">${ch}</div>`;
+    if(revealed.has(i)) return `<div class="slot">${chosungOf(ch)}</div>`;
+    return `<div class="slot empty">?</div>`;
+  }).join("");
+}
+
+function updateHintBtn(){
+  const s = getSession(currentPage);
+  const total = hintTargets().length;
+  const btn = $("hintBtn");
+  btn.textContent = `💡 초성 힌트 열기 (${s.hintsUsed}/${total})`;
+  btn.disabled = s.solved || s.hintsUsed>=total;
+}
+
+function useHint(){
+  const s = getSession(currentPage);
+  if(s.solved || s.hintsUsed>=hintTargets().length) return;
+  s.hintsUsed++;
+  renderSlots();
+  updateHintBtn();
+  $("answerInput").focus();
+}
+
+function checkAnswer(){
+  const s = getSession(currentPage);
+  if(s.solved) return;
+  const q = s.questions[s.idx];
+  const input = normalize($("answerInput").value);
+  if(!input) return;
+  const answers = [q.answer, ...(q.alt||[])].map(normalize);
+  if(answers.includes(input)){ finish(true); }
+  else{
+    const r = $("result");
+    r.className="result no";
+    r.textContent="❌ 땡! 다시 생각해보세요";
+    $("card").classList.remove("shake");
+    void $("card").offsetWidth;
+    $("card").classList.add("shake");
+    $("answerInput").select();
+  }
+}
+
+function finish(correct){
+  const s = getSession(currentPage);
+  s.solved = true;
+  const q = s.questions[s.idx];
+  const total = hintTargets().length;
+  renderSlots(true);
+  const r = $("result");
+  if(correct){
+    const pts = Math.max(10, 100 - Math.round(s.hintsUsed/total*90));
+    s.score += pts;
+    s.results[s.idx] = true;
+    s.hints[s.idx] = s.hintsUsed;
+    r.className="result ok";
+    r.innerHTML = `⭕ 정답! <b>${q.answer}</b> (+${pts}점)<small>힌트 ${s.hintsUsed}개 사용</small>`;
+  }else{
+    s.results[s.idx] = false;
+    r.className="result reveal";
+    r.innerHTML = `정답은 <b>${q.answer}</b> 였습니다`;
+  }
+  restoreSolvedUI();
+  renderProgress();
+}
+
+function restoreSolvedUI(){
+  const s = getSession(currentPage);
+  $("answerInput").disabled = true;
+  $("submitBtn").disabled = true;
+  $("hintBtn").disabled = true;
+  $("giveupBtn").style.display = "none";
+  const nb = $("nextBtn");
+  nb.style.display = "block";
+  nb.textContent = s.idx < s.questions.length-1 ? "다음 문제 →" : "결과 보기 🏁";
+  nb.focus();
+}
+
+function next(){
+  const s = getSession(currentPage);
+  s.idx++;
+  s.hintsUsed = 0;
+  s.solved = false;
+  if(s.idx >= s.questions.length){
+    s.finished = true;
+    if(currentPage === "home") recordAttendance();
+    renderStreak();
+    renderFinal();
+    return;
+  }
+  renderGame();
+}
+
+function shareText(){
+  const s = getSession(currentPage);
+  const meta = currentPage==="home" ? {title:"오늘의 기억력 게임"} : CATEGORY_META[currentPage];
+  const emojis = s.results.map(r=>r?"🟩":"🟥").join("");
+  const st = loadStore();
+  return `🧠 ${meta.title} ${todayStr()}\n${emojis} ${s.score}점` +
+         (st.streak?` 🔥${st.streak}일 연속`:"");
+}
+
+function renderFinal(){
+  const s = getSession(currentPage);
+  const correct = s.results.filter(Boolean).length;
+  const emojis = s.results.map(r=>r?"🟩":"🟥").join("");
+  $("card").innerHTML = `
+    <div class="final">
+      <div style="font-size:40px">${correct===s.questions.length?"🏆":correct>0?"🎉":"😅"}</div>
+      <div class="score">${s.score}점</div>
+      <div class="emoji-line">${emojis}</div>
+      <p>${s.questions.length}문제 중 <b style="color:var(--text)">${correct}문제</b> 정답!<br>
+      내일 자정에 새로운 문제가 출제됩니다.</p>
+      <div style="height:14px"></div>
+      <button class="btn btn-share" id="shareBtn">📋 결과 공유하기</button>
+      <button class="btn btn-giveup" id="retryBtn">오늘 문제 다시 풀기</button>
+    </div>`;
+  renderProgress();
+  $("shareBtn").onclick = async ()=>{
+    try{
+      await navigator.clipboard.writeText(shareText());
+      $("shareBtn").textContent = "✅ 복사 완료!";
+    }catch(e){ prompt("복사해서 공유하세요:", shareText()); }
+  };
+  $("retryBtn").onclick = ()=>{ delete sessions[currentPage]; renderGame(); };
+}
+
+/* ================= 페이지 전환 ================= */
+function switchPage(page){
+  if(!PAGES.includes(page)) page = "home";
+  currentPage = page;
+  location.hash = page==="home" ? "" : page;
+  document.querySelectorAll("nav button").forEach(b=>{
+    b.classList.toggle("active", b.dataset.page===page);
+  });
+  const t = $("pageTitle");
+  if(page==="home") t.innerHTML = `🧠 오늘의 <span>기억력 게임</span>`;
+  else{
+    const m = CATEGORY_META[page];
+    t.innerHTML = `${m.ico} 오늘의 <span>${m.label}게임</span>`;
+  }
+  renderGame();
+}
+
+/* ================= 초기화 ================= */
+async function loadData(){
+  try{
+    const res = await fetch("questions.json", {cache:"no-store"});
+    if(res.ok){
+      const d = await res.json();
+      if(d && (d.movie||d.singer)) return {...SAMPLE_QUESTIONS, ...d};
+    }
+  }catch(e){
+    if(location.protocol === "file:"){
+      const f = document.querySelector("footer");
+      f.innerHTML = `⚠️ <b style="color:var(--accent2)">지금은 내장 샘플 문제로 실행 중입니다.</b><br>
+        크롤링한 문제(영화 스틸컷 등)를 보려면 폴더의 <b>시작하기.command</b>를 더블클릭하거나<br>
+        터미널에서 <code>python3 -m http.server 8000</code> 실행 후 localhost:8000 으로 여세요.` + "<br><br>" + f.innerHTML;
+    }
+  }
+  return SAMPLE_QUESTIONS;
+}
+
+(async function init(){
+  const d = new Date();
+  $("dateLabel").textContent = `${d.getFullYear()}년 ${d.getMonth()+1}월 ${d.getDate()}일의 문제`;
+  renderStreak();
+  renderDiffRow();
+  DATA = await loadData();
+  document.querySelectorAll("nav button").forEach(b=>{
+    b.onclick = ()=>switchPage(b.dataset.page);
+  });
+  document.querySelectorAll("#diffRow button").forEach(b=>{
+    b.onclick = ()=>setDiff(b.dataset.diff);
+  });
+  switchPage(location.hash.replace("#","") || "home");
+})();
+</script>
+</body>
+</html>
