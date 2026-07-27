@@ -126,24 +126,38 @@ def crawl_singers(limit=12):
             if not (t and a):
                 continue
             title, artist = t.get_text(strip=True), a.get_text(strip=True)
-            if artist in seen:
+            answer, alt = clean_artist(artist)
+            if answer in seen:
                 continue
             diff = "easy" if rank <= 10 else "normal" if rank <= 50 else "hard"
             if per_diff[diff] >= quota:
                 continue
-            seen.add(artist)
+            seen.add(answer)
             per_diff[diff] += 1
             m = re.search(r"goSongDetail\('?(\d+)'?\)", t.get("href", ""))
             lyric = get_melon_lyric_snippet(m.group(1)) if m else None
             prompt = (f"🎵 '{title}' — \"{lyric}\"" if lyric
                       else f"🎵 '{title}' — 현재 멜론 차트인 중인 이 곡의 가수는?")
-            out.append({"answer": artist, "alt": [], "prompt": prompt,
+            out.append({"answer": answer, "alt": alt, "prompt": prompt,
                         "lyric": True, "difficulty": diff})
             if len(out) >= limit:
                 break
     except Exception as e:
         print(f"  [singer] 실패: {e}")
     return out
+
+
+def clean_artist(name):
+    """'LE SSERAFIM (르세라핌)' → 정답 '르세라핌', 별칭에 나머지 표기 등록.
+    한글 표기를 우선 정답으로 사용."""
+    m = re.match(r"^(.*?)\s*\((.*?)\)\s*$", name)
+    if not m:
+        return name, []
+    outer, inner = m.group(1).strip(), m.group(2).strip()
+    def has_ko(s): return bool(re.search(r"[가-힣]", s))
+    if has_ko(inner) and not has_ko(outer):
+        return inner, [outer, name]
+    return outer, [inner, name]
 
 
 def get_melon_lyric_snippet(song_id, lines=1):
@@ -180,15 +194,19 @@ def wiki_cast(page_title):
             text = revs[0].get("slots", {}).get("main", {}).get("*", "") or revs[0].get("*", "")
     if not text:
         return []
-    # |출연자 = ... 또는 |출연 = ... 줄에서 [[이름]] 링크 추출
-    cast = []
+    # |출연자 = ... 또는 |출연 = ... 필드에서만 [[이름]] 링크 추출
+    # (필드가 없으면 빈 리스트 반환 — 본문 전체에서 긁으면 '일요일', '돌비 디지털' 같은
+    #  엉뚱한 링크가 출연진으로 들어가는 오류가 생김)
     m = re.search(r"\|\s*(?:출연자|출연|진행자?)\s*=\s*(.*?)(?=\n\s*\|)", text, re.S)
-    block = m.group(1) if m else text
-    for link in re.findall(r"\[\[([^\]|#]+)(?:\|[^\]]*)?\]\]", block):
-        name = link.strip()
-        # 사람 이름으로 보이는 것만 (2~4자 한글, 문서명 괄호 제거)
-        name = re.sub(r"\s*\(.*\)$", "", name)
-        if re.fullmatch(r"[가-힣]{2,4}(?:\s?[가-힣0-9]{0,3})?", name) and name not in cast:
+    if not m:
+        return []
+    NOT_PERSON = {"대한민국", "일요일", "토요일", "문화방송", "한국방송공사", "돌비 디지털",
+                  "서울특별시", "리얼리티 방송", "버라이어티"}
+    cast = []
+    for link in re.findall(r"\[\[([^\]|#]+)(?:\|[^\]]*)?\]\]", m.group(1)):
+        name = re.sub(r"\s*\(.*\)$", "", link.strip())
+        if (re.fullmatch(r"[가-힣]{2,4}(?:\s?[가-힣0-9]{0,3})?", name)
+                and name not in NOT_PERSON and name not in cast):
             cast.append(name)
     return cast[:6]
 
@@ -218,39 +236,74 @@ IMG_BASE = "https://image.tmdb.org/t/p/w780"
 PROFILE_BASE = "https://image.tmdb.org/t/p/w500"
 
 
-def crawl_actors_tmdb(api_key):
-    """네이버 크롤링 실패 시 대체: TMDB 인물 검색으로 배우 사진 수집.
-    난이도 = TMDB popularity 3등분 (객관 지표)."""
-    people = []
-    for name in KNOWN_ACTORS[:15]:
-        try:
-            r = fetch(f"{TMDB}/search/person",
+def crawl_actors_tmdb(api_key, per_tier=8, movie_pages=3, cast_per_movie=8):
+    """TMDB 한국 인기 영화들의 출연진에서 배우 풀을 동적으로 구성 (수백 명 규모).
+    난이도 = 수집된 전체 풀 안에서 popularity 백분위 3등분.
+    풀이 크고 무명~톱스타가 섞여 있어 백분위 방식이 자연스럽게 작동한다.
+    영화 목록이 바뀌고 매일 랜덤 추출하므로 문제가 계속 달라진다."""
+    # 1) 한국 영화 수집
+    movies = []
+    try:
+        for page in range(1, movie_pages + 1):
+            r = fetch(f"{TMDB}/discover/movie",
                       params={"api_key": api_key, "language": "ko-KR",
-                              "query": name}).json()
-            for p in r.get("results") or []:
-                if p.get("known_for_department") == "Acting" and p.get("profile_path"):
-                    people.append(p)
-                    break
-        except Exception as e:
-            print(f"  [actor/tmdb] {name} 실패: {e}")
-    if not people:
+                              "with_origin_country": "KR",
+                              "sort_by": "vote_count.desc",
+                              "vote_count.gte": 100,
+                              "without_genres": "99,10402,16",
+                              "page": page}).json()
+            movies += [m for m in (r.get("results") or [])
+                       if m.get("original_language") == "ko"]
+    except Exception as e:
+        print(f"  [actor/tmdb] discover 실패: {e}")
         return []
-    people.sort(key=lambda p: p.get("popularity", 0), reverse=True)
-    n = len(people)
+
+    # 2) 각 영화의 출연진 수집 (주연~조연 상위 cast_per_movie명)
+    people = {}
+    for mv in movies:
+        try:
+            r = fetch(f"{TMDB}/movie/{mv['id']}/credits",
+                      params={"api_key": api_key, "language": "ko-KR"}).json()
+            for c in (r.get("cast") or [])[:cast_per_movie]:
+                if not c.get("profile_path"):
+                    continue
+                if not re.search(r"[가-힣]", c.get("name", "")):
+                    continue  # 한글 이름만 (외국 배우 제외)
+                pid = c["id"]
+                if pid not in people:
+                    people[pid] = c
+                people[pid]["_count"] = people[pid].get("_count", 0) + 1
+        except Exception:
+            continue
+
+    # 3) 너무 무명(사실상 못 맞추는) 배우 제외: 출연 2회 이상 또는 인기도 일정 이상
+    pool = [p for p in people.values()
+            if p.get("_count", 0) >= 2 or p.get("popularity", 0) >= 2.0]
+    if len(pool) < 30:
+        pool = list(people.values())
+    if not pool:
+        return []
+    print(f"  [actor/tmdb] 배우 풀 {len(pool)}명 구성")
+
+    # 4) popularity 백분위로 3등분 → 각 티어에서 랜덤 추출
+    pool.sort(key=lambda p: p.get("popularity", 0), reverse=True)
+    n = len(pool)
+    tiers = {"easy": pool[:n // 3], "normal": pool[n // 3:2 * n // 3], "hard": pool[2 * n // 3:]}
     out = []
-    for i, p in enumerate(people):
-        diff = "easy" if i < n / 3 else "normal" if i < 2 * n / 3 else "hard"
-        out.append({"answer": p["name"], "alt": [],
-                    "img": PROFILE_BASE + p["profile_path"],
-                    "prompt": "이 배우의 이름은?",
-                    "difficulty": diff})
+    for diff, tier in tiers.items():
+        random.shuffle(tier)
+        for p in tier[:per_tier]:
+            out.append({"answer": p["name"], "alt": [],
+                        "img": PROFILE_BASE + p["profile_path"],
+                        "prompt": "이 배우의 이름은?",
+                        "difficulty": diff})
     return out
 
 
-def crawl_movies(api_key, limit=12, pages=4):
-    """TMDB discover로 한국 영화 수집, 스틸컷(backdrop) 첨부.
-    난이도 = 수집분 내 투표수(vote_count) 상위 1/3 easy / 중간 normal / 하위 hard.
-    (내 주관이 아니라 전세계 이용자 투표수라는 객관 지표 사용)"""
+def crawl_movies(api_key, limit=24, pages=8):
+    """TMDB discover로 한국 영화 ~160편 풀 구성, 스틸컷(backdrop) 첨부.
+    난이도 = 풀 내 투표수(vote_count) 백분위 3등분, 티어별 매일 랜덤 추출.
+    (배우와 같은 논리: 큰 풀 + 객관 지표 + 랜덤 추출로 재탕 방지)"""
     movies = []
     try:
         for page in range(1, pages + 1):
@@ -259,8 +312,10 @@ def crawl_movies(api_key, limit=12, pages=4):
                               "with_origin_country": "KR",
                               "sort_by": "vote_count.desc",
                               "vote_count.gte": 50,  # 너무 무명작 제외
+                              "without_genres": "99,10402,16",  # 다큐/공연실황/애니 제외
                               "page": page}).json()
-            movies += r.get("results") or []
+            movies += [mv for mv in (r.get("results") or [])
+                       if mv.get("original_language") == "ko"]
     except Exception as e:
         print(f"  [movie] discover 실패: {e}")
         return []
