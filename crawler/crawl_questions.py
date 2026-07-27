@@ -401,7 +401,8 @@ def crawl_movies(api_key, limit=24, pages=8):
                               "without_genres": "99,10402,16",  # 다큐/공연실황/애니 제외
                               "page": page}).json()
             movies += [mv for mv in (r.get("results") or [])
-                       if mv.get("original_language") == "ko"]
+                       if mv.get("original_language") == "ko"
+                       and len(mv.get("title", "")) <= 10]  # 제목 10자 초과 제외 (초성 힌트가 너무 길어짐)
         except Exception as e:
             print(f"  [movie] discover p{page} 실패(건너뜀): {e}")
             continue  # 한 페이지 실패해도 나머지로 계속
