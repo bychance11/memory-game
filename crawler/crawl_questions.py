@@ -267,8 +267,9 @@ def crawl_actors_tmdb(api_key, per_tier=8, movie_pages=3, cast_per_movie=8):
             for c in (r.get("cast") or [])[:cast_per_movie]:
                 if not c.get("profile_path"):
                     continue
-                if not re.search(r"[가-힣]", c.get("name", "")):
-                    continue  # 한글 이름만 (외국 배우 제외)
+                # 원어 이름이 한글인 배우만 (에드 해리스처럼 한국어 표기된 외국 배우 제외)
+                if not re.search(r"[가-힣]", c.get("original_name", "")):
+                    continue
                 pid = c["id"]
                 if pid not in people:
                     people[pid] = c
