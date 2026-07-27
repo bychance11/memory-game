@@ -584,7 +584,8 @@ function switchPage(page){
 /* ================= 초기화 ================= */
 async function loadData(){
   try{
-    const res = await fetch("questions.json", {cache:"no-store"});
+    // 날짜를 쿼리로 붙여 브라우저·CDN 캐시 우회 (하루 단위 갱신이므로 날짜면 충분)
+    const res = await fetch("questions.json?d=" + todaySeed(), {cache:"no-store"});
     if(res.ok){
       const d = await res.json();
       if(d && (d.movie||d.singer)) return {...SAMPLE_QUESTIONS, ...d};
