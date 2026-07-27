@@ -468,12 +468,27 @@ function renderGame(){
   const inp = $("answerInput");
   inp.onkeydown = e=>{ if(e.key==="Enter") checkAnswer(); };
   // 키보드 열림/닫힘에 맞춰 화면 압축 모드 전환
-  inp.onfocus = ()=>{
-    document.body.classList.add("kb");
-    setTimeout(()=>inp.scrollIntoView({block:"center", behavior:"smooth"}), 150);
-  };
+  inp.onfocus = ()=>{ document.body.classList.add("kb"); adjustForKeyboard(); };
   inp.onblur = ()=>document.body.classList.remove("kb");
   focusInput();
+}
+
+// 입력창을 키보드 '바로 위'에 붙임 (visualViewport = 키보드 제외한 실제 보이는 영역)
+function adjustForKeyboard(){
+  setTimeout(()=>{
+    const inp = $("answerInput");
+    if(!inp || document.activeElement !== inp) return;
+    const vv = window.visualViewport;
+    const visibleH = vv ? vv.height : innerHeight;
+    const r = inp.getBoundingClientRect();
+    const delta = r.bottom - (visibleH - 14); // 입력창 아래 여백 14px만 남김
+    if(Math.abs(delta) > 4) window.scrollBy({top: delta, behavior:"smooth"});
+  }, 300);
+}
+if(window.visualViewport){
+  visualViewport.addEventListener("resize", ()=>{
+    if(document.body.classList.contains("kb")) adjustForKeyboard();
+  });
 }
 
 function hintTargets(){
