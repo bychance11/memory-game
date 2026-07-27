@@ -1,65 +1,65 @@
 {
   "actor": [
     {
-      "answer": "에드 해리스",
+      "answer": "이솜",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/kUbUA70WPiosPT4kBJMWtGk0ASd.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/jFz4smLt7SwC4wdA8gdiKpXU7Kh.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "easy"
     },
     {
-      "answer": "김무열",
+      "answer": "공유",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/wLuVca9icDLjUkOG84IlEmfP52b.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/ocGoFb6TrK3uWGXt4WnuibUG1vD.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "easy"
     },
     {
-      "answer": "노윤서",
+      "answer": "크리스 에반스",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/A67wGhTozfav5saZ1Umi5f98Ezb.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/3bOGNsHlrswhyW79uvIHH1V43JI.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "easy"
     },
     {
-      "answer": "조여정",
+      "answer": "이병헌",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/5MgWM8pkUiYkj9MEaEpO0Ir1FD9.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/j7SUd9Qi8iOxgrQGb3nQyEYcXur.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "easy"
     },
     {
-      "answer": "이연",
+      "answer": "마동석",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/uTZMewSjjx4MxDYAaZrhbl1fAGX.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/ckxoXz3l4mCcHEIRaqUc7oGoIFg.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "easy"
     },
     {
-      "answer": "틸다 스윈튼",
+      "answer": "소지섭",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/dzjT4LKgs7eOma84GsPy78DsGNH.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/bj8YIJd7kXnIoemM0GDqelon3kX.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "easy"
     },
     {
-      "answer": "송강호",
+      "answer": "비",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/kBM9UTPYXUA2RNk210DXhztLFns.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/aXOjIBUxu7fmBOxTJcgYmtTKD1D.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "easy"
     },
     {
-      "answer": "김새론",
+      "answer": "스티븐 연",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/jPWTS9hyezN2jqTeWFN3iUxszHc.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/fOMFO2Xx4duzpNgS9Q5ytO44yGb.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "easy"
     },
     {
-      "answer": "김우빈",
+      "answer": "이엘",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/AjMMxxWbTNdafyWuY41xAHFPVou.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/4AkevGu4IoGiWEeq46nX3pvByWO.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "normal"
     },
@@ -71,140 +71,156 @@
       "difficulty": "normal"
     },
     {
-      "answer": "구교환",
+      "answer": "조우진",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/aFwCpSKPGFqoiTStY6ljXnD5CwH.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/7yoOqi1yV4q9MBLOLMfQDFqbYc7.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "normal"
     },
     {
-      "answer": "수지",
+      "answer": "정유미",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/39x6Dc4ELZxHbxCuOM0ddbwKh3F.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/pU8iBcZHhuc4kQe6HHZVcommefG.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "normal"
     },
     {
-      "answer": "박희순",
+      "answer": "김의성",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/s2SSzvlsSfCPP5EXhCoWUr8970F.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/y7T2LJyorTK2NDk10yeTINWKrWR.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "normal"
     },
     {
-      "answer": "지대한",
+      "answer": "이희준",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/9aoOX8p2oxUAwOaT8jT6GWfjs01.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/4slyXnHbKgzmeyJNetBSORgDDEF.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "normal"
     },
     {
-      "answer": "김지훈",
+      "answer": "설경구",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/k9Uq26mNkRzoPMu5jGfVoxS3M2V.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/teD7AMzfNl4qhQO2b6MAWwLtPVn.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "normal"
     },
     {
-      "answer": "박병은",
+      "answer": "김우빈",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/8lDiEHjbBxPD8VNu1kGifMXhPUn.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/AjMMxxWbTNdafyWuY41xAHFPVou.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "normal"
     },
     {
-      "answer": "오달수",
+      "answer": "강동원",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/hd72oGjq0YKYdgZKMnqtV00MV28.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/xGPT8rgvWuK8Qh7BKNd7fhKs8Sk.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "hard"
     },
     {
-      "answer": "김도윤",
+      "answer": "변희봉",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/aj6K7PfdgmZN6SyQBFFvMeewGyf.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/fV8BtRziGqUsBozd1G6lEwmW2b5.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "hard"
     },
     {
-      "answer": "차태현",
+      "answer": "곽도원",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/fzMKBBQaBeK6V0dJnPMWHFaJx8T.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/kX31v6ZeiVBQtmhPRyZhoyWBonj.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "hard"
     },
     {
-      "answer": "유아인",
+      "answer": "이영애",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/a1OhZlBbONBLJ6RhJRK9geS5TU2.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/3YRo3MwheRf7lR0ZNa4FG12RVRn.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "hard"
     },
     {
-      "answer": "신하균",
+      "answer": "진선규",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/4UF7bfqwWUt8gZPH8t7fWuoGQVX.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/toFCyPac5rSpN58p0fsZ7lbogYc.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "hard"
     },
     {
-      "answer": "전혜진",
+      "answer": "이정현",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/7PliJIOzUei41vyE9FaIWvFMNzC.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/rOm1wgpRGDAyc8YvsWW3A99zmbi.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "hard"
     },
     {
-      "answer": "최귀화",
+      "answer": "염정아",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/aYiS6jQNNmOSfzcobDs12pLOOjj.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/5qIkgP0VcfF0YhO3bixzBtA1jH2.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "hard"
     },
     {
-      "answer": "엄지원",
+      "answer": "이대연",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/icqDRYRw9T99ZIHYCxTUrl0s6aS.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/vv6WMIPEikHNsiYldGJJQ2ty9Zt.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "hard"
     }
   ],
   "singer": [
     {
-      "answer": "멜로망스",
-      "alt": [],
-      "prompt": "🎵 '사랑인가 봐' — 현재 멜론 차트인 중인 이 곡의 가수는?",
-      "lyric": true,
-      "difficulty": "hard"
-    },
-    {
-      "answer": "정국",
-      "alt": [],
-      "prompt": "🎵 'Seven (feat. Latto) - Clean Ver.' — 현재 멜론 차트인 중인 이 곡의 가수는?",
-      "lyric": true,
-      "difficulty": "hard"
-    },
-    {
-      "answer": "NMIXX",
-      "alt": [],
-      "prompt": "🎵 'Blue Valentine' — 현재 멜론 차트인 중인 이 곡의 가수는?",
-      "lyric": true,
-      "difficulty": "normal"
-    },
-    {
-      "answer": "이클립스",
+      "answer": "데이식스",
       "alt": [
-        "ECLIPSE",
-        "이클립스 (ECLIPSE)"
+        "DAY6",
+        "DAY6 (데이식스)"
       ],
-      "prompt": "🎵 '소나기' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "prompt": "🎵 '한 페이지가 될 수 있게' — 현재 멜론 차트인 중인 이 곡의 가수는?",
       "lyric": true,
       "difficulty": "normal"
     },
     {
-      "answer": "PLAVE",
+      "answer": "이창섭",
       "alt": [],
-      "prompt": "🎵 '이 밤을 빌려 말해요' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "prompt": "🎵 '천상연' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "lyric": true,
+      "difficulty": "normal"
+    },
+    {
+      "answer": "순순희",
+      "alt": [
+        "지환",
+        "순순희(지환)"
+      ],
+      "prompt": "🎵 '눈을 감아도(2026)' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "lyric": true,
+      "difficulty": "hard"
+    },
+    {
+      "answer": "제니",
+      "alt": [
+        "JENNIE",
+        "제니 (JENNIE)"
+      ],
+      "prompt": "🎵 'Less than a Lover' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "lyric": true,
+      "difficulty": "normal"
+    },
+    {
+      "answer": "아이브",
+      "alt": [
+        "IVE",
+        "IVE (아이브)"
+      ],
+      "prompt": "🎵 'REBEL HEART' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "lyric": true,
+      "difficulty": "hard"
+    },
+    {
+      "answer": "임현정",
+      "alt": [],
+      "prompt": "🎵 '사랑은 봄비처럼...이별은 겨울비처럼...' — 현재 멜론 차트인 중인 이 곡의 가수는?",
       "lyric": true,
       "difficulty": "hard"
     },
@@ -214,38 +230,31 @@
         "DAY6",
         "Young K (DAY6)"
       ],
-      "prompt": "🎵 '응원가' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "prompt": "🎵 'Marionette' — 현재 멜론 차트인 중인 이 곡의 가수는?",
       "lyric": true,
       "difficulty": "hard"
     },
     {
-      "answer": "임영웅",
+      "answer": "ALLDAY PROJECT",
       "alt": [],
-      "prompt": "🎵 '사랑은 늘 도망가' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "prompt": "🎵 'ONE MORE TIME' — 현재 멜론 차트인 중인 이 곡의 가수는?",
       "lyric": true,
       "difficulty": "hard"
     },
     {
-      "answer": "조째즈",
+      "answer": "다비치",
       "alt": [],
-      "prompt": "🎵 '모르시나요(PROD.로코베리)' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "prompt": "🎵 '타임캡슐' — 현재 멜론 차트인 중인 이 곡의 가수는?",
       "lyric": true,
       "difficulty": "normal"
     },
     {
-      "answer": "aespa",
-      "alt": [],
-      "prompt": "🎵 'WDA (Whole Different Animal) (Feat. G-DRAGON)' — 현재 멜론 차트인 중인 이 곡의 가수는?",
-      "lyric": true,
-      "difficulty": "normal"
-    },
-    {
-      "answer": "에이티즈",
+      "answer": "악뮤",
       "alt": [
-        "ATEEZ",
-        "ATEEZ(에이티즈)"
+        "AKMU",
+        "AKMU (악뮤)"
       ],
-      "prompt": "🎵 'BAD' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "prompt": "🎵 '소문의 낙원' — 현재 멜론 차트인 중인 이 곡의 가수는?",
       "lyric": true,
       "difficulty": "normal"
     },
@@ -260,12 +269,9 @@
       "difficulty": "easy"
     },
     {
-      "answer": "최예나",
-      "alt": [
-        "YENA",
-        "YENA (최예나)"
-      ],
-      "prompt": "🎵 '캐치 캐치' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "answer": "aespa",
+      "alt": [],
+      "prompt": "🎵 'LEMONADE' — 현재 멜론 차트인 중인 이 곡의 가수는?",
       "lyric": true,
       "difficulty": "easy"
     }
@@ -341,185 +347,171 @@
   ],
   "movie": [
     {
-      "answer": "20세기 소녀",
+      "answer": "마더",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/uTqanKhe1FSDm1MSRuqVr3C42Ol.jpg",
-      "prompt": "힌트: 2022년 개봉",
+      "img": "https://image.tmdb.org/t/p/w780/2Ks4vGuMDEW7Q7cGcxOfCfaQSnF.jpg",
+      "prompt": "힌트: 2009년 개봉",
+      "difficulty": "easy"
+    },
+    {
+      "answer": "살인의 추억",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/2NArMoObkAbnIPvqlHC3gRGsfBb.jpg",
+      "prompt": "힌트: 2003년 개봉",
       "difficulty": "easy"
     },
     {
       "answer": "소원",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/4Nx40jwpoTHPjCWNGoaZ6kaoGxa.jpg",
+      "img": "https://image.tmdb.org/t/p/w780/l5K9elugftlcyIHHm4nylvsn26X.jpg",
       "prompt": "힌트: 2013년 개봉",
-      "difficulty": "easy"
-    },
-    {
-      "answer": "좋은 놈, 나쁜 놈, 이상한 놈",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/gec3e76TRGUBx1Ut0c6yuSahVDp.jpg",
-      "prompt": "힌트: 2008년 개봉",
       "difficulty": "easy"
     },
     {
       "answer": "신과함께-인과 연",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/ul4WiN9EJxsMokdg7z4Y6iisvHS.jpg",
+      "img": "https://image.tmdb.org/t/p/w780/wPxOkWXjOZeV8TvapBCN7RmCe2.jpg",
       "prompt": "힌트: 2018년 개봉",
       "difficulty": "easy"
     },
     {
-      "answer": "악마를 보았다",
+      "answer": "악인전",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/tW8u1dVNlGoCjXKFbTgFOqZRUki.jpg",
-      "prompt": "힌트: 2010년 개봉",
+      "img": "https://image.tmdb.org/t/p/w780/jtvOhbWcYRWkV60CLNePTjDfCjz.jpg",
+      "prompt": "힌트: 2019년 개봉",
       "difficulty": "easy"
     },
     {
-      "answer": "올드보이",
+      "answer": "좋은 놈, 나쁜 놈, 이상한 놈",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/tcbzsdWpdidbN7zbOymlRKfIHVg.jpg",
-      "prompt": "힌트: 2003년 개봉",
+      "img": "https://image.tmdb.org/t/p/w780/rMAc9CEqExWTKnsp8jAc7ZxuI8X.jpg",
+      "prompt": "힌트: 2008년 개봉",
       "difficulty": "easy"
     },
     {
-      "answer": "킹덤: 아신전",
+      "answer": "복수는 나의 것",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/pfcj8IYB5bK8RTWiHwOCGfIzVw6.jpg",
-      "prompt": "힌트: 2021년 개봉",
+      "img": "https://image.tmdb.org/t/p/w780/65K0ckFP1IoBDKyPGfMsycE706W.jpg",
+      "prompt": "힌트: 2002년 개봉",
       "difficulty": "easy"
     },
     {
-      "answer": "감기",
+      "answer": "터널",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/hja2GU6crKZHjl0eyv98uhfrkuy.jpg",
-      "prompt": "힌트: 2013년 개봉",
+      "img": "https://image.tmdb.org/t/p/w780/37dC684Q6a4o83oAx8KEyNSuBV3.jpg",
+      "prompt": "힌트: 2016년 개봉",
       "difficulty": "easy"
     },
     {
-      "answer": "택시운전사",
+      "answer": "기생충",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/1q9JVXo38DRa35m16LR27mvxt4C.jpg",
+      "img": "https://image.tmdb.org/t/p/w780/hiKmpZMGZsrkA3cdce8a7Dpos1j.jpg",
+      "prompt": "힌트: 2019년 개봉",
+      "difficulty": "easy"
+    },
+    {
+      "answer": "명량",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/3KB32UjT3iL6YziK7760YzSiOEI.jpg",
+      "prompt": "힌트: 2014년 개봉",
+      "difficulty": "normal"
+    },
+    {
+      "answer": "조작된 도시",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/bBYWuhCSJKzkaK4S4fOfInMn5Mi.jpg",
       "prompt": "힌트: 2017년 개봉",
-      "difficulty": "easy"
+      "difficulty": "normal"
     },
     {
-      "answer": "길복순",
+      "answer": "콘크리트 유토피아",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/hEDlC541z77JqxRmeRGGnyjIj09.jpg",
+      "img": "https://image.tmdb.org/t/p/w780/h467xrZyl0Iky5cM9NTjYUiSs2N.jpg",
       "prompt": "힌트: 2023년 개봉",
       "difficulty": "normal"
     },
     {
-      "answer": "싸이보그지만 괜찮아",
+      "answer": "감시자들",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/2PkqP7uRzEKHb678gYNtfOLUy2X.jpg",
-      "prompt": "힌트: 2006년 개봉",
+      "img": "https://image.tmdb.org/t/p/w780/bE4XWNy9CZD4TbJoFlRejbjI71X.jpg",
+      "prompt": "힌트: 2013년 개봉",
+      "difficulty": "normal"
+    },
+    {
+      "answer": "미드나이트",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/nqXDvidMB5jepJjQzNdPiZhOy3j.jpg",
+      "prompt": "힌트: 2021년 개봉",
       "difficulty": "normal"
     },
     {
       "answer": "늑대사냥",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/mIW7eFxHnNqlwKwKWb6dpVjmHao.jpg",
+      "img": "https://image.tmdb.org/t/p/w780/A5UrOppVdGHPfz1QnrOOdHV7G5A.jpg",
       "prompt": "힌트: 2022년 개봉",
       "difficulty": "normal"
     },
     {
-      "answer": "7번방의 선물",
+      "answer": "극한직업",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/6MZdEVe0COl9sB1sCIPOOFpngjO.jpg",
-      "prompt": "힌트: 2013년 개봉",
-      "difficulty": "normal"
-    },
-    {
-      "answer": "마이웨이",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/nXtmWQzn5Guz6N5zipzZWlqISJU.jpg",
-      "prompt": "힌트: 2011년 개봉",
-      "difficulty": "normal"
-    },
-    {
-      "answer": "디 워",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/5WWqrUIGrCb1QvZtYVaSfZgUG8n.jpg",
-      "prompt": "힌트: 2007년 개봉",
-      "difficulty": "normal"
-    },
-    {
-      "answer": "범죄도시 2",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/p5L7UYtRtL6tMltPzb8DX0rynNv.jpg",
-      "prompt": "힌트: 2022년 개봉",
-      "difficulty": "normal"
-    },
-    {
-      "answer": "나쁜 남자",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/ntSrdFyMX1NJx3xkFCV0z6n5ejm.jpg",
-      "prompt": "힌트: 2002년 개봉",
-      "difficulty": "normal"
-    },
-    {
-      "answer": "살인자의 기억법",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/v9grLnT4ZG4ptt0cQQThtg8LMma.jpg",
-      "prompt": "힌트: 2017년 개봉",
-      "difficulty": "normal"
-    },
-    {
-      "answer": "검객",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/sSeBrIq1AM62zlVSO2CHQ6xRgmX.jpg",
-      "prompt": "힌트: 2020년 개봉",
-      "difficulty": "hard"
-    },
-    {
-      "answer": "사마리아",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/dajrVlQ7rCIMk5scDDfgBPGUSWs.jpg",
-      "prompt": "힌트: 2004년 개봉",
-      "difficulty": "hard"
-    },
-    {
-      "answer": "밀양",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/bJd4hoeLCQIqqZnyQ9W1Bh5dIY7.jpg",
-      "prompt": "힌트: 2007년 개봉",
-      "difficulty": "hard"
-    },
-    {
-      "answer": "변호인",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/eJzZv2Olsav8OnZr667LzsvARe5.jpg",
-      "prompt": "힌트: 2013년 개봉",
-      "difficulty": "hard"
-    },
-    {
-      "answer": "사바하",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/vDTHyh8NeKj3dyGY8FZDRhnI8WB.jpg",
+      "img": "https://image.tmdb.org/t/p/w780/uVyrPkZT7NzlX21D13BrR69iokT.jpg",
       "prompt": "힌트: 2019년 개봉",
+      "difficulty": "normal"
+    },
+    {
+      "answer": "피에타",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/qUuaoM3bUB4dwDbit9o1rHSOZUP.jpg",
+      "prompt": "힌트: 2012년 개봉",
+      "difficulty": "normal"
+    },
+    {
+      "answer": "시",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/zrb9N8be4crIi68IlTdmRBMhXDw.jpg",
+      "prompt": "힌트: 2010년 개봉",
+      "difficulty": "normal"
+    },
+    {
+      "answer": "화이: 괴물을 삼킨 아이",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/mfhxx62YCizDGgdQtRhWWXwr5Aw.jpg",
+      "prompt": "힌트: 2013년 개봉",
       "difficulty": "hard"
     },
     {
-      "answer": "다만 악에서 구하소서",
+      "answer": "오아시스",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/au6YoYkzbcgZ4CTCwc57UdhD8FC.jpg",
-      "prompt": "힌트: 2020년 개봉",
+      "img": "https://image.tmdb.org/t/p/w780/zUnF9O3Wy8XVtz9GXgouA4k8Gu2.jpg",
+      "prompt": "힌트: 2002년 개봉",
       "difficulty": "hard"
     },
     {
-      "answer": "대호",
+      "answer": "특송",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/umGszkvTs35G8J1AifaKoG8NBRz.jpg",
-      "prompt": "힌트: 2015년 개봉",
+      "img": "https://image.tmdb.org/t/p/w780/pAISUx3tmaAg5x4n5pLPAgEdhp6.jpg",
+      "prompt": "힌트: 2022년 개봉",
       "difficulty": "hard"
     },
     {
-      "answer": "강철비",
+      "answer": "최종병기 활",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/7TDn7pqT8Y3drEd8LnQECqleirU.jpg",
-      "prompt": "힌트: 2017년 개봉",
+      "img": "https://image.tmdb.org/t/p/w780/hmLv5eP7wu39s1FOw5ihnGxIIGa.jpg",
+      "prompt": "힌트: 2011년 개봉",
+      "difficulty": "hard"
+    },
+    {
+      "answer": "우는 남자",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/c1fDKwLbInSP6AzTFUtiajJ4uGv.jpg",
+      "prompt": "힌트: 2014년 개봉",
+      "difficulty": "hard"
+    },
+    {
+      "answer": "활",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/vE2lgC4rZLYIsoEYkEWt3deN5u9.jpg",
+      "prompt": "힌트: 2005년 개봉",
       "difficulty": "hard"
     },
     {
@@ -527,6 +519,20 @@
       "alt": [],
       "img": "https://image.tmdb.org/t/p/w780/lqqpLpepykrMNVWQJdFUUNVqMKV.jpg",
       "prompt": "힌트: 2018년 개봉",
+      "difficulty": "hard"
+    },
+    {
+      "answer": "베테랑",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/fDLC0FLTkEU2rMIbptxCRYWeceq.jpg",
+      "prompt": "힌트: 2015년 개봉",
+      "difficulty": "hard"
+    },
+    {
+      "answer": "해적: 바다로 간 산적",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/aI0N8Y3lMcQmJBoKwbxPdV09Epy.jpg",
+      "prompt": "힌트: 2014년 개봉",
       "difficulty": "hard"
     }
   ],
