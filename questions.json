@@ -1,17 +1,35 @@
 {
   "actor": [
     {
-      "answer": "마동석",
+      "answer": "전지현",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/ckxoXz3l4mCcHEIRaqUc7oGoIFg.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/qejOQBdIzN18e69yRcsiD0JQi4c.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "easy",
       "info": [
-        "부산행 (2016) — Sang-hwa 역",
-        "악인전 (2019) — Jang Dong-su 역",
-        "감기 (2013) — Jeon Kook-Hwan 역",
-        "황야 (2024) — Nam-san 역",
-        "신과함께-인과 연 (2018) — Sung-ju / Household God 역"
+        "엽기적인 그녀 (2001) — The Girl 역",
+        "킹덤: 아신전 (2021) — Ashin 역"
+      ]
+    },
+    {
+      "answer": "김유정",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w500/eFcMTDIgzSGLHZYXcsf1M42cvFt.jpg",
+      "prompt": "이 배우의 이름은?",
+      "difficulty": "easy",
+      "info": [
+        "추격자 (2008) — Eun-ji 역",
+        "20세기 소녀 (2022) — Na Bo-ra 역"
+      ]
+    },
+    {
+      "answer": "신민아",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w500/6CjxjYvZBuvbAQTcuoPb8EeVrUI.jpg",
+      "prompt": "이 배우의 이름은?",
+      "difficulty": "easy",
+      "info": [
+        "달콤한 인생 (2005) — Hee-soo 역"
       ]
     },
     {
@@ -25,57 +43,24 @@
       ]
     },
     {
-      "answer": "황정민",
+      "answer": "이성민",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/hKF1uh0iEfuZlBE79CXPw415qyn.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/p71yyyIQmHbrOZHU2lphMvjlVIk.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "easy",
       "info": [
-        "곡성 (2016) — Il-gwang 역",
-        "달콤한 인생 (2005) — Mr. Baek 역",
-        "길복순 (2023) — Kim Gwang-il / Shinichiro Oda 역"
+        "어쩔수가없다 (2025) — Gu Bum-mo 역"
       ]
     },
     {
-      "answer": "박지현",
+      "answer": "공유",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/x7DPPjek9LC4XbDMLq7k2Dlzw7P.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/ocGoFb6TrK3uWGXt4WnuibUG1vD.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "easy",
       "info": [
-        "곤지암 (2018) — Ji-hyun 역"
-      ]
-    },
-    {
-      "answer": "김새론",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/jPWTS9hyezN2jqTeWFN3iUxszHc.jpg",
-      "prompt": "이 배우의 이름은?",
-      "difficulty": "easy",
-      "info": [
-        "아저씨 (2010) — Jeong So-mi 역"
-      ]
-    },
-    {
-      "answer": "김무열",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/wLuVca9icDLjUkOG84IlEmfP52b.jpg",
-      "prompt": "이 배우의 이름은?",
-      "difficulty": "easy",
-      "info": [
-        "악인전 (2019) — Jung Tae-suk 역",
-        "기억의 밤 (2017) — Yoo-seok / Choi Seong-uk 역",
-        "승리호 (2021) — Kang Hyun-woo 역"
-      ]
-    },
-    {
-      "answer": "수지",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/39x6Dc4ELZxHbxCuOM0ddbwKh3F.jpg",
-      "prompt": "이 배우의 이름은?",
-      "difficulty": "easy",
-      "info": [
-        "백두산 (2019) — Seo Ji-young 역"
+        "부산행 (2016) — Seok-woo 역",
+        "도가니 (2011) — Kang In-ho 역"
       ]
     },
     {
@@ -89,88 +74,57 @@
       ]
     },
     {
-      "answer": "박병은",
+      "answer": "소지섭",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/8lDiEHjbBxPD8VNu1kGifMXhPUn.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/bj8YIJd7kXnIoemM0GDqelon3kX.jpg",
       "prompt": "이 배우의 이름은?",
-      "difficulty": "normal",
+      "difficulty": "easy",
       "info": [
-        "대홍수 (2025) — Lee Hwi-so 역",
-        "킹덤: 아신전 (2021) — Min Chi-rok 역"
+        "외계+인 1부 (2022) — Moon Do-seok 역"
       ]
     },
     {
-      "answer": "배두나",
+      "answer": "김다미",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/lCL08q20zkqHcLLLZQRlJfG09P4.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/1biBc16BVz6bnkajnhdHUsE3j8p.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "normal",
       "info": [
-        "괴물 (2006) — Park Nam-joo 역",
-        "복수는 나의 것 (2002) — Yeong-mi 역",
-        "터널 (2016) — Se-hyun 역",
-        "브로커 (2022) — Su-jin 역"
+        "마녀 (2018) — Ja-yoon 역",
+        "대홍수 (2025) — Koo An-na 역"
       ]
     },
     {
-      "answer": "유해진",
+      "answer": "예수정",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/y6L2EsmnbnCFxCgfHR2oeL7oQoo.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/rwGPhu8Ge36eMkrOlzfdKKFargw.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "normal",
       "info": [
-        "감기 (2013) — Bae Kyung-Ub 역",
-        "택시운전사 (2017) — Hwang Tae-sul 역",
-        "승리호 (2021) — Bubs (voice) 역",
-        "파묘 (2024) — Ko Young-geun 역"
+        "부산행 (2016) — In-gil 역",
+        "신과함께-죄와 벌 (2017) — Ja-hong's Mother 역"
       ]
     },
     {
-      "answer": "하정우",
+      "answer": "정유미",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/9KINm0XIwbt4Qql4oZX55krzKxg.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/pU8iBcZHhuc4kQe6HHZVcommefG.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "normal",
       "info": [
-        "아가씨 (2016) — Count Fujiwara 역",
-        "추격자 (2008) — Ji Young-min 역",
-        "신과함께-죄와 벌 (2017) — Gang-rim 역",
-        "신과함께-인과 연 (2018) — Gang-rim 역",
-        "터널 (2016) — Lee Jung-soo 역"
+        "부산행 (2016) — Sung-gyeong 역",
+        "도가니 (2011) — Seo Yoo-jin 역"
       ]
     },
     {
-      "answer": "김의성",
+      "answer": "조우진",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/y7T2LJyorTK2NDk10yeTINWKrWR.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/7yoOqi1yV4q9MBLOLMfQDFqbYc7.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "normal",
       "info": [
-        "부산행 (2016) — Yong-suk 역",
-        "외계+인 2부 (2024) — Jajang / Doctor 역",
-        "외계+인 1부 (2022) — Jajang / Doctor 역"
-      ]
-    },
-    {
-      "answer": "김우빈",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/AjMMxxWbTNdafyWuY41xAHFPVou.jpg",
-      "prompt": "이 배우의 이름은?",
-      "difficulty": "normal",
-      "info": [
-        "외계+인 2부 (2024) — Guard / Thunder 역",
-        "외계+인 1부 (2022) — Guard / Thunder 역"
-      ]
-    },
-    {
-      "answer": "지대한",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/9aoOX8p2oxUAwOaT8jT6GWfjs01.jpg",
-      "prompt": "이 배우의 이름은?",
-      "difficulty": "normal",
-      "info": [
-        "올드보이 (2003) — No Joo-hwan 역",
-        "봄 여름 가을 겨울 그리고 봄 (2003) — Detective Ji 역"
+        "외계+인 2부 (2024) — Mr. Blue 역",
+        "외계+인 1부 (2022) — Mr. Blue 역"
       ]
     },
     {
@@ -185,50 +139,57 @@
       ]
     },
     {
-      "answer": "곽도원",
+      "answer": "원빈",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/kX31v6ZeiVBQtmhPRyZhoyWBonj.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/v5lzKZjvNrbgYnr3vw8cKZVNyTA.jpg",
       "prompt": "이 배우의 이름은?",
-      "difficulty": "hard",
+      "difficulty": "normal",
       "info": [
-        "곡성 (2016) — Jong-goo 역",
-        "황해 (2010) — Professor Kim Seung-hyun 역"
+        "마더 (2009) — Yoon Do-joon 역",
+        "아저씨 (2010) — Cha Tae-sik 역",
+        "태극기 휘날리며 (2004) — Lee Jin-seok 역"
       ]
     },
     {
-      "answer": "정석용",
+      "answer": "손예진",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/tyTSdGaVKotPmJXGNtz6fXoj8Tc.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/i6fASFvO3mUceZJvipn4RiLHA44.jpg",
       "prompt": "이 배우의 이름은?",
-      "difficulty": "hard",
+      "difficulty": "normal",
       "info": [
-        "20세기 소녀 (2022) — Bo-ra's Father 역",
-        "터널 (2016) — Chief Choi 역"
+        "어쩔수가없다 (2025) — Mi-ri 역"
       ]
     },
     {
-      "answer": "오달수",
+      "answer": "김지훈",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/hd72oGjq0YKYdgZKMnqtV00MV28.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/k9Uq26mNkRzoPMu5jGfVoxS3M2V.jpg",
       "prompt": "이 배우의 이름은?",
-      "difficulty": "hard",
+      "difficulty": "normal",
       "info": [
-        "올드보이 (2003) — Park Cheol-woong 역",
-        "괴물 (2006) — The Monster (voice) 역",
-        "친절한 금자씨 (2005) — Mr. Chang 역",
-        "신과함께-죄와 벌 (2017) — Prosecutor 역",
-        "어쩔수가없다 (2025) — Detective #1 역"
+        "발레리나 (2023) — Choi Pro 역"
       ]
     },
     {
-      "answer": "장소연",
+      "answer": "이영애",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/f6P6S8MIVAsoyzuqvT63DF1iahy.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/3YRo3MwheRf7lR0ZNa4FG12RVRn.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "hard",
       "info": [
-        "곡성 (2016) — Jong-goo's Wife 역",
-        "김씨 표류기 (2009) — Seung-geun's Girlfriend 역"
+        "친절한 금자씨 (2005) — Lee Geum-ja 역",
+        "공동경비구역 JSA (2000) — Maj. Sophie E. Jean 역"
+      ]
+    },
+    {
+      "answer": "최정우",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w500/doHUwUDRML1uo0PVVRXblGAJhN3.jpg",
+      "prompt": "이 배우의 이름은?",
+      "difficulty": "hard",
+      "info": [
+        "추격자 (2008) — Chief of Police 역",
+        "마녀 (2018) — Mr. Koo 역"
       ]
     },
     {
@@ -243,126 +204,89 @@
       ]
     },
     {
-      "answer": "이정현",
+      "answer": "변희봉",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/rOm1wgpRGDAyc8YvsWW3A99zmbi.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/fV8BtRziGqUsBozd1G6lEwmW2b5.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "hard",
       "info": [
-        "반도 (2020) — Min-jung 역",
-        "헤어질 결심 (2022) — Jeong-ahn 역"
+        "살인의 추억 (2003) — Sergeant Koo Hee-bong 역",
+        "괴물 (2006) — Park Hie-bong 역"
       ]
     },
     {
-      "answer": "전혜진",
+      "answer": "염정아",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/7PliJIOzUei41vyE9FaIWvFMNzC.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/5qIkgP0VcfF0YhO3bixzBtA1jH2.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "hard",
       "info": [
-        "대홍수 (2025) — Lim Hyeon-mo 역",
-        "백두산 (2019) — Jeon Yu-gyeong 역"
+        "장화, 홍련 (2003) — Eun-joo 역",
+        "외계+인 2부 (2024) — Madam Black 역",
+        "외계+인 1부 (2022) — Madam Black 역"
       ]
     },
     {
-      "answer": "김병옥",
+      "answer": "엄지원",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/oGVs2OmYTyXR0KT9xvzVWCAKx8t.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/icqDRYRw9T99ZIHYCxTUrl0s6aS.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "hard",
       "info": [
-        "올드보이 (2003) — Mr. Han 역",
-        "친절한 금자씨 (2005) — Preacher 역",
-        "마녀 (2018) — Chief Do 역"
+        "소원 (2013) — Mi-hee 역",
+        "정이 (2023) — Se-yeon 역"
+      ]
+    },
+    {
+      "answer": "김뢰하",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w500/bGHnBUrBKk2ItXDZJrBDnBeQJvj.jpg",
+      "prompt": "이 배우의 이름은?",
+      "difficulty": "hard",
+      "info": [
+        "살인의 추억 (2003) — Detective Cho Yong-koo 역",
+        "달콤한 인생 (2005) — Moon-seok 역",
+        "킹덤: 아신전 (2021) — Tahab 역"
+      ]
+    },
+    {
+      "answer": "윤제문",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w500/ay4bL3m71dEPterBKxWzCmPpLNS.jpg",
+      "prompt": "이 배우의 이름은?",
+      "difficulty": "hard",
+      "info": [
+        "마더 (2009) — Je-moon 역",
+        "좋은 놈, 나쁜 놈, 이상한 놈 (2008) — Byung-choon 역"
       ]
     }
   ],
   "singer": [
     {
-      "answer": "aespa",
-      "alt": [],
-      "prompt": "🎵 'WDA (Whole Different Animal) (Feat. G-DRAGON)' — 현재 멜론 차트인 중인 이 곡의 가수는?",
-      "lyric": true,
-      "difficulty": "normal"
-    },
-    {
-      "answer": "한로로",
-      "alt": [],
-      "prompt": "🎵 '0+0' — 현재 멜론 차트인 중인 이 곡의 가수는?",
-      "lyric": true,
-      "difficulty": "normal"
-    },
-    {
-      "answer": "Lady Gaga",
-      "alt": [],
-      "prompt": "🎵 'Die With A Smile' — 현재 멜론 차트인 중인 이 곡의 가수는?",
-      "lyric": true,
-      "difficulty": "hard"
-    },
-    {
-      "answer": "Young K",
+      "answer": "제니",
       "alt": [
-        "DAY6",
-        "Young K (DAY6)"
+        "JENNIE",
+        "제니 (JENNIE)"
       ],
-      "prompt": "🎵 'Marionette' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "prompt": "🎵 'Less than a Lover' — 현재 멜론 차트인 중인 이 곡의 가수는?",
       "lyric": true,
-      "difficulty": "hard"
+      "difficulty": "normal",
+      "info": [
+        "'Less than a Lover' — 멜론 차트 44위"
+      ]
     },
     {
-      "answer": "악뮤",
+      "answer": "르세라핌",
       "alt": [
-        "AKMU",
-        "AKMU (악뮤)"
+        "LE SSERAFIM",
+        "LE SSERAFIM (르세라핌)"
       ],
-      "prompt": "🎵 '기쁨, 슬픔, 아름다운 마음' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "prompt": "🎵 'BOOMPALA' — 현재 멜론 차트인 중인 이 곡의 가수는?",
       "lyric": true,
-      "difficulty": "normal"
-    },
-    {
-      "answer": "김나영",
-      "alt": [],
-      "prompt": "🎵 '봄 내음보다 너를' — 현재 멜론 차트인 중인 이 곡의 가수는?",
-      "lyric": true,
-      "difficulty": "hard"
-    },
-    {
-      "answer": "아이유",
-      "alt": [],
-      "prompt": "🎵 'Love wins all' — 현재 멜론 차트인 중인 이 곡의 가수는?",
-      "lyric": true,
-      "difficulty": "hard"
-    },
-    {
-      "answer": "투어스",
-      "alt": [
-        "TWS",
-        "TWS (투어스)"
-      ],
-      "prompt": "🎵 '첫 만남은 계획대로 되지 않아' — 현재 멜론 차트인 중인 이 곡의 가수는?",
-      "lyric": true,
-      "difficulty": "hard"
-    },
-    {
-      "answer": "성시경",
-      "alt": [],
-      "prompt": "🎵 '너의 모든 순간' — 현재 멜론 차트인 중인 이 곡의 가수는?",
-      "lyric": true,
-      "difficulty": "normal"
-    },
-    {
-      "answer": "WOODZ",
-      "alt": [],
-      "prompt": "🎵 'Drowning' — 현재 멜론 차트인 중인 이 곡의 가수는?",
-      "lyric": true,
-      "difficulty": "easy"
-    },
-    {
-      "answer": "NMIXX",
-      "alt": [],
-      "prompt": "🎵 'Heavy Serenade' — 현재 멜론 차트인 중인 이 곡의 가수는?",
-      "lyric": true,
-      "difficulty": "normal"
+      "difficulty": "hard",
+      "info": [
+        "'BOOMPALA' — 멜론 차트 68위"
+      ]
     },
     {
       "answer": "리센느",
@@ -370,9 +294,117 @@
         "RESCENE",
         "RESCENE (리센느)"
       ],
-      "prompt": "🎵 'LOVE ATTACK' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "prompt": "🎵 'Runaway' — 현재 멜론 차트인 중인 이 곡의 가수는?",
       "lyric": true,
-      "difficulty": "easy"
+      "difficulty": "normal",
+      "info": [
+        "'Runaway' — 멜론 차트 47위"
+      ]
+    },
+    {
+      "answer": "임현정",
+      "alt": [],
+      "prompt": "🎵 '사랑은 봄비처럼...이별은 겨울비처럼...' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "lyric": true,
+      "difficulty": "hard",
+      "info": [
+        "'사랑은 봄비처럼...이별은 겨울비처럼...' — 멜론 차트 82위"
+      ]
+    },
+    {
+      "answer": "최예나",
+      "alt": [
+        "YENA",
+        "YENA (최예나)"
+      ],
+      "prompt": "🎵 '캐치 캐치' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "lyric": true,
+      "difficulty": "easy",
+      "info": [
+        "'캐치 캐치' — 멜론 차트 8위"
+      ]
+    },
+    {
+      "answer": "박재정",
+      "alt": [],
+      "prompt": "🎵 '헤어지자 말해요' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "lyric": true,
+      "difficulty": "hard",
+      "info": [
+        "'헤어지자 말해요' — 멜론 차트 86위"
+      ]
+    },
+    {
+      "answer": "Young K",
+      "alt": [
+        "DAY6",
+        "Young K (DAY6)"
+      ],
+      "prompt": "🎵 'Hey Honey' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "lyric": true,
+      "difficulty": "hard",
+      "info": [
+        "'Hey Honey' — 멜론 차트 84위"
+      ]
+    },
+    {
+      "answer": "방탄소년단",
+      "alt": [],
+      "prompt": "🎵 'SWIM' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "lyric": true,
+      "difficulty": "normal",
+      "info": [
+        "'SWIM' — 멜론 차트 38위"
+      ]
+    },
+    {
+      "answer": "아이브",
+      "alt": [
+        "IVE",
+        "IVE (아이브)"
+      ],
+      "prompt": "🎵 'REBEL HEART' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "lyric": true,
+      "difficulty": "hard",
+      "info": [
+        "'REBEL HEART' — 멜론 차트 70위"
+      ]
+    },
+    {
+      "answer": "aespa",
+      "alt": [],
+      "prompt": "🎵 'Whiplash' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "lyric": true,
+      "difficulty": "normal",
+      "info": [
+        "'Whiplash' — 멜론 차트 32위"
+      ]
+    },
+    {
+      "answer": "이클립스",
+      "alt": [
+        "ECLIPSE",
+        "이클립스 (ECLIPSE)"
+      ],
+      "prompt": "🎵 '소나기' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "lyric": true,
+      "difficulty": "normal",
+      "info": [
+        "'소나기' — 멜론 차트 40위"
+      ]
+    },
+    {
+      "answer": "코르티스",
+      "alt": [
+        "CORTIS",
+        "CORTIS (코르티스)"
+      ],
+      "prompt": "🎵 'REDRED' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "lyric": true,
+      "difficulty": "easy",
+      "info": [
+        "'REDRED' — 멜론 차트 3위"
+      ]
     }
   ],
   "variety": [
@@ -388,7 +420,12 @@
         "구성환",
         "이주승"
       ],
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "info": [
+        "MBC, 2013~ 방영 중",
+        "싱글 라이프 관찰 예능, 무지개 회원",
+        "기안84·전현무 등의 일상 공개로 화제"
+      ]
     },
     {
       "answer": "1박 2일",
@@ -402,7 +439,12 @@
         "이준",
         "딘딘"
       ],
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "info": [
+        "KBS2, 2007~ 방영 중",
+        "복불복의 원조, 야생 로드 버라이어티",
+        "까나리 액젓 복불복이 여기서 탄생"
+      ]
     },
     {
       "answer": "아는 형님",
@@ -416,7 +458,12 @@
         "이수근",
         "김희철"
       ],
-      "difficulty": "normal"
+      "difficulty": "normal",
+      "info": [
+        "JTBC, 2015~ 방영 중",
+        "교실 콘셉트 토크쇼",
+        "\"나 OO인데 나 알아?\" 반말 토크가 특징"
+      ]
     },
     {
       "answer": "놀면 뭐하니",
@@ -429,7 +476,12 @@
         "허경환",
         "주우재"
       ],
-      "difficulty": "normal"
+      "difficulty": "normal",
+      "info": [
+        "MBC, 2019~ 방영 중",
+        "유재석의 부캐 놀이터",
+        "유산슬·싹쓰리·환불원정대가 여기서 탄생"
+      ]
     },
     {
       "answer": "신서유기",
@@ -441,79 +493,96 @@
         "규현",
         "송민호"
       ],
-      "difficulty": "normal"
+      "difficulty": "normal",
+      "info": [
+        "tvN, 2015~2020 방영",
+        "나영석표 리얼 야생 게임 여행기",
+        "인터넷 선공개 예능의 성공 사례"
+      ]
+    },
+    {
+      "answer": "전지적 참견 시점",
+      "alt": [
+        "전지적참견시점"
+      ],
+      "cast": [
+        "전현무",
+        "송은이",
+        "양세형",
+        "이영자",
+        "유병재"
+      ],
+      "difficulty": "easy",
+      "info": [
+        "MBC, 2018~ 방영 중",
+        "스타와 매니저의 일상 관찰 예능",
+        "이영자 먹방으로 초반 화제"
+      ]
+    },
+    {
+      "answer": "꽃보다 할배",
+      "alt": [
+        "꽃보다할배"
+      ],
+      "cast": [
+        "이순재",
+        "신구",
+        "박근형",
+        "백일섭",
+        "김용건"
+      ],
+      "difficulty": "normal",
+      "info": [
+        "tvN, 2013~2018",
+        "평균 76세 원로 배우들의 배낭여행",
+        "이순재·신구·박근형·백일섭 + 짐꾼 이서진"
+      ]
     }
   ],
   "movie": [
     {
-      "answer": "아가씨",
+      "answer": "곤지암",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/3upEZ0ltY7WwOSFVXrtiP34D48p.jpg",
-      "prompt": "힌트: 2016년 개봉",
+      "img": "https://image.tmdb.org/t/p/w780/bnXcdPfIrkZeUIC4qXeOgmmudtN.jpg",
+      "prompt": "힌트: 2018년 개봉",
       "difficulty": "easy",
       "info": [
-        "개봉: 2016년",
-        "감독: 박찬욱",
-        "주연: 김민희, 김태리, 하정우",
-        "TMDB 평점 8.2 (투표 4,401개)"
+        "개봉: 2018년",
+        "감독: 정범식",
+        "주연: 위하준, 박지현, 오아연",
+        "TMDB 평점 7.3 (투표 972개)"
       ]
     },
     {
-      "answer": "소원",
+      "answer": "기생충",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/4Nx40jwpoTHPjCWNGoaZ6kaoGxa.jpg",
-      "prompt": "힌트: 2013년 개봉",
+      "img": "https://image.tmdb.org/t/p/w780/25tz24hlrqAbjhpHx1FhmfPH8Qf.jpg",
+      "prompt": "힌트: 2019년 개봉",
       "difficulty": "easy",
       "info": [
-        "개봉: 2013년",
-        "감독: 이준익",
-        "주연: 설경구, 엄지원, 이레",
-        "TMDB 평점 8.4 (투표 894개)"
+        "개봉: 2019년",
+        "감독: 봉준호",
+        "주연: 송강호, 이선균, 조여정",
+        "TMDB 평점 8.5 (투표 20,932개)"
       ]
     },
     {
-      "answer": "황야",
+      "answer": "정이",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/qLQiQXe8tHk8mokDH0LoKudPDH3.jpg",
-      "prompt": "힌트: 2024년 개봉",
+      "img": "https://image.tmdb.org/t/p/w780/qHdPNd1cUaSNYLLNgt1Pv3LVd0T.jpg",
+      "prompt": "힌트: 2023년 개봉",
       "difficulty": "easy",
       "info": [
-        "개봉: 2024년",
-        "감독: 허명행",
-        "주연: 마동석, 이준영, 이희준",
-        "TMDB 평점 6.7 (투표 823개)"
-      ]
-    },
-    {
-      "answer": "악녀",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/r4fxp9LqfCyPsnz6LFVzUn7jrVN.jpg",
-      "prompt": "힌트: 2017년 개봉",
-      "difficulty": "easy",
-      "info": [
-        "개봉: 2017년",
-        "감독: 정병길",
-        "주연: 김옥빈, 신하균, 성준",
-        "TMDB 평점 6.9 (투표 777개)"
-      ]
-    },
-    {
-      "answer": "신과함께-죄와 벌",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/uslQFtW5ZYZxIMroa6YpvvA06Tn.jpg",
-      "prompt": "힌트: 2017년 개봉",
-      "difficulty": "easy",
-      "info": [
-        "개봉: 2017년",
-        "감독: 김용화",
-        "주연: 하정우, 차태현, 주지훈",
-        "TMDB 평점 8.0 (투표 1,207개)"
+        "개봉: 2023년",
+        "감독: 연상호",
+        "주연: 강수연, 김현주, 류경수",
+        "TMDB 평점 6.1 (투표 684개)"
       ]
     },
     {
       "answer": "박쥐",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/oNdO2VSonWIZFZNC7O4bkuFTNOh.jpg",
+      "img": "https://image.tmdb.org/t/p/w780/9IMZqBKbALO7d2bwr6ECKP4igoe.jpg",
       "prompt": "힌트: 2009년 개봉",
       "difficulty": "easy",
       "info": [
@@ -524,61 +593,87 @@
       ]
     },
     {
-      "answer": "공동경비구역 JSA",
+      "answer": "악마를 보았다",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/z7w6ACQJTeGYASr1plSwfRe6Ytk.jpg",
-      "prompt": "힌트: 2000년 개봉",
+      "img": "https://image.tmdb.org/t/p/w780/3dOk53czoP0jigGwwKdTxqx4MT9.jpg",
+      "prompt": "힌트: 2010년 개봉",
       "difficulty": "easy",
       "info": [
-        "개봉: 2000년",
-        "감독: 박찬욱",
-        "주연: 이영애, 이병헌, 송강호",
-        "TMDB 평점 7.8 (투표 852개)"
+        "개봉: 2010년",
+        "감독: 김지운",
+        "주연: 이병헌, 최민식, 전국환",
+        "TMDB 평점 7.8 (투표 3,078개)"
       ]
     },
     {
-      "answer": "김씨 표류기",
+      "answer": "외계+인 2부",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/q3cOyhojgMmgFjvLoyKDY8W3GP2.jpg",
-      "prompt": "힌트: 2009년 개봉",
+      "img": "https://image.tmdb.org/t/p/w780/kZbTOcTrEGyroQMWQSGIRlNSkwP.jpg",
+      "prompt": "힌트: 2024년 개봉",
       "difficulty": "easy",
       "info": [
-        "개봉: 2009년",
-        "감독: 이해준",
-        "주연: 정재영, 정려원, 양미경",
-        "TMDB 평점 7.9 (투표 737개)"
+        "개봉: 2024년",
+        "감독: 최동훈",
+        "주연: 류준열, 김태리, 김우빈",
+        "TMDB 평점 6.7 (투표 861개)"
       ]
     },
     {
-      "answer": "악인전",
+      "answer": "반도",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/jJJQ1PPXUEchqyZ9YyWzgSNU39Z.jpg",
-      "prompt": "힌트: 2019년 개봉",
-      "difficulty": "easy",
-      "info": [
-        "개봉: 2019년",
-        "감독: 이원태",
-        "주연: 마동석, 김무열, 김성규",
-        "TMDB 평점 7.9 (투표 1,528개)"
-      ]
-    },
-    {
-      "answer": "낙원의 밤",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/dEh93Ni98JWh7fmhD56ZlOFQmoT.jpg",
+      "img": "https://image.tmdb.org/t/p/w780/gEjNlhZhyHeto6Fy5wWy5Uk3A9D.jpg",
       "prompt": "힌트: 2020년 개봉",
-      "difficulty": "normal",
+      "difficulty": "easy",
       "info": [
         "개봉: 2020년",
-        "감독: 박훈정",
-        "주연: 엄태구, 전여빈, 차승원",
-        "TMDB 평점 6.9 (투표 306개)"
+        "감독: 연상호",
+        "주연: 강동원, 이정현, 이레",
+        "TMDB 평점 6.7 (투표 2,613개)"
+      ]
+    },
+    {
+      "answer": "20세기 소녀",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/lLsJRHjwHUdg8VoJsgcJLnewRxN.jpg",
+      "prompt": "힌트: 2022년 개봉",
+      "difficulty": "easy",
+      "info": [
+        "개봉: 2022년",
+        "감독: Bang Woo-ri",
+        "주연: 김유정, 변우석, 박정우",
+        "TMDB 평점 8.2 (투표 836개)"
+      ]
+    },
+    {
+      "answer": "빈집",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/nqY8yuxLU4K9cSCQpsW4PGyotlN.jpg",
+      "prompt": "힌트: 2004년 개봉",
+      "difficulty": "easy",
+      "info": [
+        "개봉: 2004년",
+        "감독: 김기덕",
+        "주연: 이승연, 재희, 권혁호",
+        "TMDB 평점 7.8 (투표 1,276개)"
+      ]
+    },
+    {
+      "answer": "리턴 투 서울",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/ngsAuG8JYOiuwgGejN7xljgETNt.jpg",
+      "prompt": "힌트: 2022년 개봉",
+      "difficulty": "normal",
+      "info": [
+        "개봉: 2022년",
+        "감독: Davy Chou",
+        "주연: 박지민, 오광록, Guka Han",
+        "TMDB 평점 6.2 (투표 480개)"
       ]
     },
     {
       "answer": "타워",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/f5LwI17I4F2QxJRw3JEUzfJ55Bh.jpg",
+      "img": "https://image.tmdb.org/t/p/w780/nXIXQv4SPgy2Xhld3XGqPA0Qap4.jpg",
       "prompt": "힌트: 2012년 개봉",
       "difficulty": "normal",
       "info": [
@@ -589,22 +684,22 @@
       ]
     },
     {
-      "answer": "끝까지 간다",
+      "answer": "브로커",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/roPPeakpvvb6ZrWO0Hb0yQbmgs9.jpg",
-      "prompt": "힌트: 2014년 개봉",
+      "img": "https://image.tmdb.org/t/p/w780/A8PT1ux6aMJDmn3PHTotGT0RDPs.jpg",
+      "prompt": "힌트: 2022년 개봉",
       "difficulty": "normal",
       "info": [
-        "개봉: 2014년",
-        "감독: 김성훈",
-        "주연: 이선균, 조진웅, 정만식",
-        "TMDB 평점 7.1 (투표 518개)"
+        "개봉: 2022년",
+        "감독: 고레에다 히로카즈",
+        "주연: 송강호, 강동원, 배두나",
+        "TMDB 평점 7.2 (투표 557개)"
       ]
     },
     {
       "answer": "살인자의 기억법",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/uE3QjEkf5X9X31Cn5pgwZ4CIDin.jpg",
+      "img": "https://image.tmdb.org/t/p/w780/nZsBcn0SLhHCCNjbewJ9M16xH4S.jpg",
       "prompt": "힌트: 2017년 개봉",
       "difficulty": "normal",
       "info": [
@@ -615,126 +710,113 @@
       ]
     },
     {
-      "answer": "내 머리 속의 지우개",
+      "answer": "모럴센스",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/jymqGYV1JdQlqz5hX9fGg06JlZC.jpg",
-      "prompt": "힌트: 2004년 개봉",
+      "img": "https://image.tmdb.org/t/p/w780/6eSpHe8UkrSKL0L5IC8zgjfahQw.jpg",
+      "prompt": "힌트: 2022년 개봉",
       "difficulty": "normal",
       "info": [
-        "개봉: 2004년",
-        "감독: 이재한",
-        "주연: 정우성, 손예진, 백종학",
-        "TMDB 평점 7.8 (투표 373개)"
+        "개봉: 2022년",
+        "감독: 박현진",
+        "주연: 서현, 이준영, 이엘",
+        "TMDB 평점 6.8 (투표 316개)"
       ]
     },
     {
-      "answer": "인랑",
+      "answer": "끝까지 간다",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/CX9O14p4SsAG8nz0BFhaDTSKH1.jpg",
-      "prompt": "힌트: 2018년 개봉",
+      "img": "https://image.tmdb.org/t/p/w780/iuro932kXoNkguoRD49PlfYPHOE.jpg",
+      "prompt": "힌트: 2014년 개봉",
       "difficulty": "normal",
       "info": [
-        "개봉: 2018년",
-        "감독: 김지운",
-        "주연: 강동원, 한효주, 정우성",
-        "TMDB 평점 6.3 (투표 332개)"
+        "개봉: 2014년",
+        "감독: 김성훈",
+        "주연: 이선균, 조진웅, 정만식",
+        "TMDB 평점 7.1 (투표 518개)"
       ]
     },
     {
-      "answer": "무도실무관",
+      "answer": "미녀는 괴로워",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/wSZbtiFIK1fkKZdSRtn2kz2Ttfd.jpg",
-      "prompt": "힌트: 2024년 개봉",
+      "img": "https://image.tmdb.org/t/p/w780/5sTuVsYySgJQUNIPFYWII5EdRdL.jpg",
+      "prompt": "힌트: 2006년 개봉",
       "difficulty": "normal",
       "info": [
-        "개봉: 2024년",
-        "감독: 김주환",
-        "주연: 김우빈, 김성균, 이현걸",
-        "TMDB 평점 7.7 (투표 371개)"
+        "개봉: 2006년",
+        "감독: 김용화",
+        "주연: 주진모, 김아중, 성동일",
+        "TMDB 평점 6.8 (투표 349개)"
       ]
     },
     {
-      "answer": "염력",
+      "answer": "디 워",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/53rHETjQOfCSajPki5HGfd3FQtG.jpg",
-      "prompt": "힌트: 2018년 개봉",
+      "img": "https://image.tmdb.org/t/p/w780/nAaY928uxrriho7LJpLfFTLXLp9.jpg",
+      "prompt": "힌트: 2007년 개봉",
       "difficulty": "normal",
       "info": [
-        "개봉: 2018년",
-        "감독: 연상호",
-        "주연: 류승룡, 심은경, 박정민",
-        "TMDB 평점 6.3 (투표 342개)"
+        "개봉: 2007년",
+        "감독: 심형래",
+        "주연: Jason Behr, Amanda Brooks, 로버트 포스터",
+        "TMDB 평점 4.6 (투표 462개)"
       ]
     },
     {
-      "answer": "범죄도시 3",
+      "answer": "길복순",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/lkhDa3p9t3D00zEs7F50vgWZDvQ.jpg",
+      "img": "https://image.tmdb.org/t/p/w780/mkaFqX5fmjxrmG4lKW2lgQMH26a.jpg",
       "prompt": "힌트: 2023년 개봉",
       "difficulty": "normal",
       "info": [
         "개봉: 2023년",
-        "감독: 이상용",
-        "주연: 마동석, 이준혁, 아오키 무네타카",
-        "TMDB 평점 7.2 (투표 552개)"
+        "감독: 변성현",
+        "주연: 전도연, 설경구, 김시아",
+        "TMDB 평점 6.9 (투표 554개)"
       ]
     },
     {
-      "answer": "특송",
+      "answer": "청년경찰",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/xHVYpeGQgswANURYadqVxz2jsWx.jpg",
+      "img": "https://image.tmdb.org/t/p/w780/tiN6K0LnkK6jG20M39H3AfnXIgQ.jpg",
+      "prompt": "힌트: 2017년 개봉",
+      "difficulty": "hard",
+      "info": [
+        "개봉: 2017년",
+        "감독: 김주환",
+        "주연: 박서준, 강하늘, 성동일",
+        "TMDB 평점 7.6 (투표 252개)"
+      ]
+    },
+    {
+      "answer": "박하사탕",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/7IieM8h8uGzlCRXgAb0OKnhtvaU.jpg",
+      "prompt": "힌트: 2000년 개봉",
+      "difficulty": "hard",
+      "info": [
+        "개봉: 2000년",
+        "감독: 이창동",
+        "주연: 설경구, 문소리, 김여진",
+        "TMDB 평점 7.5 (투표 294개)"
+      ]
+    },
+    {
+      "answer": "해적: 도깨비 깃발",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/dK3fwfKihBQymKPEOjaemh3iG0d.jpg",
       "prompt": "힌트: 2022년 개봉",
       "difficulty": "hard",
       "info": [
         "개봉: 2022년",
-        "감독: 박대민",
-        "주연: 박소담, 김의성, 송새벽",
-        "TMDB 평점 7.1 (투표 227개)"
-      ]
-    },
-    {
-      "answer": "전,란",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/64tinBsds1nVp4wOCgYhMbSgsRW.jpg",
-      "prompt": "힌트: 2024년 개봉",
-      "difficulty": "hard",
-      "info": [
-        "개봉: 2024년",
-        "감독: 김상만",
-        "주연: 강동원, 박정민, 차승원",
-        "TMDB 평점 7.0 (투표 212개)"
-      ]
-    },
-    {
-      "answer": "베테랑",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/fDLC0FLTkEU2rMIbptxCRYWeceq.jpg",
-      "prompt": "힌트: 2015년 개봉",
-      "difficulty": "hard",
-      "info": [
-        "개봉: 2015년",
-        "감독: 류승완",
-        "주연: 황정민, 유아인, 유해진",
-        "TMDB 평점 6.9 (투표 254개)"
-      ]
-    },
-    {
-      "answer": "늑대소년",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/i8mwcILjEMMHQG571yODB82BL9U.jpg",
-      "prompt": "힌트: 2012년 개봉",
-      "difficulty": "hard",
-      "info": [
-        "개봉: 2012년",
-        "감독: 조성희",
-        "주연: 송중기, 박보영, 유연석",
-        "TMDB 평점 7.7 (투표 290개)"
+        "감독: Kim Joung-hoon",
+        "주연: 강하늘, 한효주, 이광수",
+        "TMDB 평점 6.5 (투표 227개)"
       ]
     },
     {
       "answer": "오아시스",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/kblo77rbHpzvhGJpkJUpmWG9isF.jpg",
+      "img": "https://image.tmdb.org/t/p/w780/zUnF9O3Wy8XVtz9GXgouA4k8Gu2.jpg",
       "prompt": "힌트: 2002년 개봉",
       "difficulty": "hard",
       "info": [
@@ -745,55 +827,68 @@
       ]
     },
     {
-      "answer": "은밀하게 위대하게",
+      "answer": "지금 만나러 갑니다",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/nZKOwOjhhqN59s1tyQVicwt35qG.jpg",
-      "prompt": "힌트: 2013년 개봉",
+      "img": "https://image.tmdb.org/t/p/w780/dw9KDRImNzj3jWYSkTte7wvzamO.jpg",
+      "prompt": "힌트: 2018년 개봉",
       "difficulty": "hard",
       "info": [
-        "개봉: 2013년",
-        "감독: 장철수",
-        "주연: 김수현, 박기웅, 이현우",
-        "TMDB 평점 7.0 (투표 215개)"
+        "개봉: 2018년",
+        "감독: 이장훈",
+        "주연: 소지섭, 손예진, Kim Ji-hwan",
+        "TMDB 평점 8.2 (투표 222개)"
       ]
     },
     {
-      "answer": "우는 남자",
+      "answer": "강철비",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/bgWuI8gHnzxDMX5KpWCQTOwTxH9.jpg",
-      "prompt": "힌트: 2014년 개봉",
+      "img": "https://image.tmdb.org/t/p/w780/pUKiXMs94CldMQf72RuTEZCDMyX.jpg",
+      "prompt": "힌트: 2017년 개봉",
       "difficulty": "hard",
       "info": [
-        "개봉: 2014년",
-        "감독: 이정범",
-        "주연: 장동건, 김민희, 브라이언 티",
-        "TMDB 평점 7.3 (투표 304개)"
-      ]
-    },
-    {
-      "answer": "변호인",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/uKXsGI4BKqEEnkRMSQc4p3wqmCp.jpg",
-      "prompt": "힌트: 2013년 개봉",
-      "difficulty": "hard",
-      "info": [
-        "개봉: 2013년",
+        "개봉: 2017년",
         "감독: 양우석",
-        "주연: 송강호, 김영애, 오달수",
-        "TMDB 평점 7.8 (투표 229개)"
+        "주연: 정우성, 곽도원, 김갑수",
+        "TMDB 평점 7.1 (투표 213개)"
       ]
     },
     {
-      "answer": "발신제한",
+      "answer": "시간",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/awW4PTMf5wboJsv2eAbW9SmWH12.jpg",
-      "prompt": "힌트: 2021년 개봉",
+      "img": "https://image.tmdb.org/t/p/w780/mg5pBxvBRDESZ4bxFUYTTDakttj.jpg",
+      "prompt": "힌트: 2006년 개봉",
       "difficulty": "hard",
       "info": [
-        "개봉: 2021년",
-        "감독: 김창주",
-        "주연: 조우진, 이재인, 지창욱",
-        "TMDB 평점 7.5 (투표 223개)"
+        "개봉: 2006년",
+        "감독: 김기덕",
+        "주연: 성현아, 하정우, 박지연",
+        "TMDB 평점 6.9 (투표 252개)"
+      ]
+    },
+    {
+      "answer": "84제곱미터",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/oIVc7O2Dk4GjDeKpbMNIKLLgqor.jpg",
+      "prompt": "힌트: 2025년 개봉",
+      "difficulty": "hard",
+      "info": [
+        "개봉: 2025년",
+        "감독: 김태준",
+        "주연: 강하늘, 염혜란, 서현우",
+        "TMDB 평점 6.2 (투표 269개)"
+      ]
+    },
+    {
+      "answer": "베를린",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/hiib86sJwcqFlCJAPK8yhk63QcY.jpg",
+      "prompt": "힌트: 2013년 개봉",
+      "difficulty": "hard",
+      "info": [
+        "개봉: 2013년",
+        "감독: 류승완",
+        "주연: 하정우, 한석규, 류승범",
+        "TMDB 평점 6.7 (투표 230개)"
       ]
     }
   ],
@@ -804,7 +899,11 @@
       "alt": [
         "서울특별시"
       ],
-      "prompt": "🌍 대한민국의 수도는?"
+      "prompt": "🌍 대한민국의 수도는?",
+      "info": [
+        "인구 약 940만 명, 한강이 가로지르는 대도시",
+        "조선의 수도 '한양'에서 600년 넘게 이어진 수도"
+      ]
     },
     {
       "answer": "도쿄",
@@ -812,67 +911,111 @@
       "alt": [
         "동경"
       ],
-      "prompt": "🌍 일본의 수도는?"
+      "prompt": "🌍 일본의 수도는?",
+      "info": [
+        "세계 최대 도시권 (수도권 인구 약 3,700만)",
+        "1868년 교토에서 천도, 옛 이름은 '에도'"
+      ]
     },
     {
       "answer": "파리",
       "difficulty": "easy",
       "alt": [],
-      "prompt": "🌍 프랑스의 수도는?"
+      "prompt": "🌍 프랑스의 수도는?",
+      "info": [
+        "센 강의 도시, 별명은 '빛의 도시'",
+        "에펠탑·루브르 박물관 등 세계적 관광 도시"
+      ]
     },
     {
       "answer": "카이로",
       "difficulty": "easy",
       "alt": [],
-      "prompt": "🌍 이집트의 수도는?"
+      "prompt": "🌍 이집트의 수도는?",
+      "info": [
+        "나일강 하류, 아프리카 최대급 도시권",
+        "인근 기자에 피라미드와 스핑크스가 있음"
+      ]
     },
     {
       "answer": "하노이",
       "difficulty": "easy",
       "alt": [],
-      "prompt": "🌍 베트남의 수도는? (호치민 아님!)"
+      "prompt": "🌍 베트남의 수도는? (호치민 아님!)",
+      "info": [
+        "베트남 북부, 1010년부터의 유서 깊은 수도",
+        "최대 도시는 남부의 호치민(옛 사이공)"
+      ]
     },
     {
       "answer": "캔버라",
       "difficulty": "normal",
       "alt": [],
-      "prompt": "🌍 호주의 수도는? (시드니 아님!)"
+      "prompt": "🌍 호주의 수도는? (시드니 아님!)",
+      "info": [
+        "시드니와 멜버른의 수도 경쟁 끝에 건설된 계획도시",
+        "1913년 착공, 인구는 시드니의 1/10 수준"
+      ]
     },
     {
       "answer": "오타와",
       "difficulty": "normal",
       "alt": [],
-      "prompt": "🌍 캐나다의 수도는? (토론토 아님!)"
+      "prompt": "🌍 캐나다의 수도는? (토론토 아님!)",
+      "info": [
+        "온타리오주, 영어·프랑스어권 경계의 타협 입지",
+        "토론토·몬트리올·밴쿠버보다 작은 수도"
+      ]
     },
     {
       "answer": "브라질리아",
       "difficulty": "normal",
       "alt": [],
-      "prompt": "🌍 브라질의 수도는? (리우 아님!)"
+      "prompt": "🌍 브라질의 수도는? (리우 아님!)",
+      "info": [
+        "1960년 내륙 개발을 위해 건설된 계획도시",
+        "비행기 모양 도시 설계로 유네스코 세계문화유산"
+      ]
     },
     {
       "answer": "앙카라",
       "difficulty": "normal",
       "alt": [],
-      "prompt": "🌍 튀르키예의 수도는? (이스탄불 아님!)"
+      "prompt": "🌍 튀르키예의 수도는? (이스탄불 아님!)",
+      "info": [
+        "1923년 공화국 수립과 함께 이스탄불 대신 수도로",
+        "튀르키예 중부 아나톨리아 고원에 위치"
+      ]
     },
     {
       "answer": "베른",
       "difficulty": "normal",
       "alt": [],
-      "prompt": "🌍 스위스의 수도는? (취리히 아님!)"
+      "prompt": "🌍 스위스의 수도는? (취리히 아님!)",
+      "info": [
+        "취리히·제네바보다 작은 스위스의 수도",
+        "중세 구시가지가 유네스코 세계문화유산"
+      ]
     },
     {
       "answer": "헬싱키",
       "difficulty": "normal",
       "alt": [],
-      "prompt": "🌍 핀란드의 수도는?"
+      "prompt": "🌍 핀란드의 수도는?",
+      "info": [
+        "발트해 연안, '숲과 호수의 나라' 핀란드의 관문",
+        "1812년 러시아 지배기에 수도가 됨"
+      ]
     },
     {
       "answer": "웰링턴",
       "difficulty": "hard",
       "alt": [],
-      "prompt": "🌍 뉴질랜드의 수도는? (오클랜드 아님!)"
+      "prompt": "🌍 뉴질랜드의 수도는? (오클랜드 아님!)",
+      "info": [
+        "세계 최남단의 수도, 별명은 '바람의 도시'",
+        "최대 도시는 북쪽의 오클랜드"
+      ]
     },
     {
       "answer": "아디스아바바",
@@ -880,25 +1023,295 @@
       "alt": [
         "아디스 아바바"
       ],
-      "prompt": "🌍 에티오피아의 수도는?"
+      "prompt": "🌍 에티오피아의 수도는?",
+      "info": [
+        "해발 2,355m의 고원 도시",
+        "아프리카연합(AU) 본부 소재지, '아프리카의 수도'로 불림"
+      ]
     },
     {
       "answer": "아스타나",
       "difficulty": "hard",
       "alt": [],
-      "prompt": "🌍 카자흐스탄의 수도는?"
+      "prompt": "🌍 카자흐스탄의 수도는?",
+      "info": [
+        "1997년 알마티에서 이전한 계획 수도",
+        "2019~2022년엔 '누르술탄'으로 개명됐다가 환원"
+      ]
     },
     {
       "answer": "네피도",
       "difficulty": "hard",
       "alt": [],
-      "prompt": "🌍 미얀마의 수도는? (양곤 아님!)"
+      "prompt": "🌍 미얀마의 수도는? (양곤 아님!)",
+      "info": [
+        "2005년 양곤에서 전격 이전한 계획도시",
+        "20차선 도로가 텅 비어 있는 것으로 유명"
+      ]
     },
     {
       "answer": "아부자",
       "difficulty": "hard",
       "alt": [],
-      "prompt": "🌍 나이지리아의 수도는? (라고스 아님!)"
+      "prompt": "🌍 나이지리아의 수도는? (라고스 아님!)",
+      "info": [
+        "1991년 라고스에서 이전한 계획 수도",
+        "나이지리아 중앙부, 민족 간 균형을 위한 입지"
+      ]
+    },
+    {
+      "answer": "워싱턴",
+      "difficulty": "easy",
+      "alt": [
+        "워싱턴 D.C.",
+        "워싱턴DC",
+        "워싱턴 DC"
+      ],
+      "prompt": "🌍 미국의 수도는? (뉴욕 아님!)",
+      "info": [
+        "공식 명칭 워싱턴 D.C. (컬럼비아 특별구)",
+        "어느 주에도 속하지 않는 연방 직할지"
+      ]
+    },
+    {
+      "answer": "런던",
+      "difficulty": "easy",
+      "alt": [],
+      "prompt": "🌍 영국의 수도는?",
+      "info": [
+        "템스 강의 도시, 빅벤·버킹엄 궁전",
+        "2천 년 전 로마인이 세운 '론디니움'에서 출발"
+      ]
+    },
+    {
+      "answer": "베이징",
+      "difficulty": "easy",
+      "alt": [
+        "북경"
+      ],
+      "prompt": "🌍 중국의 수도는? (상하이 아님!)",
+      "info": [
+        "자금성·천안문 광장의 도시",
+        "원·명·청 대부터 이어진 수도"
+      ]
+    },
+    {
+      "answer": "로마",
+      "difficulty": "easy",
+      "alt": [],
+      "prompt": "🌍 이탈리아의 수도는? (밀라노 아님!)",
+      "info": [
+        "'모든 길은 로마로 통한다'의 그 로마",
+        "도시 안에 세계에서 가장 작은 나라 바티칸이 있음"
+      ]
+    },
+    {
+      "answer": "베를린",
+      "difficulty": "easy",
+      "alt": [],
+      "prompt": "🌍 독일의 수도는? (뮌헨 아님!)",
+      "info": [
+        "1989년 베를린 장벽 붕괴의 현장",
+        "통일 후 본에서 수도를 되찾아옴"
+      ]
+    },
+    {
+      "answer": "마드리드",
+      "difficulty": "easy",
+      "alt": [],
+      "prompt": "🌍 스페인의 수도는? (바르셀로나 아님!)",
+      "info": [
+        "이베리아 반도 한가운데, 해발 667m",
+        "레알 마드리드의 홈"
+      ]
+    },
+    {
+      "answer": "방콕",
+      "difficulty": "easy",
+      "alt": [],
+      "prompt": "🌍 태국의 수도는?",
+      "info": [
+        "정식 명칭이 세계에서 가장 긴 도시 이름(기네스 등재)",
+        "현지어로는 '끄룽텝'(천사의 도시)"
+      ]
+    },
+    {
+      "answer": "모스크바",
+      "difficulty": "easy",
+      "alt": [],
+      "prompt": "🌍 러시아의 수도는?",
+      "info": [
+        "크렘린과 붉은 광장의 도시",
+        "유럽에서 인구가 가장 많은 도시권"
+      ]
+    },
+    {
+      "answer": "리스본",
+      "difficulty": "normal",
+      "alt": [
+        "리스보아"
+      ],
+      "prompt": "🌍 포르투갈의 수도는?",
+      "info": [
+        "대항해시대의 출발점, 테주 강 하구",
+        "1755년 대지진 후 재건된 도시"
+      ]
+    },
+    {
+      "answer": "빈",
+      "difficulty": "normal",
+      "alt": [
+        "비엔나"
+      ],
+      "prompt": "🌍 오스트리아의 수도는?",
+      "info": [
+        "모차르트·베토벤이 활동한 '음악의 도시'",
+        "합스부르크 제국의 수도였음"
+      ]
+    },
+    {
+      "answer": "아테네",
+      "difficulty": "normal",
+      "alt": [],
+      "prompt": "🌍 그리스의 수도는?",
+      "info": [
+        "파르테논 신전, 민주주의의 발상지",
+        "기록상 3,400년 이상 된 유럽 최고(最古) 수도급 도시"
+      ]
+    },
+    {
+      "answer": "프라하",
+      "difficulty": "normal",
+      "alt": [],
+      "prompt": "🌍 체코의 수도는?",
+      "info": [
+        "'백탑의 도시', 카를교와 프라하 성",
+        "구시가지 전체가 유네스코 세계문화유산"
+      ]
+    },
+    {
+      "answer": "바르샤바",
+      "difficulty": "normal",
+      "alt": [],
+      "prompt": "🌍 폴란드의 수도는?",
+      "info": [
+        "2차대전 때 파괴됐다가 옛 모습대로 복원",
+        "쇼팽의 도시"
+      ]
+    },
+    {
+      "answer": "부다페스트",
+      "difficulty": "normal",
+      "alt": [],
+      "prompt": "🌍 헝가리의 수도는?",
+      "info": [
+        "도나우 강을 사이에 둔 '부다'와 '페스트'가 합쳐진 이름",
+        "야경이 아름다워 '도나우의 진주'로 불림"
+      ]
+    },
+    {
+      "answer": "자카르타",
+      "difficulty": "normal",
+      "alt": [],
+      "prompt": "🌍 인도네시아의 수도는?",
+      "info": [
+        "자바 섬 북서부, 인구 1,000만+",
+        "지반 침하로 새 수도 '누산타라' 이전을 추진 중"
+      ]
+    },
+    {
+      "answer": "뉴델리",
+      "difficulty": "normal",
+      "alt": [
+        "델리"
+      ],
+      "prompt": "🌍 인도의 수도는? (뭄바이 아님!)",
+      "info": [
+        "1911년 콜카타에서 천도, 델리 남부의 계획 구역",
+        "인도문(India Gate)과 대통령궁"
+      ]
+    },
+    {
+      "answer": "멕시코시티",
+      "difficulty": "normal",
+      "alt": [
+        "멕시코 시티"
+      ],
+      "prompt": "🌍 멕시코의 수도는?",
+      "info": [
+        "아스테카 제국의 수도 테노치티틀란 자리",
+        "해발 2,240m, 아메리카 대륙 최대급 도시"
+      ]
+    },
+    {
+      "answer": "마닐라",
+      "difficulty": "normal",
+      "alt": [],
+      "prompt": "🌍 필리핀의 수도는?",
+      "info": [
+        "루손 섬, 마닐라 만의 항구 도시",
+        "스페인 식민지 시절의 성곽도시 인트라무로스"
+      ]
+    },
+    {
+      "answer": "오슬로",
+      "difficulty": "normal",
+      "alt": [],
+      "prompt": "🌍 노르웨이의 수도는?",
+      "info": [
+        "노벨 평화상 시상식이 열리는 도시",
+        "피오르 안쪽 깊숙이 자리한 항구"
+      ]
+    },
+    {
+      "answer": "프리토리아",
+      "difficulty": "hard",
+      "alt": [],
+      "prompt": "🌍 남아프리카공화국의 행정수도는? (요하네스버그 아님!)",
+      "info": [
+        "남아공은 수도가 3개: 행정 프리토리아, 입법 케이프타운, 사법 블룸폰테인",
+        "자카란다 꽃의 도시"
+      ]
+    },
+    {
+      "answer": "울란바토르",
+      "difficulty": "hard",
+      "alt": [],
+      "prompt": "🌍 몽골의 수도는?",
+      "info": [
+        "세계에서 가장 추운 수도 (연평균 기온 영하)",
+        "몽골 인구의 절반 가까이가 거주"
+      ]
+    },
+    {
+      "answer": "타슈켄트",
+      "difficulty": "hard",
+      "alt": [],
+      "prompt": "🌍 우즈베키스탄의 수도는?",
+      "info": [
+        "실크로드의 오아시스 도시",
+        "중앙아시아 최대 도시"
+      ]
+    },
+    {
+      "answer": "리야드",
+      "difficulty": "hard",
+      "alt": [],
+      "prompt": "🌍 사우디아라비아의 수도는?",
+      "info": [
+        "아라비아 반도 중앙의 사막 도시",
+        "네옴시티 등 초대형 프로젝트의 중심"
+      ]
+    },
+    {
+      "answer": "다카",
+      "difficulty": "hard",
+      "alt": [],
+      "prompt": "🌍 방글라데시의 수도는?",
+      "info": [
+        "세계에서 인구밀도가 가장 높은 도시권 중 하나",
+        "릭샤(인력거)의 도시"
+      ]
     }
   ]
 }
