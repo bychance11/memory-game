@@ -70,8 +70,16 @@ VARIETY_DIFFICULTY = {
 }
 
 
-def fetch(url, **kw):
-    r = requests.get(url, headers=HEADERS, timeout=10, **kw)
+def fetch(url, retries=3, **kw):
+    """요청 제한(429)·일시 오류(5xx)면 잠시 쉬고 재시도."""
+    import time
+    for i in range(retries):
+        r = requests.get(url, headers=HEADERS, timeout=10, **kw)
+        if r.status_code == 429 or r.status_code >= 500:
+            time.sleep(2 * (i + 1))
+            continue
+        r.raise_for_status()
+        return r
     r.raise_for_status()
     return r
 
