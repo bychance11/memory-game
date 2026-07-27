@@ -432,32 +432,46 @@ function hintTargets(){
   return t;
 }
 
+/* 힌트 단계: 글자 수 N일 때 총 2N번.
+   1~N번째 클릭 = 초성이 한 글자씩, N+1~2N번째 = 글자가 한 자씩 공개.
+   마지막(2N번째)까지 누르면 정답 공개 처리. */
 function renderSlots(revealAll=false){
   const s = getSession(currentPage);
   const ans = s.questions[s.idx].answer;
-  const revealed = new Set(hintTargets().slice(0, s.hintsUsed));
+  const targets = hintTargets();
+  const n = targets.length;
+  const stage = new Map(); // 글자 인덱스 -> 0:숨김 1:초성 2:글자
+  targets.forEach((idx,pos)=>{
+    stage.set(idx, s.hintsUsed >= n+pos+1 ? 2 : s.hintsUsed >= pos+1 ? 1 : 0);
+  });
   $("slots").innerHTML = [...ans].map((ch,i)=>{
     if(ch===" ") return `<div class="slot space"></div>`;
-    if(revealAll) return `<div class="slot">${ch}</div>`;
-    if(revealed.has(i)) return `<div class="slot">${chosungOf(ch)}</div>`;
+    if(revealAll || stage.get(i)===2) return `<div class="slot">${ch}</div>`;
+    if(stage.get(i)===1) return `<div class="slot">${chosungOf(ch)}</div>`;
     return `<div class="slot empty">?</div>`;
   }).join("");
 }
 
 function updateHintBtn(){
   const s = getSession(currentPage);
-  const total = hintTargets().length;
+  const n = hintTargets().length;
+  const total = n*2;
   const btn = $("hintBtn");
-  btn.textContent = `💡 초성 힌트 열기 (${s.hintsUsed}/${total})`;
+  const kind = s.hintsUsed < n ? "초성" : "글자";
+  btn.textContent = s.hintsUsed >= total
+    ? `💡 힌트 소진`
+    : `💡 ${kind} 힌트 열기 (${s.hintsUsed}/${total})`;
   btn.disabled = s.solved || s.hintsUsed>=total;
 }
 
 function useHint(){
   const s = getSession(currentPage);
-  if(s.solved || s.hintsUsed>=hintTargets().length) return;
+  const total = hintTargets().length*2;
+  if(s.solved || s.hintsUsed>=total) return;
   s.hintsUsed++;
   renderSlots();
   updateHintBtn();
+  if(s.hintsUsed >= total){ finish(false); return; } // 마지막 힌트 = 정답 공개
   $("answerInput").focus();
 }
 
@@ -484,7 +498,7 @@ function finish(correct){
   const s = getSession(currentPage);
   s.solved = true;
   const q = s.questions[s.idx];
-  const total = hintTargets().length;
+  const total = hintTargets().length*2;
   renderSlots(true);
   const r = $("result");
   if(correct){

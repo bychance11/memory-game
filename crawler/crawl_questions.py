@@ -241,10 +241,10 @@ def crawl_actors_tmdb(api_key, per_tier=8, movie_pages=3, cast_per_movie=8):
     난이도 = 수집된 전체 풀 안에서 popularity 백분위 3등분.
     풀이 크고 무명~톱스타가 섞여 있어 백분위 방식이 자연스럽게 작동한다.
     영화 목록이 바뀌고 매일 랜덤 추출하므로 문제가 계속 달라진다."""
-    # 1) 한국 영화 수집
+    # 1) 한국 영화 수집 (페이지 단위 실패는 건너뜀)
     movies = []
-    try:
-        for page in range(1, movie_pages + 1):
+    for page in range(1, movie_pages + 1):
+        try:
             r = fetch(f"{TMDB}/discover/movie",
                       params={"api_key": api_key, "language": "ko-KR",
                               "with_origin_country": "KR",
@@ -254,9 +254,9 @@ def crawl_actors_tmdb(api_key, per_tier=8, movie_pages=3, cast_per_movie=8):
                               "page": page}).json()
             movies += [m for m in (r.get("results") or [])
                        if m.get("original_language") == "ko"]
-    except Exception as e:
-        print(f"  [actor/tmdb] discover 실패: {e}")
-        return []
+        except Exception as e:
+            print(f"  [actor/tmdb] discover p{page} 실패(건너뜀): {e}")
+            continue
 
     # 2) 각 영화의 출연진 수집 (주연~조연 상위 cast_per_movie명)
     people = {}
@@ -306,8 +306,8 @@ def crawl_movies(api_key, limit=24, pages=8):
     난이도 = 풀 내 투표수(vote_count) 백분위 3등분, 티어별 매일 랜덤 추출.
     (배우와 같은 논리: 큰 풀 + 객관 지표 + 랜덤 추출로 재탕 방지)"""
     movies = []
-    try:
-        for page in range(1, pages + 1):
+    for page in range(1, pages + 1):
+        try:
             r = fetch(f"{TMDB}/discover/movie",
                       params={"api_key": api_key, "language": "ko-KR",
                               "with_origin_country": "KR",
@@ -317,9 +317,9 @@ def crawl_movies(api_key, limit=24, pages=8):
                               "page": page}).json()
             movies += [mv for mv in (r.get("results") or [])
                        if mv.get("original_language") == "ko"]
-    except Exception as e:
-        print(f"  [movie] discover 실패: {e}")
-        return []
+        except Exception as e:
+            print(f"  [movie] discover p{page} 실패(건너뜀): {e}")
+            continue  # 한 페이지 실패해도 나머지로 계속
     if not movies:
         return []
 
