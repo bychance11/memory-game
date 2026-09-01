@@ -1,35 +1,37 @@
 {
   "actor": [
     {
-      "answer": "조여정",
+      "answer": "마동석",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/5MgWM8pkUiYkj9MEaEpO0Ir1FD9.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/ckxoXz3l4mCcHEIRaqUc7oGoIFg.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "easy",
       "info": [
-        "기생충 (2019) — Yeon-kyo 역"
+        "부산행 (2016) — Sang-hwa 역",
+        "악인전 (2019) — Jang Dong-su 역",
+        "감기 (2013) — Jeon Gook-hwan 역",
+        "황야 (2024) — Nam-san 역",
+        "신과함께-인과 연 (2018) — Sung-ju / Household God 역"
       ]
     },
     {
-      "answer": "김무열",
+      "answer": "수지",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/wLuVca9icDLjUkOG84IlEmfP52b.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/39x6Dc4ELZxHbxCuOM0ddbwKh3F.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "easy",
       "info": [
-        "악인전 (2019) — Jung Tae-suk 역",
-        "기억의 밤 (2017) — Yoo-seok / Choi Seong-uk 역",
-        "승리호 (2021) — Kang Hyun-woo 역"
+        "백두산 (2019) — Seo Ji-young 역"
       ]
     },
     {
-      "answer": "변우석",
+      "answer": "성준",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/iACGQCFJZUMsy4ywEzNiPokXFB9.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/375rx6041ov9kLc6G36CGf4kwx4.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "easy",
       "info": [
-        "20세기 소녀 (2022) — Poong Woon-ho 역"
+        "악녀 (2017) — Hyun-soo 역"
       ]
     },
     {
@@ -40,17 +42,6 @@
       "difficulty": "easy",
       "info": [
         "기생충 (2019) — Chung-sook 역"
-      ]
-    },
-    {
-      "answer": "김다미",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/1biBc16BVz6bnkajnhdHUsE3j8p.jpg",
-      "prompt": "이 배우의 이름은?",
-      "difficulty": "easy",
-      "info": [
-        "마녀 (2018) — Ja-yoon 역",
-        "대홍수 (2025) — Koo An-na 역"
       ]
     },
     {
@@ -66,141 +57,134 @@
       ]
     },
     {
-      "answer": "설경구",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/teD7AMzfNl4qhQO2b6MAWwLtPVn.jpg",
-      "prompt": "이 배우의 이름은?",
-      "difficulty": "easy",
-      "info": [
-        "소원 (2013) — Dong-hoon 역",
-        "길복순 (2023) — Cha Min-kyu 역"
-      ]
-    },
-    {
-      "answer": "박희순",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/s2SSzvlsSfCPP5EXhCoWUr8970F.jpg",
-      "prompt": "이 배우의 이름은?",
-      "difficulty": "easy",
-      "info": [
-        "어쩔수가없다 (2025) — Choi Seon-chul 역",
-        "마녀 (2018) — Choi 역"
-      ]
-    },
-    {
-      "answer": "김새론",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/jPWTS9hyezN2jqTeWFN3iUxszHc.jpg",
-      "prompt": "이 배우의 이름은?",
-      "difficulty": "normal",
-      "info": [
-        "아저씨 (2010) — Jeong So-mi 역"
-      ]
-    },
-    {
-      "answer": "전종서",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/13mReqKdJFy3NjbqAFzVBLiyF9d.jpg",
-      "prompt": "이 배우의 이름은?",
-      "difficulty": "normal",
-      "info": [
-        "버닝 (2018) — Shin Hae-mi 역",
-        "콜 (2020) — Young-sook 역",
-        "발레리나 (2023) — Jang Ok-joo 역"
-      ]
-    },
-    {
-      "answer": "김시아",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/2kh2hTeABBIyVwPEgRVij1Ldcil.jpg",
-      "prompt": "이 배우의 이름은?",
-      "difficulty": "normal",
-      "info": [
-        "킹덤: 아신전 (2021) — Little Ashin 역",
-        "백두산 (2019) — Sun-ok 역",
-        "길복순 (2023) — Gil Jae-young 역"
-      ]
-    },
-    {
-      "answer": "이희준",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/4slyXnHbKgzmeyJNetBSORgDDEF.jpg",
-      "prompt": "이 배우의 이름은?",
-      "difficulty": "normal",
-      "info": [
-        "감기 (2013) — Byung-Ki 역",
-        "황야 (2024) — Yang Gi-su 역"
-      ]
-    },
-    {
-      "answer": "김해숙",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/dt5bmKeG7qbvDwHrxFZFxiGc9fZ.jpg",
-      "prompt": "이 배우의 이름은?",
-      "difficulty": "normal",
-      "info": [
-        "아가씨 (2016) — Ms. Sasaki 역",
-        "박쥐 (2009) — Lady Ra 역",
-        "소원 (2013) — Psychiatrist Jung-sook 역",
-        "터널 (2016) — Minister 역"
-      ]
-    },
-    {
-      "answer": "황정민",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/hKF1uh0iEfuZlBE79CXPw415qyn.jpg",
-      "prompt": "이 배우의 이름은?",
-      "difficulty": "normal",
-      "info": [
-        "곡성 (2016) — Il-gwang 역",
-        "달콤한 인생 (2005) — Mr. Baek 역",
-        "길복순 (2023) — Kim Gwang-il / Shinichiro Oda 역"
-      ]
-    },
-    {
-      "answer": "김성오",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/bvwsF0l3f2qs19GCUyHtAqGDL5P.jpg",
-      "prompt": "이 배우의 이름은?",
-      "difficulty": "normal",
-      "info": [
-        "아저씨 (2010) — Jong-seok 역",
-        "길복순 (2023) — Shin 역"
-      ]
-    },
-    {
       "answer": "남지현",
       "alt": [],
       "img": "https://image.tmdb.org/t/p/w500/dSFP974u2btrs44Ynw0osCTDBtH.jpg",
       "prompt": "이 배우의 이름은?",
-      "difficulty": "normal",
+      "difficulty": "easy",
       "info": [
         "터널 (2016) — Mi-Na 역"
       ]
     },
     {
-      "answer": "지대한",
+      "answer": "박호산",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/9aoOX8p2oxUAwOaT8jT6GWfjs01.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/gL5eN7UvYlseBD0rjdjgjiVKuQJ.jpg",
       "prompt": "이 배우의 이름은?",
-      "difficulty": "hard",
+      "difficulty": "easy",
       "info": [
-        "올드보이 (2003) — No Joo-hwan 역",
-        "봄 여름 가을 겨울 그리고 봄 (2003) — Detective Ji 역"
+        "콜 (2020) — Mr. Kim 역"
       ]
     },
     {
-      "answer": "오달수",
+      "answer": "이솜",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/hd72oGjq0YKYdgZKMnqtV00MV28.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/jFz4smLt7SwC4wdA8gdiKpXU7Kh.jpg",
+      "prompt": "이 배우의 이름은?",
+      "difficulty": "easy",
+      "info": [
+        "길복순 (2023) — Cha Min-hee 역"
+      ]
+    },
+    {
+      "answer": "하정우",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w500/9KINm0XIwbt4Qql4oZX55krzKxg.jpg",
+      "prompt": "이 배우의 이름은?",
+      "difficulty": "normal",
+      "info": [
+        "아가씨 (2016) — Count Fujiwara 역",
+        "추격자 (2008) — Ji Young-min 역",
+        "신과함께-죄와 벌 (2017) — Gang-rim 역",
+        "신과함께-인과 연 (2018) — Gang-rim 역",
+        "터널 (2016) — Lee Jung-soo 역"
+      ]
+    },
+    {
+      "answer": "이동휘",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w500/dqGCVaJ5yuGgKTPUEqCJNk8Nzbs.jpg",
+      "prompt": "이 배우의 이름은?",
+      "difficulty": "normal",
+      "info": [
+        "콜 (2020) — Baek Min-hyun 역"
+      ]
+    },
+    {
+      "answer": "박성훈",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w500/nSF8VW2IoZcAA910gKQxbu01umk.jpg",
+      "prompt": "이 배우의 이름은?",
+      "difficulty": "normal",
+      "info": [
+        "곤지암 (2018) — Sung-hoon 역"
+      ]
+    },
+    {
+      "answer": "김지훈",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w500/k9Uq26mNkRzoPMu5jGfVoxS3M2V.jpg",
+      "prompt": "이 배우의 이름은?",
+      "difficulty": "normal",
+      "info": [
+        "발레리나 (2023) — Choi Pro 역"
+      ]
+    },
+    {
+      "answer": "배두나",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w500/lCL08q20zkqHcLLLZQRlJfG09P4.jpg",
+      "prompt": "이 배우의 이름은?",
+      "difficulty": "normal",
+      "info": [
+        "괴물 (2006) — Park Nam-joo 역",
+        "복수는 나의 것 (2002) — Yeong-mi 역",
+        "터널 (2016) — Se-hyun 역",
+        "브로커 (2022) — Su-jin 역"
+      ]
+    },
+    {
+      "answer": "장광",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w500/t8xMsqeIe3YzdFNeeh43TPs7c1Y.jpg",
+      "prompt": "이 배우의 이름은?",
+      "difficulty": "normal",
+      "info": [
+        "도가니 (2011) — Principal / Principal's Brother 역"
+      ]
+    },
+    {
+      "answer": "유해진",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w500/y6L2EsmnbnCFxCgfHR2oeL7oQoo.jpg",
+      "prompt": "이 배우의 이름은?",
+      "difficulty": "normal",
+      "info": [
+        "감기 (2013) — Bae Kyung-Ub 역",
+        "택시운전사 (2017) — Hwang Tae-sul 역",
+        "승리호 (2021) — Bubs (voice) 역",
+        "파묘 (2024) — Ko Young-geun 역"
+      ]
+    },
+    {
+      "answer": "강하늘",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w500/wkSSMlvNNH4uAy3wcQ9xVZ4yHfW.jpg",
+      "prompt": "이 배우의 이름은?",
+      "difficulty": "normal",
+      "info": [
+        "기억의 밤 (2017) — Jin-seok 역"
+      ]
+    },
+    {
+      "answer": "차태현",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w500/fzMKBBQaBeK6V0dJnPMWHFaJx8T.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "hard",
       "info": [
-        "올드보이 (2003) — Park Cheol-woong 역",
-        "괴물 (2006) — The Monster (voice) 역",
-        "친절한 금자씨 (2005) — Mr. Chang 역",
-        "어쩔수가없다 (2025) — Detective #1 역",
-        "신과함께-죄와 벌 (2017) — Prosecutor 역"
+        "신과함께-죄와 벌 (2017) — Kim Ja-hong 역",
+        "엽기적인 그녀 (2001) — Kyun-woo 역"
       ]
     },
     {
@@ -215,38 +199,58 @@
       ]
     },
     {
-      "answer": "김동욱",
+      "answer": "정석용",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/zN4UoEuFIbjuzkgvtvQtziG7Rtq.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/tyTSdGaVKotPmJXGNtz6fXoj8Tc.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "hard",
       "info": [
-        "신과함께-죄와 벌 (2017) — Kim Su-hong 역",
-        "신과함께-인과 연 (2018) — Kim Su-hong 역"
+        "20세기 소녀 (2022) — Bo-ra's Father 역",
+        "터널 (2016) — Chief Choi 역"
       ]
     },
     {
-      "answer": "염정아",
+      "answer": "김윤석",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/5qIkgP0VcfF0YhO3bixzBtA1jH2.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/kScVbOdmlQC8Og8NoTn0UEE1Cq7.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "hard",
       "info": [
-        "장화, 홍련 (2003) — Eun-joo 역",
-        "외계+인 2부 (2024) — Madam Black 역",
-        "외계+인 1부 (2022) — Madam Black 역"
+        "추격자 (2008) — Eom Jung-ho 역",
+        "황해 (2010) — Myun Jung-hak 역"
       ]
     },
     {
-      "answer": "김병옥",
+      "answer": "이엘",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/9A4pQUNIJsm1JbbamKNqz8ryOVM.jpg",
+      "img": "https://image.tmdb.org/t/p/w500/4AkevGu4IoGiWEeq46nX3pvByWO.jpg",
       "prompt": "이 배우의 이름은?",
       "difficulty": "hard",
       "info": [
-        "올드보이 (2003) — Mr. Han 역",
-        "친절한 금자씨 (2005) — Preacher 역",
-        "마녀 (2018) — Chief Do 역"
+        "콜 (2020) — Ja-ok 역",
+        "황해 (2010) — Joo Yeong 역"
+      ]
+    },
+    {
+      "answer": "변희봉",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w500/fV8BtRziGqUsBozd1G6lEwmW2b5.jpg",
+      "prompt": "이 배우의 이름은?",
+      "difficulty": "hard",
+      "info": [
+        "살인의 추억 (2003) — Sergeant Koo Hee-bong 역",
+        "괴물 (2006) — Park Hie-bong 역"
+      ]
+    },
+    {
+      "answer": "정유미",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w500/pU8iBcZHhuc4kQe6HHZVcommefG.jpg",
+      "prompt": "이 배우의 이름은?",
+      "difficulty": "hard",
+      "info": [
+        "부산행 (2016) — Sung-gyeong 역",
+        "도가니 (2011) — Seo Yoo-jin 역"
       ]
     },
     {
@@ -259,143 +263,17 @@
         "버닝 (2018) — Lawyer 역",
         "기억의 밤 (2017) — Jin-seok's Father / Mr. Park 역"
       ]
-    },
-    {
-      "answer": "김향기",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w500/fjxmH4T3JAVVNvGkBHVwpqE0JZo.jpg",
-      "prompt": "이 배우의 이름은?",
-      "difficulty": "hard",
-      "info": [
-        "신과함께-죄와 벌 (2017) — Deok-choon 역",
-        "신과함께-인과 연 (2018) — Deok-choon 역"
-      ]
     }
   ],
   "singer": [
     {
-      "answer": "임영웅",
+      "answer": "aespa",
       "alt": [],
-      "prompt": "🎵 '우리들의 블루스' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "prompt": "🎵 'WDA (Whole Different Animal) (Feat. G-DRAGON)' — 현재 멜론 차트인 중인 이 곡의 가수는?",
       "lyric": true,
       "difficulty": "hard",
       "info": [
-        "'우리들의 블루스' — 멜론 차트 63위"
-      ]
-    },
-    {
-      "answer": "NewJeans",
-      "alt": [],
-      "prompt": "🎵 'Hype Boy' — 현재 멜론 차트인 중인 이 곡의 가수는?",
-      "lyric": true,
-      "difficulty": "hard",
-      "info": [
-        "'Hype Boy' — 멜론 차트 76위"
-      ]
-    },
-    {
-      "answer": "아이브",
-      "alt": [
-        "IVE",
-        "IVE (아이브)"
-      ],
-      "prompt": "🎵 'BANG BANG' — 현재 멜론 차트인 중인 이 곡의 가수는?",
-      "lyric": true,
-      "difficulty": "normal",
-      "info": [
-        "'BANG BANG' — 멜론 차트 31위"
-      ]
-    },
-    {
-      "answer": "WOODZ",
-      "alt": [],
-      "prompt": "🎵 'Drowning' — 현재 멜론 차트인 중인 이 곡의 가수는?",
-      "lyric": true,
-      "difficulty": "normal",
-      "info": [
-        "'Drowning' — 멜론 차트 12위"
-      ]
-    },
-    {
-      "answer": "ALLDAY PROJECT",
-      "alt": [],
-      "prompt": "🎵 'ONE MORE TIME' — 현재 멜론 차트인 중인 이 곡의 가수는?",
-      "lyric": true,
-      "difficulty": "hard",
-      "info": [
-        "'ONE MORE TIME' — 멜론 차트 98위"
-      ]
-    },
-    {
-      "answer": "에이티즈",
-      "alt": [
-        "ATEEZ",
-        "ATEEZ(에이티즈)"
-      ],
-      "prompt": "🎵 'BAD' — 현재 멜론 차트인 중인 이 곡의 가수는?",
-      "lyric": true,
-      "difficulty": "easy",
-      "info": [
-        "'BAD' — 멜론 차트 9위"
-      ]
-    },
-    {
-      "answer": "성시경",
-      "alt": [],
-      "prompt": "🎵 '너의 모든 순간' — 현재 멜론 차트인 중인 이 곡의 가수는?",
-      "lyric": true,
-      "difficulty": "normal",
-      "info": [
-        "'너의 모든 순간' — 멜론 차트 28위"
-      ]
-    },
-    {
-      "answer": "NMIXX",
-      "alt": [],
-      "prompt": "🎵 'Blue Valentine' — 현재 멜론 차트인 중인 이 곡의 가수는?",
-      "lyric": true,
-      "difficulty": "normal",
-      "info": [
-        "'Blue Valentine' — 멜론 차트 37위"
-      ]
-    },
-    {
-      "answer": "Young K",
-      "alt": [
-        "DAY6",
-        "Young K (DAY6)"
-      ],
-      "prompt": "🎵 'Shut The Door' — 현재 멜론 차트인 중인 이 곡의 가수는?",
-      "lyric": true,
-      "difficulty": "hard",
-      "info": [
-        "'Shut The Door' — 멜론 차트 95위"
-      ]
-    },
-    {
-      "answer": "도경수",
-      "alt": [
-        "D.O.",
-        "도경수(D.O.)"
-      ],
-      "prompt": "🎵 'Popcorn' — 현재 멜론 차트인 중인 이 곡의 가수는?",
-      "lyric": true,
-      "difficulty": "normal",
-      "info": [
-        "'Popcorn' — 멜론 차트 29위"
-      ]
-    },
-    {
-      "answer": "하츠투하츠",
-      "alt": [
-        "Hearts2Hearts",
-        "Hearts2Hearts (하츠투하츠)"
-      ],
-      "prompt": "🎵 'FOCUS' — 현재 멜론 차트인 중인 이 곡의 가수는?",
-      "lyric": true,
-      "difficulty": "hard",
-      "info": [
-        "'FOCUS' — 멜론 차트 99위"
+        "'WDA (Whole Different Animal) (Feat. G-DRAGON)' — 멜론 차트 91위"
       ]
     },
     {
@@ -409,6 +287,124 @@
       "difficulty": "easy",
       "info": [
         "'Pretty Girl' — 멜론 차트 5위"
+      ]
+    },
+    {
+      "answer": "다비치",
+      "alt": [],
+      "prompt": "🎵 '타임캡슐' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "lyric": true,
+      "difficulty": "normal",
+      "info": [
+        "'타임캡슐' — 멜론 차트 21위"
+      ]
+    },
+    {
+      "answer": "볼빨간사춘기",
+      "alt": [],
+      "prompt": "🎵 '여름아 부탁해' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "lyric": true,
+      "difficulty": "normal",
+      "info": [
+        "'여름아 부탁해' — 멜론 차트 12위"
+      ]
+    },
+    {
+      "answer": "로제",
+      "alt": [
+        "ROSÉ",
+        "로제 (ROSÉ)"
+      ],
+      "prompt": "🎵 'APT.' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "lyric": true,
+      "difficulty": "hard",
+      "info": [
+        "'APT.' — 멜론 차트 60위"
+      ]
+    },
+    {
+      "answer": "G-DRAGON",
+      "alt": [],
+      "prompt": "🎵 'HOME SWEET HOME (feat. 태양, 대성)' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "lyric": true,
+      "difficulty": "normal",
+      "info": [
+        "'HOME SWEET HOME (feat. 태양, 대성)' — 멜론 차트 25위"
+      ]
+    },
+    {
+      "answer": "하츠투하츠",
+      "alt": [
+        "Hearts2Hearts",
+        "Hearts2Hearts (하츠투하츠)"
+      ],
+      "prompt": "🎵 'RUDE!' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "lyric": true,
+      "difficulty": "normal",
+      "info": [
+        "'RUDE!' — 멜론 차트 16위"
+      ]
+    },
+    {
+      "answer": "데이식스",
+      "alt": [
+        "DAY6",
+        "DAY6 (데이식스)"
+      ],
+      "prompt": "🎵 'Welcome to the Show' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "lyric": true,
+      "difficulty": "hard",
+      "info": [
+        "'Welcome to the Show' — 멜론 차트 71위"
+      ]
+    },
+    {
+      "answer": "악뮤",
+      "alt": [
+        "AKMU",
+        "AKMU (악뮤)"
+      ],
+      "prompt": "🎵 '소문의 낙원' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "lyric": true,
+      "difficulty": "normal",
+      "info": [
+        "'소문의 낙원' — 멜론 차트 18위"
+      ]
+    },
+    {
+      "answer": "방탄소년단",
+      "alt": [],
+      "prompt": "🎵 'Dynamite' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "lyric": true,
+      "difficulty": "hard",
+      "info": [
+        "'Dynamite' — 멜론 차트 82위"
+      ]
+    },
+    {
+      "answer": "아이브",
+      "alt": [
+        "IVE",
+        "IVE (아이브)"
+      ],
+      "prompt": "🎵 'BLACKHOLE' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "lyric": true,
+      "difficulty": "hard",
+      "info": [
+        "'BLACKHOLE' — 멜론 차트 97위"
+      ]
+    },
+    {
+      "answer": "에이티즈",
+      "alt": [
+        "ATEEZ",
+        "ATEEZ(에이티즈)"
+      ],
+      "prompt": "🎵 'BAD' — 현재 멜론 차트인 중인 이 곡의 가수는?",
+      "lyric": true,
+      "difficulty": "easy",
+      "info": [
+        "'BAD' — 멜론 차트 9위"
       ]
     }
   ],
@@ -546,22 +542,35 @@
   ],
   "movie": [
     {
-      "answer": "살인의 추억",
+      "answer": "도가니",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/njaw7QZy5ni8ZDydx3b1EDpEfwk.jpg",
-      "prompt": "힌트: 2003년 개봉",
+      "img": "https://image.tmdb.org/t/p/w780/3xTS1lDlbpwg63slWSMeHdamOS1.jpg",
+      "prompt": "힌트: 2011년 개봉",
       "difficulty": "easy",
       "info": [
-        "개봉: 2003년",
-        "감독: 봉준호",
-        "주연: 송강호, 김상경, 김뢰하",
-        "TMDB 평점 8.1 (투표 4,774개)"
+        "개봉: 2011년",
+        "감독: 황동혁",
+        "주연: 공유, 정유미, 김현수",
+        "TMDB 평점 8.2 (투표 807개)"
+      ]
+    },
+    {
+      "answer": "박쥐",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/9IMZqBKbALO7d2bwr6ECKP4igoe.jpg",
+      "prompt": "힌트: 2009년 개봉",
+      "difficulty": "easy",
+      "info": [
+        "개봉: 2009년",
+        "감독: 박찬욱",
+        "주연: 송강호, 김옥빈, 김해숙",
+        "TMDB 평점 7.1 (투표 1,119개)"
       ]
     },
     {
       "answer": "버닝",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/qQEt2FqF8McryFBNX30dyDJKiEK.jpg",
+      "img": "https://image.tmdb.org/t/p/w780/p4JvZZFonKPvIeXZ1c4xkJD8Ty7.jpg",
       "prompt": "힌트: 2018년 개봉",
       "difficulty": "easy",
       "info": [
@@ -572,35 +581,74 @@
       ]
     },
     {
+      "answer": "공동경비구역 JSA",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/uYIkbLVWeSLBiIHZxNY8RshFrpn.jpg",
+      "prompt": "힌트: 2000년 개봉",
+      "difficulty": "easy",
+      "info": [
+        "개봉: 2000년",
+        "감독: 박찬욱",
+        "주연: 이영애, 이병헌, 송강호",
+        "TMDB 평점 7.8 (투표 870개)"
+      ]
+    },
+    {
+      "answer": "추격자",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/hmF1hNNmHjeN5eLqqxokNplwjmd.jpg",
+      "prompt": "힌트: 2008년 개봉",
+      "difficulty": "easy",
+      "info": [
+        "개봉: 2008년",
+        "감독: 나홍진",
+        "주연: 김윤석, 하정우, 서영희",
+        "TMDB 평점 7.8 (투표 1,610개)"
+      ]
+    },
+    {
+      "answer": "달콤한 인생",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/t8EDE4bkYZBaSCo7Gq8uIWtW4pV.jpg",
+      "prompt": "힌트: 2005년 개봉",
+      "difficulty": "easy",
+      "info": [
+        "개봉: 2005년",
+        "감독: 김지운",
+        "주연: 이병헌, 김영철, 신민아",
+        "TMDB 평점 7.4 (투표 1,029개)"
+      ]
+    },
+    {
       "answer": "택시운전사",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/dbXjTu5J00kCggPnQlDpVZmDBil.jpg",
+      "img": "https://image.tmdb.org/t/p/w780/jus5yLRU266MeaCcEj8LCN6YGze.jpg",
       "prompt": "힌트: 2017년 개봉",
       "difficulty": "easy",
       "info": [
         "개봉: 2017년",
         "감독: 장훈",
         "주연: 송강호, 토마스 크레치만, 유해진",
-        "TMDB 평점 8.0 (투표 1,213개)"
+        "TMDB 평점 8.0 (투표 1,214개)"
       ]
     },
     {
-      "answer": "승리호",
+      "answer": "대홍수",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/izrpjJype1BhBf2ROGcxC5KY1fa.jpg",
-      "prompt": "힌트: 2021년 개봉",
+      "img": "https://image.tmdb.org/t/p/w780/3jMN1k8b0Ptd9eMoeftUyDGJdCh.jpg",
+      "prompt": "힌트: 2025년 개봉",
       "difficulty": "easy",
       "info": [
-        "개봉: 2021년",
-        "감독: 조성희",
-        "주연: 송중기, 김태리, 유해진",
-        "TMDB 평점 7.0 (투표 1,173개)"
+        "개봉: 2025년",
+        "감독: 김병우",
+        "주연: 김다미, 박해수, 권은성",
+        "TMDB 평점 6.0 (투표 760개)"
       ]
     },
     {
       "answer": "반도",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/d2UxKyaJ5GgzuHaSsWinFfv3g6L.jpg",
+      "img": "https://image.tmdb.org/t/p/w780/clKYnuFo7o7Wg8yNCNQwLWfovtd.jpg",
       "prompt": "힌트: 2020년 개봉",
       "difficulty": "easy",
       "info": [
@@ -611,113 +659,48 @@
       ]
     },
     {
-      "answer": "외계+인 2부",
+      "answer": "도둑들",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/kSYvc0qDI3LxF7XftEEARfJBSXM.jpg",
-      "prompt": "힌트: 2024년 개봉",
-      "difficulty": "easy",
+      "img": "https://image.tmdb.org/t/p/w780/aqHEBoRTX5UGnXuZcf35BUhjKM2.jpg",
+      "prompt": "힌트: 2012년 개봉",
+      "difficulty": "normal",
       "info": [
-        "개봉: 2024년",
+        "개봉: 2012년",
         "감독: 최동훈",
-        "주연: 류준열, 김태리, 김우빈",
-        "TMDB 평점 6.7 (투표 868개)"
+        "주연: 김윤석, 김혜수, 이정재",
+        "TMDB 평점 6.8 (투표 339개)"
       ]
     },
     {
-      "answer": "20세기 소녀",
+      "answer": "명량",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/lLsJRHjwHUdg8VoJsgcJLnewRxN.jpg",
-      "prompt": "힌트: 2022년 개봉",
-      "difficulty": "easy",
-      "info": [
-        "개봉: 2022년",
-        "감독: Bang Woo-ri",
-        "주연: 김유정, 변우석, 박정우",
-        "TMDB 평점 8.2 (투표 858개)"
-      ]
-    },
-    {
-      "answer": "황야",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/jUuirvTHZz6v82iAAaEoSEQlXpB.jpg",
-      "prompt": "힌트: 2024년 개봉",
-      "difficulty": "easy",
-      "info": [
-        "개봉: 2024년",
-        "감독: 허명행",
-        "주연: 마동석, 이준영, 이희준",
-        "TMDB 평점 6.7 (투표 828개)"
-      ]
-    },
-    {
-      "answer": "파묘",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/6EO11KoiMMG29ISaQrm2G5DCe1X.jpg",
-      "prompt": "힌트: 2024년 개봉",
-      "difficulty": "easy",
-      "info": [
-        "개봉: 2024년",
-        "감독: 장재현",
-        "주연: 최민식, 김고은, 유해진",
-        "TMDB 평점 7.7 (투표 797개)"
-      ]
-    },
-    {
-      "answer": "길복순",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/mGwzJbtX6zU0SdtxeHn1sNNK8JW.jpg",
-      "prompt": "힌트: 2023년 개봉",
+      "img": "https://image.tmdb.org/t/p/w780/A8ZCRd3BpTdn5WLL8glCcFAYWRe.jpg",
+      "prompt": "힌트: 2014년 개봉",
       "difficulty": "normal",
       "info": [
-        "개봉: 2023년",
-        "감독: 변성현",
-        "주연: 전도연, 설경구, 김시아",
-        "TMDB 평점 6.9 (투표 571개)"
+        "개봉: 2014년",
+        "감독: 김한민",
+        "주연: 최민식, 류승룡, 조진웅",
+        "TMDB 평점 7.0 (투표 337개)"
       ]
     },
     {
-      "answer": "모럴센스",
+      "answer": "해운대",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/l4NkCzrW90bxrYn8Y8QS76Q6lsn.jpg",
-      "prompt": "힌트: 2022년 개봉",
+      "img": "https://image.tmdb.org/t/p/w780/pMgVSiUBe5tGFlVf0wVJQeelOhL.jpg",
+      "prompt": "힌트: 2009년 개봉",
       "difficulty": "normal",
       "info": [
-        "개봉: 2022년",
-        "감독: 박현진",
-        "주연: 서현, 이준영, 이엘",
-        "TMDB 평점 6.8 (투표 321개)"
-      ]
-    },
-    {
-      "answer": "리턴 투 서울",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/5POTrRIcfGT6XsNsZh26gjeqxlQ.jpg",
-      "prompt": "힌트: 2022년 개봉",
-      "difficulty": "normal",
-      "info": [
-        "개봉: 2022년",
-        "감독: Davy Chou",
-        "주연: 박지민, 오광록, Guka Han",
-        "TMDB 평점 6.2 (투표 490개)"
-      ]
-    },
-    {
-      "answer": "오직 그대만",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/qSRynQILZUwLYBap1SGdgk4J5ex.jpg",
-      "prompt": "힌트: 2011년 개봉",
-      "difficulty": "normal",
-      "info": [
-        "개봉: 2011년",
-        "감독: 송일곤",
-        "주연: 소지섭, 한효주, 강신일",
-        "TMDB 평점 7.8 (투표 318개)"
+        "개봉: 2009년",
+        "감독: 윤제균",
+        "주연: 설경구, 하지원, 박중훈",
+        "TMDB 평점 6.9 (투표 505개)"
       ]
     },
     {
       "answer": "황해",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/yh1xMNVUXQkhdniFUXZiKD8FAM3.jpg",
+      "img": "https://image.tmdb.org/t/p/w780/5qM5GYwMWnaWcXjniy5rBR92s9k.jpg",
       "prompt": "힌트: 2010년 개봉",
       "difficulty": "normal",
       "info": [
@@ -728,100 +711,74 @@
       ]
     },
     {
-      "answer": "밀정",
+      "answer": "내가 살인범이다",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/ohiUEBRpfMFKEnU2CCQ7jq5KRT0.jpg",
-      "prompt": "힌트: 2016년 개봉",
+      "img": "https://image.tmdb.org/t/p/w780/76amS3T3lLgQN7YM0PkRbGHBvB3.jpg",
+      "prompt": "힌트: 2012년 개봉",
       "difficulty": "normal",
       "info": [
-        "개봉: 2016년",
-        "감독: 김지운",
-        "주연: 송강호, 공유, 한지민",
-        "TMDB 평점 7.2 (투표 383개)"
+        "개봉: 2012년",
+        "감독: 정병길",
+        "주연: 정재영, 박시후, 정해균",
+        "TMDB 평점 7.1 (투표 338개)"
       ]
     },
     {
-      "answer": "싸이보그지만 괜찮아",
+      "answer": "군체",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/nMpR8pY8fMWIh8BQZjFqSowHRCH.jpg",
-      "prompt": "힌트: 2006년 개봉",
+      "img": "https://image.tmdb.org/t/p/w780/hpBGCnzOvdtQoMyE48gvwp2y5yx.jpg",
+      "prompt": "힌트: 2026년 개봉",
       "difficulty": "normal",
       "info": [
-        "개봉: 2006년",
-        "감독: 박찬욱",
-        "주연: 임수정, 비, 오달수",
-        "TMDB 평점 7.0 (투표 623개)"
+        "개봉: 2026년",
+        "감독: 연상호",
+        "주연: 전지현, 구교환, 지창욱",
+        "TMDB 평점 8.1 (투표 661개)"
       ]
     },
     {
-      "answer": "범죄도시 2",
+      "answer": "브로커",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/iuM006FCrVXqvwLg4R0hkST0HPy.jpg",
+      "img": "https://image.tmdb.org/t/p/w780/itYtNkC2wABFBCloaQCXXfZaDjy.jpg",
       "prompt": "힌트: 2022년 개봉",
       "difficulty": "normal",
       "info": [
         "개봉: 2022년",
-        "감독: 이상용",
-        "주연: 마동석, 손석구, 최귀화",
-        "TMDB 평점 7.3 (투표 458개)"
+        "감독: 고레에다 히로카즈",
+        "주연: 송강호, 강동원, 배두나",
+        "TMDB 평점 7.2 (투표 569개)"
       ]
     },
     {
-      "answer": "하녀",
+      "answer": "카터",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/bNdLtkWhLq2pFzflXmLBadfUIis.jpg",
-      "prompt": "힌트: 2010년 개봉",
+      "img": "https://image.tmdb.org/t/p/w780/vHxLWAjy3BRAaQvZEak341tGU2h.jpg",
+      "prompt": "힌트: 2022년 개봉",
       "difficulty": "normal",
       "info": [
-        "개봉: 2010년",
-        "감독: 임상수",
-        "주연: 전도연, 이정재, 서우",
-        "TMDB 평점 6.3 (투표 395개)"
+        "개봉: 2022년",
+        "감독: 정병길",
+        "주연: 주원, 이성재, 정소리",
+        "TMDB 평점 6.0 (투표 438개)"
       ]
     },
     {
-      "answer": "강철비",
+      "answer": "마녀 2",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/wokUD0rawTlUv6XqBaC30LORvvZ.jpg",
-      "prompt": "힌트: 2017년 개봉",
-      "difficulty": "hard",
+      "img": "https://image.tmdb.org/t/p/w780/8cV7zcFvazfEY8uStId95FHXcwk.jpg",
+      "prompt": "힌트: 2022년 개봉",
+      "difficulty": "normal",
       "info": [
-        "개봉: 2017년",
-        "감독: 양우석",
-        "주연: 정우성, 곽도원, 김갑수",
-        "TMDB 평점 7.1 (투표 219개)"
-      ]
-    },
-    {
-      "answer": "서복",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/bW5aasjwZQ2hDcx969v8kDyFeR6.jpg",
-      "prompt": "힌트: 2021년 개봉",
-      "difficulty": "hard",
-      "info": [
-        "개봉: 2021년",
-        "감독: 이용주",
-        "주연: 공유, 박보검, 조우진",
-        "TMDB 평점 7.2 (투표 263개)"
-      ]
-    },
-    {
-      "answer": "시간",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/oj1TOSvvxpDGmDi1GMwclAzjf2f.jpg",
-      "prompt": "힌트: 2006년 개봉",
-      "difficulty": "hard",
-      "info": [
-        "개봉: 2006년",
-        "감독: 김기덕",
-        "주연: 성현아, 하정우, 박지연",
-        "TMDB 평점 6.9 (투표 258개)"
+        "개봉: 2022년",
+        "감독: 박훈정",
+        "주연: 신시아, 박은빈, 서은수",
+        "TMDB 평점 7.4 (투표 472개)"
       ]
     },
     {
       "answer": "뷰티 인사이드",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/qZlAyN4y6Tff6mtTD2y2or2EBon.jpg",
+      "img": "https://image.tmdb.org/t/p/w780/iNNMyaPB1NI7L96YPxPu7UCcFXG.jpg",
       "prompt": "힌트: 2015년 개봉",
       "difficulty": "hard",
       "info": [
@@ -832,68 +789,107 @@
       ]
     },
     {
-      "answer": "괴기맨숀",
+      "answer": "검객",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/kBWUJ15tczcJXI1WMruXOqkq9ji.jpg",
-      "prompt": "힌트: 2021년 개봉",
+      "img": "https://image.tmdb.org/t/p/w780/cj7YO6UNGez6EKte3ZYo21dTQI7.jpg",
+      "prompt": "힌트: 2020년 개봉",
       "difficulty": "hard",
       "info": [
-        "개봉: 2021년",
-        "감독: 조바른",
-        "주연: 성준, 김홍파, 김보라",
-        "TMDB 평점 7.2 (투표 261개)"
+        "개봉: 2020년",
+        "감독: Choi Jae-hoon",
+        "주연: 장혁, 김현수, 조 타슬림",
+        "TMDB 평점 7.5 (투표 296개)"
       ]
     },
     {
-      "answer": "지금 만나러 갑니다",
+      "answer": "우는 남자",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/xW1RO1jI0pUkHe06UklrMLtLxtV.jpg",
+      "img": "https://image.tmdb.org/t/p/w780/bgWuI8gHnzxDMX5KpWCQTOwTxH9.jpg",
+      "prompt": "힌트: 2014년 개봉",
+      "difficulty": "hard",
+      "info": [
+        "개봉: 2014년",
+        "감독: 이정범",
+        "주연: 장동건, 김민희, 브라이언 티",
+        "TMDB 평점 7.3 (투표 308개)"
+      ]
+    },
+    {
+      "answer": "공작",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/23nSaWGiF6VFHL91pdUzYI29k70.jpg",
       "prompt": "힌트: 2018년 개봉",
       "difficulty": "hard",
       "info": [
         "개봉: 2018년",
-        "감독: 이장훈",
-        "주연: 소지섭, 손예진, Kim Ji-hwan",
-        "TMDB 평점 8.2 (투표 225개)"
+        "감독: 윤종빈",
+        "주연: 황정민, 이성민, 조진웅",
+        "TMDB 평점 7.3 (투표 224개)"
       ]
     },
     {
-      "answer": "청년경찰",
+      "answer": "베를린",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/14SZf7ZNM5OkSXfrnOfHborYfgt.jpg",
-      "prompt": "힌트: 2017년 개봉",
-      "difficulty": "hard",
-      "info": [
-        "개봉: 2017년",
-        "감독: 김주환",
-        "주연: 박서준, 강하늘, 성동일",
-        "TMDB 평점 7.5 (투표 258개)"
-      ]
-    },
-    {
-      "answer": "더 테러 라이브",
-      "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/niQy8JQ3YOioONryVEqi3F7IX4f.jpg",
+      "img": "https://image.tmdb.org/t/p/w780/arLJgXsphXWFDGNDrbFJ1fnmwXl.jpg",
       "prompt": "힌트: 2013년 개봉",
       "difficulty": "hard",
       "info": [
         "개봉: 2013년",
-        "감독: 김병우",
-        "주연: 하정우, 김대명, 이경영",
-        "TMDB 평점 7.2 (투표 286개)"
+        "감독: 류승완",
+        "주연: 하정우, 한석규, 류승범",
+        "TMDB 평점 6.7 (투표 231개)"
       ]
     },
     {
-      "answer": "회사원",
+      "answer": "암살",
       "alt": [],
-      "img": "https://image.tmdb.org/t/p/w780/nl3wQlCEc2k4JnOweVrgEK5cTkp.jpg",
-      "prompt": "힌트: 2012년 개봉",
+      "img": "https://image.tmdb.org/t/p/w780/9yFWXEzeugCxxiSyd46dZGiD6SX.jpg",
+      "prompt": "힌트: 2015년 개봉",
       "difficulty": "hard",
       "info": [
-        "개봉: 2012년",
-        "감독: 임상윤",
-        "주연: 소지섭, 이미연, 곽도원",
-        "TMDB 평점 7.0 (투표 221개)"
+        "개봉: 2015년",
+        "감독: 최동훈",
+        "주연: 전지현, 하정우, 이정재",
+        "TMDB 평점 7.3 (투표 288개)"
+      ]
+    },
+    {
+      "answer": "더 문",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/vfIAzDTLpMqNsfGu24LlDwf3vi5.jpg",
+      "prompt": "힌트: 2023년 개봉",
+      "difficulty": "hard",
+      "info": [
+        "개봉: 2023년",
+        "감독: 김용화",
+        "주연: 설경구, 도경수, 김희애",
+        "TMDB 평점 6.5 (투표 218개)"
+      ]
+    },
+    {
+      "answer": "지구를 지켜라!",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/ydnzh7ky6OvKtfXyW3J4dVq8RfJ.jpg",
+      "prompt": "힌트: 2003년 개봉",
+      "difficulty": "hard",
+      "info": [
+        "개봉: 2003년",
+        "감독: 장준환",
+        "주연: 신하균, 백윤식, 황정민",
+        "TMDB 평점 7.0 (투표 253개)"
+      ]
+    },
+    {
+      "answer": "나쁜 남자",
+      "alt": [],
+      "img": "https://image.tmdb.org/t/p/w780/vGcz0sUrcxsixWdQBFpV0PefbGH.jpg",
+      "prompt": "힌트: 2002년 개봉",
+      "difficulty": "hard",
+      "info": [
+        "개봉: 2002년",
+        "감독: 김기덕",
+        "주연: 조재현, 서원, 김윤태",
+        "TMDB 평점 6.5 (투표 307개)"
       ]
     }
   ],
